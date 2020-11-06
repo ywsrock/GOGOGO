@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+
 	//ファイル新規作成
 	f, err := os.Create("new.txt")
 	if err != nil {
@@ -24,14 +25,18 @@ func main() {
 	f.WriteString("string-------------")
 	f.WriteAt([]byte("GOlang"), 7)
 
+	//ファイルを開く
+	of, _ := os.Open("new.txt")
 	//ファイル読み込
 	bs := make([]byte, 128)
-	_, err1 := f.Read(bs)
+	_, err1 := of.Read(bs)
 
 	if err1 != nil {
-		fmt.Println(string(bs))
-		for _, b := range bs {
-			fmt.Println(b)
-		}
+		log.Fatal("read error")
 	}
+	fmt.Println(string(bs))
+
+	//File
+	defer f.Close()
+	defer of.Close()
 }
