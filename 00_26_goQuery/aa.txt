@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var TLDataContext = {
+  ual : {
+    pageview : {
+      opttype : 'smartphone',
+      content_id : '1357.T',
+      id_type : 'finance_brand_market',
+      nopv : 'false',
+      mtestid : '',
+      ss_join_id : '',
+      ss_join_id_type : '',
+      hierarchy_id : '2079965153'
+    }
+  }
+};
+</script>
+<script type="text/javascript">
+(function () {
+  var tagjs = document.createElement("script");
+  var s = document.getElementsByTagName("script")[0];
+  tagjs.async = true;
+  tagjs.src = "//s.yjtag.jp/tag.js#site=aSf293Q";
+  s.parentNode.insertBefore(tagjs, s);
+}());
+</script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>ETF (NEXT FUNDS) 日経ダブルインバース上場投信【1357】：銘柄情報 - Y!ファイナンス</title>
+<link rel="stylesheet" href="https://s.yimg.jp/images/finance/smp/common/css/finance.css" media="all">
+<link rel="stylesheet" href="https://s.yimg.jp/images/finance/smp/common/css/common.css?date=20151124" media="all">
+<link rel="apple-touch-icon" href="https://s.yimg.jp/images/finance/app/finance152.png">
+<link rel="stylesheet" href="https://s.yimg.jp/images/finance/smp/common/css/module_finance.css" media="all">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="(NEXT FUNDS) 日経ダブルインバース上場投信【1357】のリアルタイム株価、チャート、関連ニュース、配当金などの決算情報を掲載。投資やマネーの総合情報サイト - Yahoo!ファイナンス">
+<meta name="keywords" content="ETF (NEXT FUNDS) 日経ダブルインバース上場投信,1357,ETF,チャート,ニュース,掲示板,時系列">
+<script src="https://s.yimg.jp/images/finance/smp/common/js/mics/loadjs.js"></script>
+<script src="/js/finance.js?date=20150910"></script>
+<script>YAHOO.JP.fin.M.B="nc=-100";document.addEventListener('DOMContentLoaded',function(){if(!YAHOO.JP.fin.M.B){document.getElementById('alertSign2').style['display']='block'}});YJFIN.B=YAHOO.JP.fin.M.B;</script>
+<!-- basic-SMHCS -->
+<!-- smhcs -->
+<link rel="stylesheet" href="https://s.yimg.jp/yui/jp/smh/sp/2.5.15/css/yjsmhStyle.css" />
+<link rel="stylesheet" href="https://s.yimg.jp/yui/jp/smh/sp/2.2.4/css/yjsmh_finance.css" />
+<!-- /smhcs --><script type="text/javascript" src="https://s.yimg.jp/images/listing/tool/yads/yads-timeline-ex.js"></script>
+<script type="text/javascript" src="//yads.c.yimg.jp/js/yads-async.js"></script>
+<script src="https://s.yimg.jp/l/ext/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://s.yimg.jp/images/finance/common/js/libra.js" ></script>
+<script src="https://s.yimg.jp/images/finance/common/js/spark.js" ></script>
+<script src="https://s.yimg.jp/images/finance/common/js/chart-min.js" ></script>
+<link rel="stylesheet" href="https://s.yimg.jp/images/finance/smp/stock/css/stockDetail.css" media="all">
+<meta property="fb:app_id" content="464062600275671">
+<meta property="og:site_name" content="Y!ファイナンス">
+<meta property="og:title" content="ETF (NEXT FUNDS) 日経ダブルインバース上場投信【1357】：銘柄情報 - Y!ファイナンス">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://m.finance.yahoo.co.jp/stock?code=1357.T">
+<meta property="og:image" content="https://s.yimg.jp/images/finance/common/image/ogp.png">
+<meta property="og:description" content="(NEXT FUNDS) 日経ダブルインバース上場投信【1357】のリアルタイム株価、チャート、関連ニュース、配当金などの決算情報を掲載。投資やマネーの総合情報サイト - Yahoo!ファイナンス">
+<link rel="dns-prefetch" href="//approach.yahooapis.jp" />
+<link rel="alternate" href="android-app://jp.co.yahoo.android.finance/yjfinance-appindexing/m.finance.yahoo.co.jp/stock?code=1357.T" /></head>
+<body>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=aSf293Q" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+<div class="appMdl" id="app_mdl" style="display: none">
+<section class="appMdlInner">
+<div class="appMdlHeader">
+<h3 class="appMdlTtl">証券アプリ一覧</h3>
+<div class="appMdlBtn" id="stockShrCls">
+</div>
+</div>
+<div class="appMdlBody" id="mdlBox">
+</div>
+<p class="appMdlNotes">※ご協賛いただいた証券会社様を掲載しております。</p>
+</section>
+</div><div id="alert_mdl" style="display: none">
+<div class="modalBg" style="height: 4196px; z-index: 1000;">
+  <div class="modalBoxFin alertMdlInner">
+  <form method="post" action="/alert/regist" id="addAlertForm">
+    <div class="modalTitle">アラート設定</div>
+    <div class="alertTitle" id="alert_mdl_err_message" style="display: none"></div>
+    <div class="modalText">
+      <input type="hidden" name="code_0" value="1357.T">
+      <ul class="modalAlertDetail clearFix">
+        <li>
+          <dl>
+            <dt class="alertTitle">指値（高値）</dt>
+            <dd><input class="rate" type="number" name="high_0" value=""></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt class="alertTitle">指値（安値）</dt>
+            <dd><input class="rate" type="number" name="low_0" value=""></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt class="alertTitle">値上がり率</dt>
+            <dd>
+              <select name="up_0" class="alertSelect">
+                <option value="">---</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+                <option value="30">30%</option>
+              </select>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt class="alertTitle">値下がり率</dt>
+            <dd>
+              <select name="down_0" class="alertSelect">
+                <option value="">---</option>
+                <option value="-5">5%</option>
+                <option value="-10">10%</option>
+                <option value="-15">15%</option>
+                <option value="-20">20%</option>
+                <option value="-25">25%</option>
+                <option value="-30">30%</option>
+              </select>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+      <div class="buttonMedium">
+        <p class="yellow"><a href="#" id="alertStockAdd">設定する</a></p>
+      </div>
+    </div>
+    <p class="modalButton"><a href="#" class="normal" id="addAlertCls"><span>閉じる</span></a></p>
+  </form>
+  </div>
+</div>
+</div>
+<div id="alert_complete_mdl" style="display: none">
+<div class="modalBg" style="height: 4196px; z-index: 1000;">
+  <div class="modalBoxFin alertMdlInner">
+    <div class="modalTitle">アラート設定</div>
+    <div class="modalText">
+    
+      <ul class="modalAlertComplete clearFix">
+        <li>
+          <dl>
+            <dt class="alertTitle" id="alert_mdl_updt_message"></dt>
+            <dd class="configList"><a href="alert/config" data-ylk="slk:config;pos:0">設定一覧を見る</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <div class="buttonMedium"></div>
+    </div>
+    <p class="modalButton"><a href="#" class="normal" id="addAlertCompCls"><span>閉じる</span></a></p>
+  </div>
+</div>
+</div>
+<div id="wrapper">
+  <style>
+    .appNoticetop{
+        font-size:13px;
+        text-decoration:none;
+        padding-left:5px;
+        text-align:center;
+        display:block;
+    }
+    .appNotice{ 
+        font-size:16px;
+        margin:0 0 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+        overflow:hidden;
+        border-bottom: 1px solid #ccc;
+    }
+    .appNotice a{
+        text-decoration:none;
+        color: #FFFFFF;
+    }
+    .appNotice .close{
+        width: 32px;
+        height: 76px;
+        background: url(https://s.yimg.jp/images/mobile/yjapp/promo/sab/rsab_close.png) no-repeat 50% 50%;
+         -webkit-background-size: 20px 20px;
+         text-indent: 110%;
+         white-space: nowrap;
+         overflow: hidden;
+         position: absolute;
+         left: 0px
+     }
+     /* margin-top: -30px;} */
+    .appNotice .all{
+        display:block;
+        /*width:100%;*/
+        /*max-width: 100%;*/
+        height:auto;
+        margin: 0 auto;
+         /*-webkit-background-size: 266px 82px;*/
+         /*background-position: center center;*/
+         /*background-repeat:no-repeat;*/
+        padding: 0 35px;
+        text-align: center;
+     }
+     .appNotice .all img{
+        width: 100%;
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+    }  
+  </style>
+  <div id="androidBanner" style="display:none;">
+    <div class="appNotice">
+        <a href="#" class="close" id="androidBannerClose">×</a>
+        <a href="#" class="all" id="androidBannerAll"><img src="https://s.yimg.jp/images/finance/smp/promotion/img/financeApp/bnr/w2a/31.png" width="100%" height="all"></a>
+    </div>
+  </div>
+  <!-- basic-SMH-logout -->
+<div id="yjsmhWrapper">
+  <!-- smhlg_logout -->
+  <div id="yjsmhMenuArea"><span class="yjsmhMenuAreaClose"></span></div>
+  <header id="yjsmhHeader" class="yjsmhHeaderDefault yjsmhStsLogout">
+    <div id="yjsmhLogo">
+      <h1 title="Yahoo!ファイナンス"><a data-redirectadclick href="https://m.finance.yahoo.co.jp" data-ylk="slk:h_srvtop;pos:0" id="yjsmhSLogo" class="rapid-noclick-resp">Yahoo!ファイナンス</a></h1>
+      <ul class="yjsmhHeaderMenu">
+        <li>
+          <a data-redirectadclick href="#" id="yjsmhNotice" class="rapid-noclick-resp"><span>通知数：</span><strong id="yjsmhNoticeNumI">i</strong></a>
+        </li>
+        <li>
+          <a data-redirectadclick href="https://m.yahoo.co.jp/" id="yjsmhYlogo" class="rapid-noclick-resp">Yahoo! JAPAN</a>
+        </li>
+        <li class="yjsmhContentsMenu">
+          <a class="yjsmhHeaderOpen rapid-noclick-resp" id="yjsmhOpenButton"><div><p>メニューを開く</p></div></a>
+        </li>
+      </ul>
+    </div>
+    <div id="mhd_header_sp">
+      <div id="yjsmhPremHeader" class="yjsmhLoginArea yjsmhNoLogin">
+        <ul id="yjsmhPremHeaderInner">
+          <li id="yjsmhLoginToolExt"><a data-redirectadclick href="https://login.yahoo.co.jp/config/login?.src=finance&amp;.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T&amp;referrer=mhd_login" id="yjsmhLoginExt" data-ylk="slk:d_login;pos:0"><span>ログイン</span></a></li>
+          <li id="yjsmhRegToolExt"><a data-redirectadclick href="https://account.edit.yahoo.co.jp/registration?.src=finance&amp;.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T&amp;referrer=mhd_reg" id="yjsmhRegExt" data-ylk="slk:d_regyid;pos:0"><span>ID新規取得</span></a></li>
+        </ul>
+      </div>
+      <style>#mhd_prem_header_sp{display:none;}</style>
+    </div>
+    <div id="mhd_prem_header_sp"></div>
+  </header>
+  <!-- /smhlg_logout -->
+
+  <!-- smhli_logout -->
+  <nav id="yjsmhMenu">
+    <div id="yjsmhMenuWrp">
+      <ul id="yjsmhPersonal">
+        <li id="yjsmhLoginArea" class="yjsmhColumnTwo"><a data-redirectadclick href="https://login.yahoo.co.jp/config/login?.src=finance&amp;.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T&amp;referrer=mhd_menu_login" id="yjsmhSidebarLogin" data-ylk="slk:h_login;pos:0"><span>ログイン</span></a><a data-redirectadclick href="https://account.edit.yahoo.co.jp/registration?.src=finance&amp;.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T&amp;referrer=mhd_menu_reg" id="yjsmhSidebarReg" data-ylk="slk:h_reg;pos:0"><span>ID新規取得</span></a></li>
+        <li id="yjsmhPoint" class="yjsmhPointStatus"><a data-redirectadclick href="https://points.yahoo.co.jp/book" id="yjsmhLogoutPointStatus" data-ylk="slk:d_tpthst;pos:0"><span class="yjsmhPointLogo">ポイントを確認</span></a></li>
+      </ul>
+      <ul id="yjsmhPrArea"></ul>
+      <ul id="yjsmhInfo"></ul>
+    </div>
+  </nav>
+  <div id="yjsmhNotification">
+    <header id="yjsmhNotificationHeader">
+      <h1>通知</h1>
+      <nav>
+        <ul>
+          <li class="yjsmhCloseBtn" id="yjsmhCloseBtn">
+            <a data-redirectadclick href="#" class="rapid-noclick-resp">閉じる</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="yjsmhNotificationArticle">
+      <div class="yjsmhNotificationWrapper">
+        <div id="yjsmhNotificationPromo">
+          <div class="yjsmhPromotion">
+            <a data-redirectadclick href="https://login.yahoo.co.jp/config/login?.src=finance&amp;.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T&amp;referrer=mhd_notice_login" id="yjsmhPromoImg"><div class="yjsmhPromoImg"></div></a>
+            <div class="yjsmhBtnArea">
+              <div class="yjsmhBtnSubmit">
+                <a data-redirectadclick href="https://login.yahoo.co.jp/config/login?.src=finance&amp;.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T&amp;referrer=mhd_notice_login" class="yjsmhSubmit" id="yjsmhPromotionLogin">いますぐ確認する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://s.yimg.jp/images/mempf/mhd/2_3_0/mempf.js"></script>
+  <script type="text/javascript" src="https://s.yimg.jp/images/security/pf/pcore-1.0.2.min.js"></script>
+  <script type="text/javascript" src="https://s.yimg.jp/images/security/pf/yjsecure.js"></script>
+  <script type="text/javascript">
+    YAHOO=(typeof YAHOO==='undefined')?{}:YAHOO;
+    YAHOO.JP=(typeof YAHOO.JP==='undefined')?{}:YAHOO.JP;
+    YAHOO.JP.smh=(typeof YAHOO.JP.smh==='undefined')?{}:YAHOO.JP.smh;
+  </script>
+  <script type="text/javascript" src="https://s.yimg.jp/images/approach/jslib/deeplink-2.0.2.js"></script>
+  <script type="text/javascript">
+    YAHOO.JP.smh.Approach=new YAHOO.JP.Approach({'yjdnAppId':'dj0zaiZpPVk1dGhzcmI5cXo0cyZzPWNvbnN1bWVyc2VjcmV0Jng9NTE-'});
+  </script>
+  <script type="text/javascript">
+    /*<![CDATA[*/
+    (function(d,t){
+      var s=d.getElementsByTagName(t)[0],n=d.createElement(t);
+      n.id='yjsmhScript';
+      n.src='https://s.yimg.jp/yui/jp/smh/sp/2.6.30/js/smh-min.js';
+      n.setAttribute('data-s','');
+      s.parentNode.insertBefore(n,s);
+    }(document,'script'));
+    /*]]>*/
+  </script>
+  <!-- /smhli_logout -->
+</div>
+
+<div id="posMEM3"><!-- MEM3 noResult --></div>
+<div id="posMEM2"><!-- MEM2 noResult --></div>
+<div id="posMEM"><!-- MEM noResult --></div>
+<div class="column alertSign2" id="alertSign2" style="display:none;">
+<p>データが取得できません。</p>
+<p class="note">お手数ですが、ページを更新し、再度データを取得してください。</p>
+<div class="buttonMedium">
+<p><a href="https://m.finance.yahoo.co.jp/stock?code=1357.T">ページを更新する</a></p>
+</div>
+</div>
+<noscript><p class="errorText">JavaScriptが無効です。JavaScriptの設定が無効では、ページの移動が正常にできない場合や、一部利用できない機能があります。画面を正しく表示させるには、ブラウザーの設定でJavaScriptを有効にしてください。JavaScriptの設定を変更する方法は<a href="https://m.yahoo-help.jp/app/noscript">こちら</a>。</p></noscript>
+
+
+<div id="content">
+
+<div id="stockinf"><section id="stockTitle">
+<span class="button"><a href="/portfolio/detail/edit?id=&code=1357.T" class="addToPortfolio" title="追加" data-ylk="slk:addprtfo;pos:0">追加</a></span>
+<div>
+<h2 class="title"><a href="https://m.finance.yahoo.co.jp/stock?code=1357.T" onmousedown="this.href='https://m.finance.yahoo.co.jp/stock?code=1357.T'" data-ylk="slk:stock;pos:0">(NEXT FUNDS) 日経ダブルインバース上場投信</a></h2>
+<p class="description">1357（東証）</p>
+</div>
+</section></div>
+
+<div id="modules">
+
+<section id="detail" style="display:block;">
+<header class="labelBgimg" id="_detail"><div id="reload">
+<a href="javascript:void(0)" class="buttonIconFin" title="更新">更新</a>
+<h2 class="title">詳細情報 <span class="titleExplain">（リアルタイム株価）</span></h2>
+</div></header>
+<div id="detail-module">
+<div class="finBtnMin feeBtn" id="hikakusec">
+<ul>
+<li><a href="https://ysyoken.hikaku.minkabu.jp/sp/charge.html?stock_code=1357&stock_price=587" data-ylk="slk:btn;pos:0"><span class="crownIco">NF 日経Wインバースの売買で1番お得な証券会社は？</span></a></li>
+</ul>
+</div>
+<div class="stockDetail">
+<ul><li><dl><dt>取引値 <span class="dateFin">11/13 15:00</span></dt> <dd class="priceFin">587</dd><dd class="icoRealTime">&nbsp;</dd></dl></li>
+<li><dl><dt>前日比</dt> <dd class="deltaUp arrow">+7（+1.21%）</dd></dl></li>
+<li><dl><dt>前日終値 <span class="dateFin">11/12</span></dt> <dd>580</dd></dl></li>
+<li><dl><dt>始値 <span class="dateFin">11/13 09:00</span></dt> <dd>586</dd><dd class="icoRealTime">&nbsp;</dd></dl></li>
+<li><dl><dt>高値 <span class="dateFin">11/13 11:04</span></dt> <dd>595</dd><dd class="icoRealTime">&nbsp;</dd></dl></li>
+<li><dl><dt>安値 <span class="dateFin">11/13 09:07</span></dt> <dd>583</dd><dd class="icoRealTime">&nbsp;</dd></dl></li>
+<li><dl><dt>出来高</dt> <dd>46,680,019株</dd></dl></li>
+<li><dl><dt>売買代金</dt> <dd>27,500,122千円</dd></dl></li>
+<li><dl><dt>純資産</dt> <dd>286,449百万円</dd></dl></li>
+<li><dl><dt>値幅制限</dt> <dd>480～680</dd></dl></li>
+<div class="yjS note clearfix">
+<p class="text">
+<span class="icoRealTime">&nbsp;</span>：リアルタイム
+</p>
+<div class="finBtnMin vipBtn2">
+<a href="https://rdsig.yahoo.co.jp/finance/sp/investment/stock/detail/price_button/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svcXVvdGF0aW9uP2NvZGU9MTM1Ny5U"><span class="icoBoard">板気配を見る</span></a>
+</div>
+</div>
+</ul></div>
+
+</div>
+<aside>
+<div class="socialBtn">
+<div id="stock_shr" class="appBtn2 tabButtonFin">
+<a title="証券アプリを起動する" href="#" id="appStockShare" data-ylk="slk:app_shr;pos:0">
+            証券アプリを起動する
+            </a>
+</div>
+<div id="add_stock_alert" class="alertBtn2 tabButtonFin"><a title="アラート設定" href="https://login.yahoo.co.jp/config/login?.src=quote&lg=jp&.intl=jp&.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T%23alert_mdl">ログインしてアラートを設定する</a></div>
+        <ul>
+                    <li class="tweet">            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none">ツイート</a>
+        </li>
+                            <li class="btnFb">
+                <div class="fb-like"><a target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://m.finance.yahoo.co.jp/stock?code=1357.T"><img width="59" height="18" title="Facebookにシェア" alt="Facebookにシェア" src="https://s.yimg.jp/images/evt/common/share/fb_btn.png"></a></div>
+                </li>
+                    <li class="line">            <script src="/js/line-button.js"></script>            <script type="text/javascript">
+                new jp.naver.line.media.LineButton({"text":"ETF (NEXT FUNDS) 日経ダブルインバース上場投信【1357】：銘柄情報 - Y!ファイナンス","url":"https://m.finance.yahoo.co.jp/stock?code=1357.T&fr=sd_ln"});
+            </script>
+        </li>
+        </ul>
+</div>
+</aside>
+<a id="w2aBnr" style="display: block; text-align: center; font-size: 0;" href="http://info.finance.yahoo.co.jp/pr/finance_app">
+  <img id="w2aBnrImg" style="width:100%; max-width:414px;" src="" alt="">
+</a>
+<script type="text/javascript">
+(function(){
+// android
+var w2aBnrImgArr = [
+    "https://s.yimg.jp/images/finance/mt/special/live/assets/image/bnr_750x234.png",
+    "https://s.yimg.jp/images/finance/mt/special/column2020/bn/202010/750_234.png"
+];
+var w2aBnrURLArr = [
+    "https://rdsig.yahoo.co.jp/finance/realtime/sp/stocks/RV=1/RU=aHR0cHM6Ly9maW5hbmNlLnlhaG9vLmNvLmpwL2ZlYXR1cmUvc3BlY2lhbC9saXZlL2luZGV4Lmh0bWw-",
+    "https://rdsig.yahoo.co.jp/finance/column/202010/sp/stocks/detail/RV=1/RU=aHR0cHM6Ly9maW5hbmNlLnlhaG9vLmNvLmpwL2ZlYXR1cmUvc3BlY2lhbC9pbnZlc3RtZW50dHJ1c3QvY29sdW1uLzIwMjAxMC8-"
+];
+var w2aBnrType = Math.floor(Math.random()*w2aBnrImgArr.length);
+document.getElementById("w2aBnr").href=w2aBnrURLArr[w2aBnrType];
+document.getElementById("w2aBnrImg").src=w2aBnrImgArr[w2aBnrType];
+}());
+</script> 
+
+ 
+</section>
+<section id="chart" style="display:none;">
+<header class="labelBgimg" id="_chart"><div id="reload">
+<a href="/stock?code=1357.T" class="buttonIconFin" title="更新">更新</a>
+<h2 class="title">チャート <span class="titleExplain">（リアルタイム株価）</span></h2>
+</div></header>
+<div id="chart-module" style="margin-bottom:10px;"></div>
+<div id="chart-selector" class="tabButtonFin">
+<ul>
+<li><a href="/stock/chart?term=1d&code=1357.T" class="rapid-noclick-resp">1日</a></li>
+<li><a href="/stock/chart?term=1w&code=1357.T" class="rapid-noclick-resp">1週</a></li>
+<li class="current"><a href="/stock/chart?candle_period=d&span=1&code=1357.T" class="rapid-noclick-resp">1カ月</a></li>
+<li class="wide"><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/chart/highspec_st/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svY2hhcnQ_Y2FuZGxlX3BlcmlvZD13JnNwYW49MSZjb2RlPTEzNTcuVA--">高機能チャート</a></li>
+</ul>
+</div>
+<div id="w2aBtnForChart" class="txtC" style="margin: 0 10px;">
+<a href="javascript:void(0);">
+<img style="width:100%; max-width:414px;" src="https://s.yimg.jp/images/finance/bnr/201801/W2Abnr_chartbtn.png" alt="">
+</a>
+</div>
+<aside>
+<div id="64642_222967_01"></div>
+<script type="text/javascript" language="JavaScript">
+yads_ad_ds = '64642_222967';
+yads_type_tag = 'finance_smp_stock_top';
+</script>
+<script type="text/javascript" language="JavaScript" src="//yads.c.yimg.jp/js/yads.js"></script>
+</aside>
+</section>
+<script src="/js/yj_fin_chart_base.js?_=20101201"></script>
+<section id="bbs" class="stockDetailBbs" style="display:none;">
+  <header class="labelBgimg" id="_bbs">
+    <div>
+      <h2 class="title">掲示板</h2>
+    </div>
+  </header>
+  <div class="listBoardFin">
+    <div id="bbs-module"></div>
+      <div class="more">
+        <ul class="btnList">
+          <li id="w2aBtnForBbs2" class="btn"><a href="javascript:void(0);">アプリで続きを見る</a></li>
+          <li class="btn"><a href="https://m.finance.yahoo.co.jp/stock/bbs?code=1357.T">webで続きを見る</a></li>
+        </ul>
+      </div>
+    </div>
+
+</section><section id="news" style="display:none;">
+<header class="labelBgimg" id="_news"><div id="reload">
+<h2 class="title">ニュース</h2>
+</div></header>
+<div id="news-module"></div>
+</section>
+<section id="quotation" style="display:none;">
+<header class="labelBgimg" id="_quotation"><div id="reload">
+<a href="/stock?code=1357.T" class="buttonIconFin" title="更新">更新</a>
+<h2 class="title">板気配 <span class="titleExplain">（リアルタイム株価）</span></h2>
+</div></header>
+<div id="quotation-module"></div>
+</section>
+<section id="additionaldata" style="display:none;">
+<header class="labelBgimg" id="_additionaldata"><div id="reload">
+<a href="/stock?code=1357.T" class="buttonIconFin" title="更新">更新</a>
+<h2 class="title">参考指標 <span class="titleExplain">（リアルタイム株価）</span></h2>
+</div></header>
+<div id="additionaldata-module" class="stockDetail"></div>
+</section>
+<section id="historicaldata" style="display:none;">
+<header class="labelBgimg" id="_historicaldata"><div id="reload">
+<h2 class="title">株価時系列データ</h2>
+</div></header>
+<div id="historicaldata-module"></div>
+</section>
+<section id="historicaldata-margin" style="display:none;">
+<header class="labelBgimg" id="_historicaldata-margin"><div id="reload">
+<h2 class="title">信用残時系列データ</h2>
+</div></header>
+<div id="historicaldata-margin-module"></div>
+</section>
+<section id="margin" style="display:none;">
+<header class="labelBgimg" id="_margin"><div id="reload">
+<h2 class="title">信用取引情報</h2>
+</div></header>
+<div id="margin-module" class="stockDetail"></div>
+</section>
+
+<div id="banner-stock" class="mb10" style="display:none;">
+<aside>
+<div id="MMON" class="bnrMmon"></div>
+<script type="text/javascript">
+yadsRequestAsync({
+    'yads_ad_ds' : '59704_14041', // YADS配信タグのID （発行された値）
+    'yads_ad_space' : '2079965153', // スペースID
+    'yads_parent_element' : 'MMON' // 広告を表示する要素のID属性
+});
+</script></aside>
+</div>
+
+</div>
+
+<div style="text-align:center;">
+<a href="https://rdsig.yahoo.co.jp/finance/us-stock-volatility/sp/stocks_info/RV=1/RU=aHR0cHM6Ly9maW5hbmNlLnlhaG9vLmNvLmpwL2ZlYXR1cmUvcHJvbW90aW9uL2Z1bmRzL20vdXMtc3RvY2stdm9sYXRpbGl0eS5odG1s"><img src="https://s.yimg.jp/images/finance/mt/promotion/funds/us-stock-volatility/bnr/300x60.jpg" width="300" height="60" alt="米国株式ボラティリティ戦略ファンド"></a>
+</div>
+
+<div style="text-align:center;">
+<a href="https://rdsig.yahoo.co.jp/finance/promotion/funds/ultra-series/sp/stocks_info/RV=1/RU=aHR0cHM6Ly9maW5hbmNlLnlhaG9vLmNvLmpwL2ZlYXR1cmUvcHJvbW90aW9uL2Z1bmRzL3VsdHJhLWJhbGFuY2UuaHRtbA--"><img src="https://s.yimg.jp/images/finance/mt/promotion/funds/ultra-balance/bnr/600x120.png" width="300" height="60" alt="ウルトラバランス"></a>
+</div><div>
+<aside>
+<div id="64642_222967_02"></div>
+<script type="text/javascript" language="JavaScript">
+yads_ad_ds = '64642_222967';
+yads_type_tag = 'finance_smp_stock_top';</script>
+<script type="text/javascript" language="JavaScript" src="//yads.c.yimg.jp/js/yads.js"></script>
+</aside>
+
+<section>
+<div id='special'>
+<header class="labelBgimg">
+<div>
+<h2 class="title">お知らせ</h2>
+</div>
+</header>
+<ul class="spNewsArea">
+
+<li class="link"><a href="https://yahoo.jp/qEyAdV"><div class="img"><img src="https://s.yimg.jp/images/finance/bnr/201510/settlement120_120_today.png" alt="決算速報　配信中（三井住友、ＳＭＣ、ゆうちょ、日本郵政など541社）" width="60" height="60"></div><div class="text"><span class="title">決算速報　配信中（三井住友、ＳＭＣ、ゆうちょ、日本郵政など541社）</span></div></a></li>
+</ul>
+</div>
+
+<header class="labelSmallFin" style="clear:both;"><div>
+<h3 class="title">この銘柄を見ている人は以下の銘柄も見ています</h3>
+</div></header>
+<div id="affinityFin">
+<div class="affinityList" id="rc">
+<ul class="affinityListMain">
+<li class="page">
+<div class="listTextlink bottom0Fin">
+<ul>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1570.T">
+<dl>
+<dt class="title">(NEXT FUNDS)日経平均レバレッジ上場投信</dt>
+<dd class="subText">1570.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1360.T">
+<dl>
+<dt class="title">日経平均ベア2倍上場投信</dt>
+<dd class="subText">1360.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1459.T">
+<dl>
+<dt class="title">楽天 ETF-日経ダブルインバース指数連動型</dt>
+<dd class="subText">1459.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1552.T">
+<dl>
+<dt class="title">国際のETF VIX短期先物指数</dt>
+<dd class="subText">1552.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=2035.T">
+<dl>
+<dt class="title">NEXT NOTES 日経平均VI先物指数 ETN</dt>
+<dd class="subText">2035.T</dd>
+</dl>
+</a>
+</li>
+</ul></div></li><li class="page">
+<div class="listTextlink bottom0Fin">
+<ul>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1571.T">
+<dl>
+<dt class="title">(NEXT FUNDS)日経平均インバース上場投信</dt>
+<dd class="subText">1571.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1366.T">
+<dl>
+<dt class="title">ダイワ 上場投信-日経平均ダブルインバース</dt>
+<dd class="subText">1366.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1356.T">
+<dl>
+<dt class="title">TOPIXベア2倍上場投信</dt>
+<dd class="subText">1356.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1579.T">
+<dl>
+<dt class="title">日経平均ブル2倍上場投信</dt>
+<dd class="subText">1579.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=2038.T">
+<dl>
+<dt class="title">NEXT NOTES ドバイ原油先物 ダブル・ブル ETN</dt>
+<dd class="subText">2038.T</dd>
+</dl>
+</a>
+</li>
+</ul></div></li><li class="page">
+<div class="listTextlink bottom0Fin">
+<ul>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1699.T">
+<dl>
+<dt class="title">(NEXT FUNDS)NOMURA原油インデックス上場</dt>
+<dd class="subText">1699.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1358.T">
+<dl>
+<dt class="title">上場インデックス日経レバレッジ指数</dt>
+<dd class="subText">1358.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=2516.T">
+<dl>
+<dt class="title">東証マザーズETF</dt>
+<dd class="subText">2516.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1458.T">
+<dl>
+<dt class="title">楽天 ETF-日経レバレッジ指数連動型</dt>
+<dd class="subText">1458.T</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1671.T">
+<dl>
+<dt class="title">WTI原油価格連動型上場投信</dt>
+<dd class="subText">1671.T</dd>
+</dl>
+</a>
+</li>
+</ul></div></li></ul>
+</div>
+<noscript><p><a href="#">一覧を見る</a></p></noscript>
+<div class="naviPaging" style="display:none;" id="pg">
+<ul class="prevNext imagelistNavi">
+<li><a class="pageLeft" data-ylk="slk:pr;pos:0">前の5件</a></li>
+<li class="center"><em></em></li>
+<li><a class="pageRight" data-ylk="slk:pn;pos:0">次の5件</a></li>
+</ul>
+<p id="affinityCount"></p>
+</div>
+</div>
+</section>
+
+<div class="listRowlink menuFin" id="menu">
+<ul>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/detail/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svZGV0YWlsP2NvZGU9MTM1Ny5U" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/detail/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svZGV0YWlsP2NvZGU9MTM1Ny5U'"><span class="title">詳細情報</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/chart/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svY2hhcnQ_Y29kZT0xMzU3LlQ-" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/chart/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svY2hhcnQ_Y29kZT0xMzU3LlQ-'"><span class="title">チャート</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/bbs/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svYmJzP2NvZGU9MTM1Ny5U" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/bbs/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svYmJzP2NvZGU9MTM1Ny5U'"><span class="title">掲示板</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/news/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svbmV3cz9jb2RlPTEzNTcuVA--" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/news/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svbmV3cz9jb2RlPTEzNTcuVA--'"><span class="title">ニュース（983件）</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/quotation/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svcXVvdGF0aW9uP2NvZGU9MTM1Ny5U" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/quotation/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svcXVvdGF0aW9uP2NvZGU9MTM1Ny5U'"><span class="title">板気配</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/additionaldata/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svYWRkaXRpb25hbGRhdGE_Y29kZT0xMzU3LlQ-" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/additionaldata/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svYWRkaXRpb25hbGRhdGE_Y29kZT0xMzU3LlQ-'"><span class="title">参考指標</span></a></li>
+<li><a href="#menu-historicaldata"><span class="title">時系列データ</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/margin/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svbWFyZ2luP2NvZGU9MTM1Ny5U" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/margin/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svbWFyZ2luP2NvZGU9MTM1Ny5U'"><span class="title">信用取引情報</span></a></li>
+</ul>
+</div>
+<div id="submenu">
+<div id="menu-historicaldata" class="submenu">
+<div class="backToStock"><div>
+<div class="naviPaging">
+<ul class="default">
+<li><a href="#menu" class="pageLeft">戻る</a></li>
+<li class="center">時系列データ</li>
+</ul>
+</div>
+</div></div>
+<div class="listRowlink menuFin">
+<ul>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/table/historicaldata/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svaGlzdG9yaWNhbGRhdGE_Y29kZT0xMzU3LlQ-" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/table/historicaldata/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svaGlzdG9yaWNhbGRhdGE_Y29kZT0xMzU3LlQ-'"><span class="title">株価時系列データ</span></a></li>
+<li><a href="https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/table/historicaldata_m/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svaGlzdG9yaWNhbGRhdGEvbWFyZ2luP2NvZGU9MTM1Ny5U" onmousedown="this.href='https://rdsig.yahoo.co.jp/finance/smartphone/investment/menu/table/historicaldata_m/RV=1/RU=aHR0cHM6Ly9tLmZpbmFuY2UueWFob28uY28uanAvc3RvY2svaGlzdG9yaWNhbGRhdGEvbWFyZ2luP2NvZGU9MTM1Ny5U'"><span class="title">信用残時系列データ</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<section>
+
+<section id="ranking">
+<header class="labelBgimg"><div id="reload">
+<h2 class="title">ランキング</h2>
+</div></header>
+
+<nav class="tabRankingFin" id="rnk_tab">
+<div class="addRealInfo"><span class="up">930</span><em>社</em></div>
+<div class="addRealInfo"><span class="down">2929</span><em>社</em></div>
+<ul class="primary"><li class="current"><span>値上がり</span></li><li><a href="#">値下がり</a></li><li><a href="#">出来高</a></li><li><a href="#">掲示板</a></li></ul>
+</nav>
+
+<section id="up_rnk">
+<div class="listTextlinkRankingHeader"><p><span>銘柄名</span><span>前日比（%）</span></p></div>
+<div class="listTextlinkRanking">
+<ol>
+
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=7577.t" data-ylk="slk:ranking;pos:1">
+<span class="ranking1">1</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaUp">+37.74</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)ＨＡＰｉＮＳ</dt>
+<dd class="subText">7577（東証JQS）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=7707.t" data-ylk="slk:ranking;pos:2">
+<span class="ranking2">2</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaUp">+25.54</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">プレシジョン・システム・サイエンス(株)</dt>
+<dd class="subText">7707（マザーズ）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=3936.t" data-ylk="slk:ranking;pos:3">
+<span class="ranking3">3</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaUp">+24.25</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)グローバルウェイ</dt>
+<dd class="subText">3936（マザーズ）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=4304.t" data-ylk="slk:ranking;pos:4">
+<span class="ranking4">4</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaUp">+22.90</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)Ｅストアー</dt>
+<dd class="subText">4304（東証JQS）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=9467.t" data-ylk="slk:ranking;pos:5">
+<span class="ranking5">5</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaUp">+22.84</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)アルファポリス</dt>
+<dd class="subText">9467（マザーズ）</dd>
+</dl>
+</a>
+</li>
+
+</ol>
+<div class="readMore"><a href="https://m.finance.yahoo.co.jp/ranking?kd=1" data-ylk="slk:more;pos:0"><span><span>値上がり率ランキングをもっと見る</span></span></a></div>
+</div>
+</section>
+
+<section id="down_rnk">
+<div class="listTextlinkRankingHeader"><p><span>銘柄名</span><span>前日比（%）</span></p></div>
+<div class="listTextlinkRanking">
+<ol>
+
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1689.t" data-ylk="slk:ranking;pos:1">
+<span class="ranking1">1</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaDown">-50.00</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">WisdomTree 天然ガス上場投信</dt>
+<dd class="subText">1689（東証ETF）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=4447.f" data-ylk="slk:ranking;pos:2">
+<span class="ranking2">2</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaDown">-23.04</li>
+<li class="dateFin">（11/13 15:30）</li>
+</ul>
+</dd>
+<dt class="title">(株)ピー・ビーシステムズ</dt>
+<dd class="subText">4447（福岡Q）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=3689.t" data-ylk="slk:ranking;pos:3">
+<span class="ranking3">3</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaDown">-22.52</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)イグニス</dt>
+<dd class="subText">3689（マザーズ）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=3727.t" data-ylk="slk:ranking;pos:4">
+<span class="ranking4">4</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaDown">-19.44</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)アプリックス</dt>
+<dd class="subText">3727（マザーズ）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=3928.t" data-ylk="slk:ranking;pos:5">
+<span class="ranking5">5</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin deltaDown">-16.96</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)マイネット</dt>
+<dd class="subText">3928（東証1部）</dd>
+</dl>
+</a>
+</li>
+
+</ol>
+<div class="readMore"><a href="https://m.finance.yahoo.co.jp/ranking?kd=2" data-ylk="slk:more;pos:0"><span><span>値下がり率ランキングをもっと見る</span></span></a></div>
+</div>
+</section>
+
+<section id="deal_rnk">
+<div class="listTextlinkRankingHeader"><p><span>銘柄名</span><span>出来高（株）</span></p></div>
+<div class="listTextlinkRanking">
+<ol>
+
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=7647.t" data-ylk="slk:ranking;pos:1">
+<span class="ranking1">1</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">74,081,600</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)音通</dt>
+<dd class="subText">7647（東証2部）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=8306.t" data-ylk="slk:ranking;pos:2">
+<span class="ranking2">2</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">69,539,900</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)三菱ＵＦＪフィナンシャル・グループ</dt>
+<dd class="subText">8306（東証1部）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=7201.t" data-ylk="slk:ranking;pos:3">
+<span class="ranking3">3</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">64,141,900</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">日産自動車(株)</dt>
+<dd class="subText">7201（東証1部）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1357.t" data-ylk="slk:ranking;pos:4">
+<span class="ranking4">4</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">46,680,019</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(NEXT FUNDS) 日経ダブルインバース上場投信</dt>
+<dd class="subText">1357（東証ETF）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=8918.t" data-ylk="slk:ranking;pos:5">
+<span class="ranking5">5</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">25,839,300</li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">(株)ランド</dt>
+<dd class="subText">8918（東証1部）</dd>
+</dl>
+</a>
+</li>
+
+</ol>
+<div class="readMore"><a href="https://m.finance.yahoo.co.jp/ranking?kd=3" data-ylk="slk:more;pos:0"><span><span>出来高ランキングをもっと見る</span></span></a></div>
+</div>
+</section>
+
+<section id="bbs_rnk">
+<div class="listTextlinkRankingHeader"><p><span>銘柄名</span><span>取引値（円）</span></p></div>
+<div class="listTextlinkRanking">
+<ol>
+
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=4563.t" data-ylk="slk:ranking;pos:1">
+<span class="ranking1">1</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">1,495</li>
+<li class="deltaFin"><span class="deltaUp arrow">+178（+13.52）</span></li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">アンジェス(株)</dt>
+<dd class="subText">4563（マザーズ）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=2191.t" data-ylk="slk:ranking;pos:2">
+<span class="ranking2">2</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">705</li>
+<li class="deltaFin"><span class="deltaUp arrow">+22（+3.22）</span></li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">テラ(株)</dt>
+<dd class="subText">2191（東証JQS）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=1491.t" data-ylk="slk:ranking;pos:3">
+<span class="ranking3">3</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">42</li>
+<li class="deltaFin"><span class="deltaDown arrow">-3（-6.67）</span></li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">中外鉱業(株)</dt>
+<dd class="subText">1491（東証2部）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=6897.t" data-ylk="slk:ranking;pos:4">
+<span class="ranking4">4</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">1,505</li>
+<li class="deltaFin"><span class="deltaUp arrow">+107（+7.65）</span></li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">ツインバード工業(株)</dt>
+<dd class="subText">6897（東証2部）</dd>
+</dl>
+</a>
+</li>
+<li>
+<a href="https://m.finance.yahoo.co.jp/stock?code=7707.t" data-ylk="slk:ranking;pos:5">
+<span class="ranking5">5</span>
+<dl>
+<dd>
+<ul class="priceAreaFin">
+<li class="priceFin">1,440</li>
+<li class="deltaFin"><span class="deltaUp arrow">+293（+25.54）</span></li>
+<li class="dateFin">（11/13 15:00）</li>
+</ul>
+</dd>
+<dt class="title">プレシジョン・システム・サイエンス(株)</dt>
+<dd class="subText">7707（マザーズ）</dd>
+</dl>
+</a>
+</li>
+
+</ol>
+<div class="readMore"><a href="https://m.finance.yahoo.co.jp/ranking?kd=56" data-ylk="slk:more;pos:0"><span><span>掲示板ランキングをもっと見る</span></span></a></div>
+</div>
+</section>
+
+</section>
+<section id="learn">
+<h1 class="learn_investTtl">
+<span>やさしい投資のはじめかた</span>
+</h1>
+
+<div id="learn_invest">
+<ul>
+<li><a href="https://info.finance.yahoo.co.jp/beginners/stocks/">
+<dl>
+<dt>はじめての株式</dt>
+</dl>
+</a></li>
+<li><a href="https://info.finance.yahoo.co.jp/beginners/fx/">
+<dl>
+<dt>はじめてのFX</dt>
+</dl>
+</a></li></ul>
+</div>
+</section>
+
+<section id="recent">
+<div id="recent-module"></div>
+</section>
+<aside>
+<div id="SMON" class="bnrMmon"></div>
+<script type="text/javascript">
+yadsRequestAsync({
+    'yads_ad_ds' : '33221_4604', // YADS配信タグのID （発行された値）
+    'yads_ad_space' : '2079965153', // スペースID
+    'yads_parent_element' : 'SMON' // 広告を表示する要素のID属性
+});
+</script></aside>
+</section>
+
+<section><header class="labelBgimg"><div id="reload">
+<h2 class="title">銘柄情報を探す</h2>
+</div></header>
+<div id="search">
+<div class="searchHeader simple" id="search-1">
+<form action="/search" method="get">
+<div class="frame">
+<input class="search" type="search" value="" name="q" autocapitalize="off" >
+<input class="hidden" type="hidden" value="all" name="type">
+<span class="placeHolder">コードまたは企業名を入力</span>
+<a class="clear"></a>
+<div class="mark"></div>
+</div>
+<label class="submit">検索<input type="submit" value="検索"></label>
+</form>
+</div>
+</div>
+</section>
+
+<aside>
+</aside>
+
+</div>
+
+<script src='https://s.yimg.jp/images/approach/jslib/deeplink-2.0.4.js'></script>
+<script src='/js/deeplink.js'></script>
+<script>(function() { var w2aBtnForBbs1 = new YAHOO.JP.fin.M.deeplink();
+w2aBtnForBbs1.addEventW2AButton({"fallbackUrl":"https:\/\/rdsig.yahoo.co.jp\/finance\/deeplink\/fallback\/other\/w2abtn\/bbs\/RV=1\/RE=1606465523\/RH=cmRzaWcueWFob28uY28uanA-\/RB=\/RU=aHR0cHM6Ly9pbmZvLmZpbmFuY2UueWFob28uY28uanAvcHIvZmluYW5jZV9hcHA-\/RS=^ADAQa64Vp9SJ0txwVSGyrcGgsvIxsM-","fin_cont":"bbs","fin_link":"w2abtn","code":"bbs_w2aBtnForBbs1","aprUrl":"https:\/\/m.finance.yahoo.co.jp\/stock\/bbs?code=1357.T"}, "w2aBtnForBbs1");
+ }());</script>
+<script>(function() { var w2aBtnForBbs2 = new YAHOO.JP.fin.M.deeplink();
+w2aBtnForBbs2.addEventW2AButton({"fallbackUrl":"https:\/\/rdsig.yahoo.co.jp\/finance\/deeplink\/fallback\/other\/w2abtn\/bbs\/RV=1\/RE=1606465523\/RH=cmRzaWcueWFob28uY28uanA-\/RB=\/RU=aHR0cHM6Ly9pbmZvLmZpbmFuY2UueWFob28uY28uanAvcHIvZmluYW5jZV9hcHA-\/RS=^ADAQa64Vp9SJ0txwVSGyrcGgsvIxsM-","fin_cont":"bbs","fin_link":"w2abtn","code":"bbs_w2aBtnForBbs2","aprUrl":"https:\/\/m.finance.yahoo.co.jp\/stock\/bbs?code=1357.T"}, "w2aBtnForBbs2");
+ }());</script>
+<script>(function() { var w2aBtnForChart = new YAHOO.JP.fin.M.deeplink();
+w2aBtnForChart.addEventW2AButton({"fallbackUrl":"https:\/\/rdsig.yahoo.co.jp\/finance\/deeplink\/fallback\/other\/w2abtn\/chart\/RV=1\/RE=1606465523\/RH=cmRzaWcueWFob28uY28uanA-\/RB=\/RU=aHR0cHM6Ly9pbmZvLmZpbmFuY2UueWFob28uY28uanAvcHIvZmluYW5jZV9hcHA-\/RS=^ADAebFDOnuH4mG_OgmCu6Zq4n3ip2w-","fin_cont":"chart","fin_link":"w2abtn","code":"chart_w2aBtnForChart","aprUrl":"https:\/\/m.finance.yahoo.co.jp\/stock\/chart?code=1357.T"}, "w2aBtnForChart");
+ }());</script>
+<footer id="footer" class="footerDefault">
+<div id="rpg" class="finfoot">
+    <a href="#yjsmhHeader" id="goHead">このページのトップへ</a>
+</div>
+
+<div id="sf" class="footerInner ">
+    <div class="loginArea">
+    <p class="loginStatus"><em><a href="https://login.yahoo.co.jp/config/login?.src=quote&lg=jp&.intl=jp&.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T">ログイン</a></em></p>
+<p class="loginTool">IDでもっと便利に<a href="https://account.edit.yahoo.co.jp/registration?.src=quote&.done=https%3A%2F%2Fm.finance.yahoo.co.jp%2Fstock%3Fcode%3D1357.T">新規取得</a></p>
+
+    </div>
+    <ul class="commonLink">
+        <li><a href="https://m.finance.yahoo.co.jp/">Yahoo!ファイナンス</a></li>
+        <li><a href="https://www.yahoo.co.jp/">Yahoo! JAPAN</a></li>
+    </ul>
+    <ul class="subLink">
+        <li><a href="https://privacy.yahoo.co.jp/">プライバシー</a></li>
+        <li><a href="https://about.yahoo.co.jp/docs/info/terms/">規約</a></li>
+        <li><a href="https://about.yahoo.co.jp/info/mediastatement/">ステートメント</a></li>
+        <li><a href="https://info.finance.yahoo.co.jp/vip/purchase/">特商法の表示</a></li>
+    </ul>
+    <ul class="subLink">
+        <li><a href="https://m.finance.yahoo.co.jp/caution">注記</a></li>
+        <li><a href="https://m.yahoo-help.jp/app/home/p/648/">ヘルプ・お問い合わせ</a></li>
+    </ul>
+    <p><small>(C)Yahoo Japan</small></p>
+</div>
+</footer><script type="text/javascript">
+window.addEventListener('load', function () {
+    YAHOO.JP.smh.SideBar.init([
+        {
+            'title' : 'Yahoo!ファイナンス',
+            'size'  : 1,
+            'list'  : [
+                {'title':'<img src=https://s.yimg.jp/images/finance/bnr/201902/W2Amenu552x120.png alt="Yahoo!ファイナンス 公式アプリ" width="276" height="60" style="border:0;vertical-align:bottom;margin-left: -20px;">',
+                  'url':'https://approach.yahoo.co.jp/r/LAt2As'},
+                {'title':'トップ',                  'url':'https://m.finance.yahoo.co.jp'},
+                {'title':'-アラート設定',           'url':'https://m.finance.yahoo.co.jp/alert/config'},
+                {'title':'-ポートフォリオ',         'url':'https://m.finance.yahoo.co.jp/portfolio'},
+                {'title':'-ETF',                    'url':'https://m.finance.yahoo.co.jp/etf?type=all'},
+                {'title':'-株主優待',               'url':'https://m.finance.yahoo.co.jp/stockholder'},
+                {'title':'投資信託',                'url':'https://stocks.finance.yahoo.co.jp/funds/'},
+                {'title':'FX・外国為替',            'url':'https://info.finance.yahoo.co.jp/fx/'},
+                {'title':'-経済指標',               'url':'https://m.finance.yahoo.co.jp/fx/marketcalendar'},
+                {'title':'世界の指数',              'url':'https://m.finance.yahoo.co.jp/indices'},
+                {'title':'米国株',                  'url':'https://stocks.finance.yahoo.co.jp/us/'},
+                {'title':'暗号資産',                'url':'https://www.coindeskjapan.com/crypto/'},
+                {'title':'不動産投資',              'url':'http://www.rakumachi.jp/?uiaid=yfn'},
+                {'title':'VIP倶楽部',               'url':'https://m.finance.yahoo.co.jp/promo/vip'},
+                {'title':'投資戦略室',               'url':'https://info.finance.yahoo.co.jp/vip/strategy/'},
+            ]
+        },
+        {
+            'title' : '投資を学ぶ',
+            'size'  : 2,
+            'list'  : [
+                {'title':'やさしい投資のはじめかた',    'url':'https://info.finance.yahoo.co.jp/beginners/'},
+                {'title':'はじめての株式',              'url':'https://info.finance.yahoo.co.jp/beginners/stocks/'},
+                {'title':'はじめての投資信託',          'url':'https://info.finance.yahoo.co.jp/beginners/funds/'},
+                {'title':'はじめてのFX',                'url':'https://info.finance.yahoo.co.jp/beginners/fx/'},
+                {'title':'証券会社比較',                'url':'https://ysyoken.hikaku.minkabu.jp/sp/'},
+                {'title':'FX会社比較',                  'url':'https://yfx.hikaku.minkabu.jp/sp/'},
+            ]
+        },
+        {
+            'title' : 'ニュース',
+            'size'  : 2,
+            'list'  : [
+                {'title':'ヘッドライン', 'url':'https://m.finance.yahoo.co.jp/news/pickup'},
+                {'title':'新着',         'url':'https://m.finance.yahoo.co.jp/news'},
+                {'title':'日本株',       'url':'https://m.finance.yahoo.co.jp/news?category=stocks'},
+                {'title':'決算速報',     'url':'https://m.finance.yahoo.co.jp/news/search?qa=%E6%B1%BA%E7%AE%97%E9%80%9F%E5%A0%B1'},
+                {'title':'市況・概況',   'url':'https://m.finance.yahoo.co.jp/news?category=market'},
+                {'title':'経済総合',     'url':'https://m.finance.yahoo.co.jp/news?category=bus_all'},
+                {'title':'FX',           'url':'https://m.finance.yahoo.co.jp/news?category=fx'},
+                {'title':'外国株',       'url':'https://m.finance.yahoo.co.jp/news?category=world'},
+                {'title':'雑誌・コラム', 'url':'https://m.finance.yahoo.co.jp/news?category=column'},
+                {'title':'ニュース検索', 'url':'https://m.finance.yahoo.co.jp/news/search/option'},
+            ]
+        },
+        {
+            'title' : 'ランキング',
+            'size'  : 2,
+            'list'  : [
+                {'title':'値上がり率ランキング',     'url':'https://m.finance.yahoo.co.jp/ranking?kd=1'},
+                {'title':'値下がり率ランキング',     'url':'https://m.finance.yahoo.co.jp/ranking?kd=2'},
+                {'title':'出来高ランキング',         'url':'https://m.finance.yahoo.co.jp/ranking?kd=3'},
+                {'title':'掲示板投稿数ランキング',   'url':'https://m.finance.yahoo.co.jp/ranking?kd=56'},
+                {'title':'その他のランキングを探す', 'url':'https://m.finance.yahoo.co.jp/ranking/top'},
+            ]
+        },
+        {
+            'title' : '銘柄を探す',
+            'size'  : 2,
+            'list'  : [
+                {'title':'業種から探す',       'url':'https://m.finance.yahoo.co.jp/search/industry'},
+                {'title':'五十音から探す',     'url':'https://m.finance.yahoo.co.jp/search/kana'},
+                {'title':'証券コードから探す', 'url':'https://m.finance.yahoo.co.jp/search/code'},
+                {'title':'最近見た銘柄',       'url':'https://m.finance.yahoo.co.jp/search/recent'},
+            ]
+        },
+        {
+            'title' : '賢く選ぶ',
+            'size'  : 2,
+            'list'  : [
+                {'title':'クレジットカード徹底比較',     'url':'https://finance.yahoo.co.jp/credit-card/?channel=y_internal&srv=f_default'},
+                {'title':'カードローン徹底比較', 'url':'https://finance.yahoo.co.jp/card-loan/?channel=y_internal&srv=f_default'},
+            ]
+        },
+        
+                {
+            'title' : '表示切替',
+            'size'  : 2,
+            'list'  : [
+                {'title':'パソコン版を表示する', 'url':'https://stocks.finance.yahoo.co.jp/stocks/detail/?code=1357.T'},
+            ]
+        },
+        {
+            'callback' : {
+                onMenuOpen : function() {
+                    if (typeof isSmhUltRefresh === 'undefined') {
+                        YAHOO.JP.fin.rapid.refreshModule("yjsmhMenu");
+                        isSmhUltRefresh = true;
+                    }
+                }
+            }
+        },
+    ]);
+var changeDeviceCookie = document.querySelector('ul#yjsmhInfo li:last-child a');
+changeDeviceCookie.addEventListener("click",YJFIN.D(changeDeviceCookie,function(E){
+    E.preventDefault();YJFIN.SETDCOOKIE("pc",this.href);
+}),true);
+});
+</script>
+<div id="stream-hidden-module"></div><script src='https://s.yimg.jp/images/ds/ult/finance/rapidjp-1.0.0.js'></script>
+<script src='https://s.yimg.jp/images/finance/smp/common/js/common-min.js'></script><script>(function() {
+var conf = {
+pagetype:'detail',
+conttype:'etf',
+opttype:'smartphone',
+ctsid:'1357',
+vtgrpid:'mf_171',
+status:'logout'
+};
+if (document.getElementById("msthd") !== null || document.getElementById("yjsmhHeader") !== null || document.getElementById("yjsmhMenu") !== null) {
+var sec_lists = ['yjsmhHeader','yjsmhMenu','rpg','sf','chart-selector','irinfo','stock_shr','app_mdl','add_stock_alert','alert_mdl','alert_complete_mdl','w2a_bbs'];
+} else {
+var sec_lists = ['yjsmhHeader','yjsmhMenu','rpg','sf','chart-selector','irinfo','stock_shr','app_mdl','add_stock_alert','alert_mdl','alert_complete_mdl','w2a_bbs'];
+}
+YAHOO.JP.fin.common.initSimpleRapid(conf, sec_lists, '2079965153');
+})();
+</script>
+</div>
+
+<script type="text/javascript" src="https://s.yimg.jp/images/mempf/mhd/2_3_0/mempf.js"></script><script type="text/javascript" src="https://s.yimg.jp/images/security/pf/pcore-1.0.2.min.js"></script><script type="text/javascript" src="https://s.yimg.jp/images/security/pf/yjsecure.js"></script><script type="text/javascript">
+    YAHOO=(typeof YAHOO==='undefined')?{}:YAHOO;
+    YAHOO.JP=(typeof YAHOO.JP==='undefined')?{}:YAHOO.JP;
+    YAHOO.JP.smh=(typeof YAHOO.JP.smh==='undefined')?{}:YAHOO.JP.smh;
+  </script><script type="text/javascript" src="https://s.yimg.jp/images/approach/jslib/deeplink-2.0.2.js"></script><script type="text/javascript">
+    YAHOO.JP.smh.Approach=new YAHOO.JP.Approach({'yjdnAppId':'dj0zaiZpPVk1dGhzcmI5cXo0cyZzPWNvbnN1bWVyc2VjcmV0Jng9NTE-'});
+  </script><script type="text/javascript">
+    /*<![CDATA[*/
+    (function(d,t){
+      var s=d.getElementsByTagName(t)[0],n=d.createElement(t);
+      n.id='yjsmhScript';
+      n.src='https://s.yimg.jp/yui/jp/smh/sp/2.6.30/js/smh-min.js';
+      n.setAttribute('data-s','');
+      s.parentNode.insertBefore(n,s);
+    }(document,'script'));
+    /*]]>*/
+  </script><script>new YAHOO.JP.fin.M.SAB("androidBanner","/app_banner/p1","180609","https://app.adjust.com/nr7n4gu","https://app.adjust.com/cqevf9q");</script>
+<script>
+function getDetailData() {
+    document.getElementById('detail-module').textContent = '';
+    var code = "1357.T";
+    new YJFIN.SPN.U("detail-module","/stock/detail/module?code="+code+"&sid="+2079965153,function(){
+        YAHOO.JP.fin.rapid.removeModule("hikakusec");
+        YAHOO.JP.fin.rapid.addModules("hikakusec");
+    },"","/investment/detail/update/");
+}
+var reload = document.getElementById("reload").getElementsByTagName("a");
+if (reload[0]) {
+    reload[0].addEventListener('click', getDetailData, false);
+}
+</script>
+
+<script>
+(function(){
+    var rapidRefreshModule = function(module, n) {
+        if(typeof YAHOO.JP.fin.rapid == 'undefined' || !YAHOO.JP.fin.rapid){
+            return;
+        }
+        if (n == null) {
+            n = 0;
+        }
+        if (YAHOO.JP.fin.rapid.isModuleTracked(module)) {
+            YAHOO.JP.fin.rapid.refreshModule(module);
+        } else {
+            if (n < 5) {
+                setTimeout( function() {
+                    rapidRefreshModule(module, n+1);
+                }, 50);
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded",function(){
+        for(var P=YJFIN.SPN.LS.R(),A="1357.T",N=0,I=0;I<P.length;I++){
+            if(P[I][1]){
+                switch(P[I][0]){
+                    case "chart":
+                        if(document.getElementById("chart-module")){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            var ncrumbFlag = 0;
+                            if(ncrumbFlag === 1 ){
+                                var U=new YJFIN.SPN.U("chart-module","/stock/chart/module?candle_period=d&span=1&code="+A+"&sid="+2079965153,function(){
+                                    eval(document.getElementById("yj_fin_stock_chart").innerHTML);
+                                },"_chart","/investment/chart/update/");
+
+                                for(var L=((document.getElementById("chart")).getElementsByTagName("UL")[0]).getElementsByTagName("LI"),K=0;K<L.length-1;K++){
+                                    var T=L[K].getElementsByTagName("A")[0];
+
+                                    T.addEventListener("click",function(E){
+                                        E.preventDefault();
+
+                                        // 別の場所から侵襲的にパラメーターを付与されるので、&を末尾に付与する
+                                        U.A(E,(E.currentTarget.href).replace("chart?","chart/module?sid=2079965153&"));
+
+                                        var arr = new Array("1day","1week","1month","6month","1year");
+                                        for(var L=((document.getElementById("chart")).getElementsByTagName("UL")[0]).getElementsByTagName("LI"),I=0;I<L.length-1;I++){
+                                            if(L[I]==E.currentTarget.parentNode){
+                                                L[I].className="current";
+
+                                                YJFIN.SPN.RD("/investment/chart/"+arr[I]+"/");
+
+                                                // ULTのリンククリックイベントを発火させる
+                                                YAHOO.JP.fin.rapid.beaconClick("chart-selector", "-", I+1);
+                                            }else{L[I].className=""}
+                                        }
+                                    },true);
+                                }
+                                N++;
+                            }else{
+                                document.getElementById('chart-module').innerHTML = '<p id="noChart" class="noChart" style="display:block;">通信エラーのためチャートが表示できません</p>';
+                            }
+                        }
+                        break;
+                    case "bbs":
+                        if(document.getElementById('bbs-module')){
+                            // 掲示板モジュール
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            // 掲示板モジュール更新
+                            new YJFIN.SPN.U("bbs-module","/stock/bbs/module?code="+A+"&sid="+2079965153,"","","/investment/bbs/update/");
+
+                            N++;
+                        }
+                        break;
+                    case "news":
+                        if(document.getElementById('news-module')){
+                            var m=(document.getElementById("modules")).appendChild(document.getElementById("news"));
+
+                            new YJFIN.SPN.U("news-module","/stock/news/module?code="+A+"&sid="+2079965153,function(e,s){
+                                m.style["display"]=(s==200)?"block":"none";
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "quotation":
+                        if(document.getElementById('quotation-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("quotation-module","/stock/quotation/module?code="+A,"","_quotation","/investment/quotation/update/");
+
+                            N++;
+                        }
+                        break;
+                    case "additionaldata":
+                        if(document.getElementById('additionaldata-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("additionaldata-module","/stock/additionaldata/module?code="+A,"","_additionaldata","/investment/additionaldata/update/");
+
+                            N++;
+                        }
+                        break;
+                    case "summary":
+                        if(document.getElementById('summary-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("summary-module","/stock/summary/module?code="+A);
+
+                            N++;
+                        }
+                        break;
+                    case "holdings":
+                        if(document.getElementById('holdings-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("holdings-module","/stock/holdings/module?code="+A,function(){
+                                rapidRefreshModule("holdings");
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "sales":
+                        if(document.getElementById('sales-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("sales-module","/stock/sales/module?code="+A,function(){
+                                rapidRefreshModule("sales");
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "historicaldata":
+                        if(document.getElementById('historicaldata-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("historicaldata-module","/stock/historicaldata/module?code="+A,function(){
+                                new YJFIN.SPN.H((document.getElementById("historicaldata-module")).getElementsByTagName("div")[0]);
+                                rapidRefreshModule("historicaldata");
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "historicaldata-margin":
+                        if(document.getElementById('historicaldata-margin-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("historicaldata-margin-module","/stock/historicaldata/margin/module?code="+A,function(){
+                                new YJFIN.SPN.H((document.getElementById("historicaldata-margin-module")).getElementsByTagName("div")[0]);
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "margin":
+                        if(document.getElementById('margin-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("margin-module","/stock/margin/module?code="+A);
+
+                            N++;
+                        }
+                        break;
+                    case "fundamental":
+                        if(document.getElementById('fundamental-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("fundamental-module","/stock/fundamental/module?code="+A);
+
+                            N++;
+                        }
+                        break;
+                    case "settlement-independent":
+                        if(document.getElementById('settlement-independent-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("settlement-independent-module","/stock/settlement/independent/module?code="+A,function(){
+                                new YJFIN.SPN.T("settlement-independent-module");
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "settlement-consolidate":
+                        if(document.getElementById('settlement-consolidate-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("settlement-consolidate-module","/stock/settlement/consolidate/module?code="+A,function(){
+                                new YJFIN.SPN.T("settlement-consolidate-module");
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "settlement-interim":
+                        if(document.getElementById('settlement-interim-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("settlement-interim-module","/stock/settlement/interim/module?code="+A,function(){
+                            });
+
+                            N++;
+                        }
+                        break;
+                    case "analystreport":
+                        if(document.getElementById('analystreport-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("analystreport-module","/stock/analystreport/module?yjapp=0&code="+A);
+
+                            N++;
+                        }
+                        break;
+                    case "holder":
+                        if(document.getElementById('holder-module')){
+                            var M=(document.getElementById("modules")).appendChild(document.getElementById(P[I][0]));
+                            M.style["display"]="block";
+
+                            new YJFIN.SPN.U("holder-module","/stock/holder/module?code="+A);
+
+                            N++;
+                        }
+                        break;
+                }
+            }
+
+            if(N==3){
+                var M=(document.getElementById("modules")).appendChild(document.getElementById("banner-stock"));
+                M.style["display"]="block";
+            }
+        }
+
+        if(N<3){
+            var M=(document.getElementById("modules")).appendChild(document.getElementById("banner-stock"));
+            M.style["display"]="block";
+        }
+
+        new YAHOO.JP.lib.mics.Search("search-1");
+        new FINANCE.AffinityFin("affinityFin");
+
+        new YJFIN.SPN.PF("stockTitle");
+
+        new YJFIN.SPN.L("menu","submenu");
+
+        new YJFIN.SPN.U("recent-module","/search/recent/module?type=detail&sid=2079965153");
+
+ 
+        new YAHOO.JP.fin.M.GH("goHead","/goHead/stock.tpl/");
+        new YJFIN.SPN.T("ranking");
+ 
+        if(document.getElementById("finRankingToggle01")){
+            YAHOO.JP.lib.mics.menuExpand({id:"finRankingToggle01"});
+        }
+    },false);
+
+})();
+</script>
+<script type="text/javascript">
+(function(){
+    var appData = [
+        {
+            "id": "rktn",
+            "iosAppName":"iSPEED",
+            "iosIconUrl":"https://s.yimg.jp/images/finance/smp/stock/img/rakuten_144.png",
+            "iosScheme":"ispeed://stock/detail?code={$code}",
+            "iosStoreUrl":"https://itunes.apple.com/jp/app/id389339704",
+            "androidAppName": "iSPEED",
+            "androidIconUrl":"https://s.yimg.jp/images/finance/smp/stock/img/rakuten_144.png",
+            "androidSchema":"ispeed://stock/detail?code={$code}&rand={$rand}",
+            "androidStoreUrl":"market://details?id=jp.co.rakuten_sec.ispeed",
+            "startDate":"2014/12/12 23:57:59",
+            "endDate":"2100/02/28 23:59:59"
+        },
+        {
+            "id": "sbi",
+            "iosAppName":"SBI証券<br>株 アプリ",
+            "iosIconUrl":"https://s.yimg.jp/images/finance/smp/stock/img/1711_sbi_144.png",
+            "iosScheme":"sbikabu2://stock/detail?code={$code}",
+            "iosStoreUrl":"https://itunes.apple.com/jp/app/sbi証券-株-アプリ-株価-投資情報/id1240742779?mt=8",
+            "androidAppName": "SBI証券<br>株 アプリ",
+            "androidIconUrl":"https://s.yimg.jp/images/finance/smp/stock/img/1711_sbi_144.png",
+            "androidSchema":"sbikabu2://stock/detail?code={$code}",
+            "androidStoreUrl":"https://play.google.com/store/apps/details?id=jp.co.sbisec.hyperkabu2",
+            "startDate":"2014/12/12 23:57:59",
+            "endDate":"2100/12/31 23:59:59"
+        },
+        {
+            "id": "mnx",
+            "iosAppName":"マネックス<br>証券",
+            "iosIconUrl":"https://s.yimg.jp/images/finance/smp/stock/img/monex_96.png",
+            "iosScheme":"jp.co.monex.ms.mt.iphonescheme://stock/detail?code={$code}",
+            "iosStoreUrl":"https://itunes.apple.com/jp/app/manekkusutoreda-zhu-shi-sumatofon/id1187762535",
+            "androidAppName": "マネックス<br>証券",
+            "androidIconUrl":"https://s.yimg.jp/images/finance/smp/stock/img/monex_96.png",
+            "androidSchema":"jp.co.monex.ms.mt.androidscheme://stock/detail?code={$code}",
+            "androidStoreUrl":"market://details?id=jp.co.monex.ms.mt_stock.android",
+            "startDate":"2014/12/12 23:57:59",
+            "endDate":"2100/12/31 23:59:59"
+        }
+    ];
+
+    var generateButton = function(iconUrl, appName, id, slk){
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        var img = document.createElement("img");
+        var label = document.createElement("label");
+        var beacon_tag = document.createElement("a");
+        var dl = document.createElement("dl");
+        var dt = document.createElement("dt");
+        var dd = document.createElement("dd");
+
+        img.src = iconUrl;
+        img.width = 60;
+        img.height = 60;
+        a.href = "#";
+        a.id = id;
+        a.setAttribute("data-ylk", "slk:" + slk + ";pos:0");
+        dd.innerHTML = appName;
+        beacon_tag.setAttribute("data-ylk", "slk:" + slk + "_s;pos:0");
+        beacon_tag.style.display = "none";
+
+        dt.appendChild(img);
+        dl.appendChild(dt);
+        dl.appendChild(dd);
+        a.appendChild(dl);
+        li.appendChild(a);
+        li.appendChild(beacon_tag);
+        return li;
+    };
+
+    var generateButtonForChrome = function(iconUrl, appName, id, slk){
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        var img = document.createElement("img");
+        var label = document.createElement("label");
+        var dl = document.createElement("dl");
+        var dt = document.createElement("dt");
+        var dd = document.createElement("dd");
+
+        img.src = iconUrl;
+        img.width = 60;
+        img.height = 60;
+        a.href = "#";
+        a.id = id;
+        a.setAttribute("data-ylk", "slk:" + slk + ";pos:0");
+        dd.innerHTML = appName;
+
+        dt.appendChild(img);
+        dl.appendChild(dt);
+        dl.appendChild(dd);
+        a.appendChild(dl);
+        li.appendChild(a);
+        return li;
+    };
+
+    var launchAppAtStock = function(id, sec, code, appData, called){
+        if (called !== false) {
+            return true;
+        }
+
+        var length = appData.length;
+        var i, ul, target;
+        var appNum = 0;
+        var columnNum = 4;
+        var modalLength = "300px";
+        var app_launch_p, store_launch_p, chrome_launch_p;
+
+        document.getElementsByClassName("appMdlInner")[0].style.width = modalLength;
+        for(i=0;i<length;i++){
+            app_launch_p = (i + 1) * 2;
+            store_launch_p = (i + 1) * 2 + 1;
+            chrome_launch_p = i + 2;
+
+            if(appNum % columnNum === 0){
+                ul = document.createElement("ul");
+                ul.className = "appMdlIcons";
+                document.getElementById(id).appendChild(ul);
+            }
+
+            if(YAHOO.JP.fin.common.isIOS){
+                target = generateButton(appData[i].iosIconUrl, appData[i].iosAppName, appData[i].id, "i_"+appData[i].id);
+                ul.appendChild(target);
+
+                YAHOO.JP.fin.common.launchIosApp(appData[i].id, YAHOO.JP.fin.common.generateUrlScheme(appData[i].iosScheme, code), appData[i].iosStoreUrl, sec, "i_"+appData[i].id, app_launch_p, store_launch_p);
+            }else if(YAHOO.JP.fin.common.isAndroid){
+                if(YAHOO.JP.fin.common.isChrome){
+                    target = generateButtonForChrome(appData[i].androidIconUrl, appData[i].androidAppName, appData[i].id, "c_"+appData[i].id);
+                    ul.appendChild(target);
+
+                    YAHOO.JP.fin.common.launchAndoirdAppAtChrome(appData[i].id, YAHOO.JP.fin.common.generateIntentForChrome(appData[i].androidSchema, appData[i].androidStoreUrl, code), appData[i].androidStoreUrl, sec, "c_"+appData[i].id, chrome_launch_p);
+                }else{
+                    target = generateButton(appData[i].androidIconUrl, appData[i].androidAppName, appData[i].id, "a_"+appData[i].id);
+                    ul.appendChild(target);
+                    if(appData[i].id == "nmr") {
+                        YAHOO.JP.fin.common.launchAndoirdAppAtNotChrome(appData[i].id, YAHOO.JP.fin.common.generateUrlScheme("", code), appData[i].androidStoreUrl, sec, "a_" + appData[i].id, app_launch_p, store_launch_p);
+                    }else {
+                        YAHOO.JP.fin.common.launchAndoirdAppAtNotChrome(appData[i].id, YAHOO.JP.fin.common.generateUrlScheme(appData[i].androidSchema, code), appData[i].androidStoreUrl, sec, "a_" + appData[i].id, app_launch_p, store_launch_p);
+                    }
+                }
+            }
+            appNum++;
+        }
+        return true;
+    }
+
+    var generateClsButton = function(){
+        var cls = document.createElement("a");
+
+        cls.textContent = "× 閉じる";
+        cls.title = "閉じる";
+        cls.id = "appStockMdlClose";
+        cls.setAttribute("data-ylk", "slk:app_cls;pos:0");
+        cls.href = "#";
+        cls.addEventListener("click", function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            YAHOO.JP.fin.rapid.beaconClick("app_mdl","app_cls",1);
+            document.getElementById("app_mdl").style.display = "none";
+        });
+
+        return cls;
+    }
+
+    var called = false,
+        appStockShare = document.getElementById("appStockShare");
+
+    if(appStockShare){
+        appStockShare.addEventListener("click", function(e){
+            e.preventDefault();
+            e.stopPropagation();
+
+            if(document.getElementById("appStockMdlClose") == null) {
+                document.getElementById("stockShrCls").appendChild(generateClsButton());
+            }
+            called = launchAppAtStock("mdlBox", "app_mdl", '1357.T', appData, called);
+            YAHOO.JP.fin.rapid.refreshModule("app_mdl");
+            YAHOO.JP.fin.rapid.beaconClick("stock_shr","app_shr",1);
+            document.getElementById("app_mdl").style.display = "block";
+        });
+    }
+})();
+</script>
+<script type="text/javascript">
+(function(){
+    var el = document.querySelector("#addAlertForm");
+    var addAltFormElms = el.querySelectorAll('input[name], select[name]');
+
+    document.getElementById("addAlertCls").addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        YAHOO.JP.fin.rapid.beaconClick("alert_mdl","cls",0);
+        document.getElementById("alert_mdl").style.display = "none";
+    });
+
+    document.getElementById("addAlertCompCls").addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        YAHOO.JP.fin.rapid.beaconClick("alert_complete_mdl","cls",0);
+        document.getElementById("alert_complete_mdl").style.display = "none";
+    });
+
+    document.getElementById("alertStockAdd").addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        YAHOO.JP.fin.rapid.beaconClick("alert_mdl","regist",0);
+
+        var params = [];
+        for(var i=0; i< addAltFormElms.length; i++){
+            var param = encodeURIComponent(addAltFormElms[i].name) + '=' +encodeURIComponent(addAltFormElms[i].value);
+            params.push(param);
+        }
+        var post = params.join( '&' ).replace( /%20/g, '+' );
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/alert/regist', true);
+        xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+        xhr.onreadystatechange=function(){
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200){
+                    var response = JSON.parse(xhr.responseText);
+
+                    if (response.result == 'success') {
+                        document.getElementById("alert_mdl").style.display = "none";
+                        document.getElementById("alert_mdl_updt_message").innerHTML = '設定が完了しました<br>あと'+response.remain+'件のアラートを設定できます。';
+                        document.getElementById("alert_complete_mdl").style.display = "block";
+                    } else if(response.result == 'nologin') {
+                            location.href=response.url;
+                    } else {
+                        document.getElementById("alert_mdl_err_message").innerHTML = response.warnings;
+                        document.getElementById("alert_mdl_err_message").style.display = "block";
+                    }
+                }else{
+                    document.getElementById("alert_mdl").style.display = "none";
+                    document.getElementById("alert_mdl_updt_message").innerHTML = '更新処理中にエラーが発生しました。<a href="alert/config">一覧ページ</a>で更新結果を確認してください';
+                    document.getElementById("alert_complete_mdl").style.display = "block";
+                }
+            }
+        }
+        xhr.send(post);
+
+    });
+
+    var hash = location.hash.split('#');
+    for(var i = 0; i < hash.length; i++) {
+        if (hash[i] == 'alert_mdl') {
+            document.getElementById("alert_mdl").style.display = "block";
+            location.hash = '';
+        }
+    }
+
+ 
+    document.getElementById("addStockAlert").addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        YAHOO.JP.fin.rapid.beaconClick("add_stock_alert","mdlopen",0);
+        for(var i=0; i< addAltFormElms.length; i++){
+            if(addAltFormElms[i].name != 'code_0') addAltFormElms[i].value = '';
+        }
+        document.getElementById("alert_mdl_err_message").innerHTML = '';
+        document.getElementById("alert_mdl_err_message").style.display = "none";
+        document.getElementById("alert_mdl").style.display = "block";
+    });
+})();
+</script>
+
+<!-- オーバーレイ広告 -->
+<div id="overlayAd"></div>
+<script type="text/javascript" src="//yads.c.yimg.jp/js/yads-async.js"></script>
+<div id="overlayAd"></div>
+<script type="text/javascript">
+yadsRequestAsync({
+ yads_ad_ds : '65303_118367',
+ yads_parent_element : "overlayAd"
+});
+</script>
+<script type="text/javascript" language="JavaScript" src="//yads.c.yimg.jp/js/yads.js"></script>
+<script src="https://s.yimg.jp/images/finance/common/js/overlay-min.js"></script>
+<script src="https://s.yimg.jp/images/commerce/js/libs/jquery/core/1.11.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" language="JavaScript">
+    // オーバーレイのアニメーション
+    YAHOO.JP.fin.common.switchDispOverlay({
+        overlayElemId: 'overlayAd',
+        overlapElemIds: [
+            'SMON',
+            'MMON',
+            'exclusiveAd'
+        ],
+        onDispSpecialElems: ['SPH'],
+        footerElemId: ['#footer'],
+        footerClass: ['overlayAd']
+    });
+</script>
+<!-- オーバーレイ広告 -->
+
+<script>
+(function() {
+  var domain = "finance.yahoo.co.jp";
+  var spaceid = "2079965153";
+  var property = "jp";
+  var url = "https://pvtag.yahoo.co.jp/t?f=" + spaceid + "&p=" + property + "&domain=" + domain + "&js=1&rnd=" + new Date().getTime();
+  document.write("<sc" + "ript src=\""  + url + "\"></sc" + "ript>");
+})();
+</script>
+<noscript>
+<iframe src="https://pvtag.yahoo.co.jp/t?f=2079965153&p=jp&domain=finance.yahoo.co.jp&js=0" height=1 width=1 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling="no"></iframe>
+</noscript>
+</body>
+</html>
