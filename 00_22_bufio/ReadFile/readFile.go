@@ -10,6 +10,7 @@ import (
 
 func readFile(fileName string) *os.File {
 	f, err := os.Open("test.txt")
+
 	if err != nil {
 		log.Fatal(err)
 	}

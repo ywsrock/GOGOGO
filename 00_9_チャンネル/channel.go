@@ -36,5 +36,4 @@ func main() {
 	// 受信
 	ii := <-ch1
 	fmt.Println(ii)
-
 }

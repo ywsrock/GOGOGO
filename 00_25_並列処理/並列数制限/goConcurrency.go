@@ -19,6 +19,7 @@ func doTask() {
 	//完了するまで、待機
 	var wg sync.WaitGroup
 	sem := make(chan struct{}, concurrency) // concurrency数のバッファ
+
 	for _, num := range numbers {
 		//chan　に送信
 		sem <- struct{}{}

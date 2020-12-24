@@ -9,6 +9,7 @@ func main() {
 	fmt.Println("IO　BABASE")
 	_, err := os.Stat("test.txt")
 	var curf *os.File
+
 	if os.IsNotExist(err) {
 		//ファイル新規作成
 		f, _ := os.Create("test.txt")
