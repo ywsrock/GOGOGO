@@ -33,6 +33,7 @@ func main() {
 		ch1 <- 223
 		ch1 <- 323
 	}()
+
 	// 受信
 	ii := <-ch1
 	fmt.Println(ii)

@@ -8,6 +8,7 @@ import (
 func main() {
 	// 配列の作成
 	i := [3]int{1, 2, 3}
+
 	// ポインタ取得
 	p := &i[1]
 	// 値の変更
@@ -32,7 +33,6 @@ func main() {
 		id   int
 		name string
 	}
-
 	user := myUser{1, "test"}
 	// 基本型出力
 	fmt.Println(user.id)

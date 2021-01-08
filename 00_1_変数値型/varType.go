@@ -57,12 +57,13 @@ func main() {
 	//interface{} 型　初期化時はnil状態 nil　は　null の理解してもいい
 	//interace{}　java のＯｂｊｅｃｔ見たい、何でも受ける型です
 	//★演算はできません
-	 var inf interface{}
-	 inf = 1
-	 fmt.Printf("%v\n",inf)
-	 if v,err := inf.(int);err{
-		fmt.Printf("型%v",v)
-	 }
-	 inf = [6]int{1,2,3,4,}
-	 fmt.Printf("%v\n",inf)
+	var inf interface{}
+	inf = 1
+	fmt.Printf("%v\n", inf)
+	//型アサーション
+	if v, err := inf.(int); err {
+		fmt.Printf("型%v", v)
+	}
+	inf = [6]int{1, 2, 3, 4}
+	fmt.Printf("%v\n", inf)
 }

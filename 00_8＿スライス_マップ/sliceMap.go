@@ -18,6 +18,7 @@ func main() {
 	var s []int
 	//配列の定義
 	var s1 [3]int
+
 	//配列かスライス
 	s = s1[0 : len(s1)-1]
 
@@ -72,6 +73,7 @@ func main() {
 	m1 := map[int]string{1: "A", 2: "B"}
 	fmt.Println("マップlen-->", len(m1))
 	fmt.Println(m1)
+
 	//指定キー削除処理
 	delete(m1, 2)
 	fmt.Println("マップdelete-->", m1)
