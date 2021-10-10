@@ -54,7 +54,7 @@ func main() {
 		e3 = 3
 	)
 	fmt.Println(e1, e2, e3)
-	
+
 	// 変数の代入（同じ型しかできない。暗黙的な型変換一切しません）
 	var kk1 int = 1
 	var kk2 int

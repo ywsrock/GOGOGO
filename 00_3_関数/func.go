@@ -25,7 +25,7 @@ func div(a int, b int) (int, string) {
 //戻り値は変数名指定
 func getValue() (name string) {
 	name = "Function"
-	return 	
+	return
 }
 
 // 上記と同じの意味
@@ -36,17 +36,17 @@ func getValue1() string {
 }
 
 //関数返す関数
-func retFunction() func(int,int) int {
-	return func(x,y int) int {
-		return x +y
+func retFunction() func(int, int) int {
+	return func(x, y int) int {
+		return x + y
 	}
 }
 
 //閉包処理 GO コンパイラがクロージャ内からのローカル変数参照を検出する場合、
 // クロージャと変数結び付けいた変数として処理します。
-func closure() func(string) string{
+func closure() func(string) string {
 	var str string
-	return func (contactStr string) string {
+	return func(contactStr string) string {
 		//ローカル変数strに参照すると閉包成立
 		str += contactStr
 		return str
@@ -66,10 +66,10 @@ func main() {
 
 	//エラーが発生処理方法の一つ
 	d, err := div(1, 0)
-	fmt.Println(err,d)
+	fmt.Println(err, d)
 
 	d1, err1 := div(1, 1)
-	fmt.Println(err1,d1)
+	fmt.Println(err1, d1)
 
 	//戻り値は変数名指定
 	geV := getValue()
@@ -78,19 +78,19 @@ func main() {
 	fmt.Println(getV1)
 
 	//無名関数
-	f := func(x, y int) int {return x +y}
-	fmt.Println(f(3,4))
+	f := func(x, y int) int { return x + y }
+	fmt.Println(f(3, 4))
 
 	// 上記の同じ書き方
-	var f1 func(int,int) int
-	f1 = func(x,y int) int {return x + y}
-	fmt.Println(f1(6,1))
+	var f1 func(int, int) int
+	f1 = func(x, y int) int { return x + y }
+	fmt.Println(f1(6, 1))
 
 	// 関数を返す関数
-    retFunc1 := retFunction()
-	reNum := retFunc1(1,2)
+	retFunc1 := retFunction()
+	reNum := retFunc1(1, 2)
 	fmt.Println(reNum)
-	retNum1 := retFunction()(2,3)
+	retNum1 := retFunction()(2, 3)
 	fmt.Println(retNum1)
 
 	//クロージャ 文字列連結して出力
