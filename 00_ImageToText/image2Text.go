@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/otiai10/gosseract/v2"
 	"image"
@@ -18,17 +19,25 @@ var files []string
 func main() {
 
 	var files []string
-	root := "./"
+
+	var (
+		root string
+	)
+	flag.StringVar(&root,"image","./","Parse Image Path")
+	flag.Parse()
+
+	//root := "./"
 	grayroot := "./gray"
 
 	//read dir
-	filepath.Walk(root,lsFiles(&files))
-	for _,file := range files {
+	filepath.Walk(root, lsFiles(&files))
+	for _, file := range files {
 		// image to text
 		if strings.ToLower(filepath.Ext(file)) == ".png" {
-			grayscale(file,grayroot)
+			grayscale(file, grayroot)
 		}
 	}
+	os.RemoveAll(grayroot)
 }
 
 /**
@@ -38,7 +47,7 @@ func img2Text(imgPath string) {
 	//ocr client
 	client := gosseract.NewClient()
 	defer client.Close()
-	client.SetLanguage("jpn","eng","chi_sim")
+	client.SetLanguage("jpn", "eng", "chi_sim")
 	client.SetImage(imgPath)
 	//get text
 	text, err := client.Text()
@@ -61,31 +70,37 @@ func lsFiles(files *[]string) filepath.WalkFunc {
 	}
 }
 
-func  grayscale(imgpath string,root string) {
-	ff ,err := os.Open(imgpath)
-	if err !=nil {
+func grayscale(imgpath string, root string) {
+	ff, err := os.Open(imgpath)
+	if err != nil {
 		log.Fatal(err)
 	}
 	defer ff.Close()
-	img,_ := png.Decode(ff)
+
+	if _,err :=	os.Stat(root);os.IsNotExist(err){
+		os.Mkdir(root,0777)
+	}
+
+	img, _ := png.Decode(ff)
 	bounds := img.Bounds()
 	dest := image.NewGray(bounds)
 
-	for y:= bounds.Min.Y;y<=bounds.Max.Y;y++ {
-		for x:=bounds.Min.X;x<=bounds.Max.X;x++ {
-			c := color.GrayModel.Convert(img.At(x,y))
-			gray,_:= c.(color.Gray)
-			dest.SetGray(x,y,gray)
+	for y := bounds.Min.Y; y <= bounds.Max.Y; y++ {
+		for x := bounds.Min.X; x <= bounds.Max.X; x++ {
+			c := color.GrayModel.Convert(img.At(x, y))
+			gray, _ := c.(color.Gray)
+			dest.SetGray(x, y, gray)
 		}
 	}
-	info,_:= os.Stat(imgpath)
+
+	info, _ := os.Stat(imgpath)
 	imgName := info.Name()
-	f,err := os.Create(fmt.Sprintf("%s/%s",root,imgName))
-	if  err != nil {
+	f, err := os.Create(fmt.Sprintf("%s/%s", root, imgName))
+	if err != nil {
 		log.Fatal(err)
 	}
 	defer f.Close()
-	png.Encode(f,dest)
+	png.Encode(f, dest)
 
 	img2Text(filepath.Join(root, imgName))
 }
