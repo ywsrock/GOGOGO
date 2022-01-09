@@ -1,0 +1,6 @@
+{{$r := .}}
+{{$list := sortKey . }}
+{{range $k := $list}}
+    {{$s := getMapV $r $k}}
+     {{- $s.Label -}} : {{$s.Value -}}
+{{- end}}
