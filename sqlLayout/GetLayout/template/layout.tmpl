@@ -1,0 +1,4 @@
+TableNamey ---- ColumnName ---- DataType ---- Max_Length
+{{ range $k, $v := . }}
+    {{ $v.TableName}} ---- {{ $v.ColumnName}} ---- {{ $v.DataType }} ---- {{$v.Max_Length}}
+{{ end }}
