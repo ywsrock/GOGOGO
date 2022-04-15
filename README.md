@@ -1,0 +1,3 @@
+# GOGOGO
+
+##　stated the golang.
