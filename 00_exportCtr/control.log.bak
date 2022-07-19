@@ -1,0 +1,1024 @@
+
+BEGIN VB.FORM FRMNEWLISTCALL 
+   BACKCOLOR       =   &H00008000&
+   BORDERSTYLE     =   1  '固定(実線)
+   CAPTION         =   "架電リスト一覧"
+   CLIENTHEIGHT    =   12030
+   CLIENTLEFT      =   45
+   CLIENTTOP       =   1440
+   CLIENTWIDTH     =   17700
+   CONTROLBOX      =   0   'FALSE
+   BEGINPROPERTY FONT 
+      NAME            =   "ＭＳ Ｐ明朝"
+      SIZE            =   11.25
+      CHARSET         =   128
+      WEIGHT          =   700
+      UNDERLINE       =   0   'FALSE
+      ITALIC          =   0   'FALSE
+      STRIKETHROUGH   =   0   'FALSE
+   ENDPROPERTY
+   ICON            =   "FRMNEWLISTCALL.FRX":0000
+   LINKTOPIC       =   "FORM2"
+   MAXBUTTON       =   0   'FALSE
+   SCALEHEIGHT     =   12030
+   SCALEWIDTH      =   17700
+   BEGIN VB.PICTUREBOX PICTURE1 
+      BACKCOLOR       =   &H00C0E0FF&
+      HEIGHT          =   12015
+      LEFT            =   0
+      SCALEHEIGHT     =   11955
+      SCALEWIDTH      =   17715
+      TABINDEX        =   0
+      TOP             =   0
+      WIDTH           =   17775
+      BEGIN LVWODDB2.UCLVWODDB2 LVWCALLLIST 
+         HEIGHT          =   4575
+         LEFT            =   240
+         TABINDEX        =   90
+         TOP             =   4440
+         WIDTH           =   17235
+         _EXTENTX        =   30401
+         _EXTENTY        =   8070
+      END
+      BEGIN VB.FRAME FRAME3 
+         BACKCOLOR       =   &H00C0E0FF&
+         CAPTION         =   "実行モード"
+         HEIGHT          =   2055
+         LEFT            =   14640
+         TABINDEX        =   83
+         TOP             =   1800
+         WIDTH           =   2895
+         BEGIN VB.PICTUREBOX PICTURE2 
+            BACKCOLOR       =   &H0080C0FF&
+            HEIGHT          =   345
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2235
+            TABINDEX        =   84
+            TOP             =   360
+            WIDTH           =   2295
+            BEGIN VB.OPTIONBUTTON OPTMOD 
+               BACKCOLOR       =   &H0080C0FF&
+               CAPTION         =   "AND"
+               HEIGHT          =   255
+               INDEX           =   1
+               LEFT            =   1320
+               TABINDEX        =   55
+               TOP             =   30
+               VALUE           =   -1  'TRUE
+               WIDTH           =   915
+            END
+            BEGIN VB.OPTIONBUTTON OPTMOD 
+               BACKCOLOR       =   &H0080C0FF&
+               CAPTION         =   "OR"
+               HEIGHT          =   255
+               INDEX           =   0
+               LEFT            =   180
+               TABINDEX        =   54
+               TOP             =   30
+               WIDTH           =   915
+            END
+         END
+         BEGIN VB.COMMANDBUTTON BTNSEARCH 
+            CAPTION         =   "検索"
+            BEGINPROPERTY FONT 
+               NAME            =   "ＭＳ Ｐ明朝"
+               SIZE            =   9.75
+               CHARSET         =   128
+               WEIGHT          =   700
+               UNDERLINE       =   0   'FALSE
+               ITALIC          =   0   'FALSE
+               STRIKETHROUGH   =   0   'FALSE
+            ENDPROPERTY
+            HEIGHT          =   900
+            LEFT            =   240
+            PICTURE         =   "FRMNEWLISTCALL.FRX":030A
+            STYLE           =   1  'ｸﾞﾗﾌｨｯｸｽ
+            TABINDEX        =   56
+            TOP             =   960
+            WIDTH           =   1035
+         END
+         BEGIN VB.COMMANDBUTTON BTNEXPORT 
+            CAPTION         =   "出力"
+            BEGINPROPERTY FONT 
+               NAME            =   "ＭＳ Ｐ明朝"
+               SIZE            =   9.75
+               CHARSET         =   128
+               WEIGHT          =   700
+               UNDERLINE       =   0   'FALSE
+               ITALIC          =   0   'FALSE
+               STRIKETHROUGH   =   0   'FALSE
+            ENDPROPERTY
+            HEIGHT          =   900
+            LEFT            =   1560
+            PICTURE         =   "FRMNEWLISTCALL.FRX":0614
+            STYLE           =   1  'ｸﾞﾗﾌｨｯｸｽ
+            TABINDEX        =   57
+            TOP             =   960
+            WIDTH           =   1035
+         END
+      END
+      BEGIN VB.FRAME FRMREADCHECK 
+         BACKCOLOR       =   &H00C0E0FF&
+         CAPTION         =   "■検索条件"
+         HEIGHT          =   3735
+         LEFT            =   240
+         TABINDEX        =   59
+         TOP             =   120
+         WIDTH           =   14355
+         BEGIN VB.COMMANDBUTTON BTNSTAFFLOCATION 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   13850
+            TABINDEX        =   53
+            TOP             =   3240
+            WIDTH           =   345
+         END
+         BEGIN VB.TEXTBOX TXTSTAFFLOCATION 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   10020
+            TABINDEX        =   52
+            TABSTOP         =   0   'FALSE
+            TOP             =   3240
+            WIDTH           =   3820
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   16
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   89
+            TOP             =   3240
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKSTAFFLOCATION 
+               CAPTION         =   "提案担当箇所"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   51
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTCUSTOMERCODE 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            MAXLENGTH       =   14
+            TABINDEX        =   2
+            TABSTOP         =   0   'FALSE
+            TOP             =   360
+            WIDTH           =   4035
+         END
+         BEGIN VB.TEXTBOX TXTCALLUSERID 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   4
+            TABSTOP         =   0   'FALSE
+            TOP             =   720
+            WIDTH           =   1635
+         END
+         BEGIN VB.TEXTBOX TXTELECTRIC1RET 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   8
+            TABSTOP         =   0   'FALSE
+            TOP             =   1080
+            WIDTH           =   4035
+         END
+         BEGIN VB.COMMANDBUTTON BTNELECTRIC1STATE 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   13815
+            TABINDEX        =   33
+            TOP             =   1080
+            WIDTH           =   345
+         END
+         BEGIN VB.COMMANDBUTTON BTNNEXTCALLTIMESTART 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   4560
+            TABINDEX        =   24
+            TOP             =   3240
+            WIDTH           =   345
+         END
+         BEGIN VB.COMMANDBUTTON BTNNEXTCALLTIMEEND 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   6765
+            TABINDEX        =   26
+            TOP             =   3240
+            WIDTH           =   345
+         END
+         BEGIN VB.TEXTBOX TXTNEXTCALLTIMEEND 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   5265
+            TABINDEX        =   25
+            TABSTOP         =   0   'FALSE
+            TOP             =   3240
+            WIDTH           =   1635
+         END
+         BEGIN VB.TEXTBOX TEXT13 
+            ALIGNMENT       =   2  '中央揃え
+            BACKCOLOR       =   &H8000000F&
+            BEGINPROPERTY FONT 
+               NAME            =   "ＭＳ Ｐ明朝"
+               SIZE            =   12
+               CHARSET         =   128
+               WEIGHT          =   700
+               UNDERLINE       =   0   'FALSE
+               ITALIC          =   0   'FALSE
+               STRIKETHROUGH   =   0   'FALSE
+            ENDPROPERTY
+            HEIGHT          =   360
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   4800
+            TABINDEX        =   88
+            TABSTOP         =   0   'FALSE
+            TEXT            =   "～"
+            TOP             =   3240
+            WIDTH           =   555
+         END
+         BEGIN VB.TEXTBOX TXTNEXTCALLTIMESTART 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   3060
+            TABINDEX        =   23
+            TABSTOP         =   0   'FALSE
+            TOP             =   3240
+            WIDTH           =   1635
+         END
+         BEGIN VB.COMMANDBUTTON BTNRECALLDATESTART 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   4560
+            TABINDEX        =   19
+            TOP             =   2880
+            WIDTH           =   345
+         END
+         BEGIN VB.COMMANDBUTTON BTNRECALLDATEEND 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   6765
+            TABINDEX        =   21
+            TOP             =   2880
+            WIDTH           =   345
+         END
+         BEGIN VB.TEXTBOX TXTRECALLDATEEND 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   5265
+            TABINDEX        =   20
+            TABSTOP         =   0   'FALSE
+            TOP             =   2880
+            WIDTH           =   1635
+         END
+         BEGIN VB.TEXTBOX TEXT10 
+            ALIGNMENT       =   2  '中央揃え
+            BACKCOLOR       =   &H8000000F&
+            BEGINPROPERTY FONT 
+               NAME            =   "ＭＳ Ｐ明朝"
+               SIZE            =   12
+               CHARSET         =   128
+               WEIGHT          =   700
+               UNDERLINE       =   0   'FALSE
+               ITALIC          =   0   'FALSE
+               STRIKETHROUGH   =   0   'FALSE
+            ENDPROPERTY
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   4800
+            TABINDEX        =   87
+            TABSTOP         =   0   'FALSE
+            TEXT            =   "～"
+            TOP             =   2880
+            WIDTH           =   555
+         END
+         BEGIN VB.COMMANDBUTTON BTNSOLUTIONSTATE 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   13815
+            TABINDEX        =   42
+            TOP             =   2160
+            WIDTH           =   345
+         END
+         BEGIN VB.COMMANDBUTTON BTNGASSTATE 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   13815
+            TABINDEX        =   39
+            TOP             =   1800
+            WIDTH           =   345
+         END
+         BEGIN VB.COMMANDBUTTON BTNELECTRIC2STATE 
+            CAPTION         =   "★"
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   13815
+            TABINDEX        =   36
+            TOP             =   1440
+            WIDTH           =   345
+         END
+         BEGIN VB.TEXTBOX TXTSOLUTIONSTATE 
+            BACKCOLOR       =   &H8000000F&
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   10020
+            TABINDEX        =   41
+            TABSTOP         =   0   'FALSE
+            TOP             =   2160
+            WIDTH           =   4170
+         END
+         BEGIN VB.TEXTBOX TXTGASSTATE 
+            BACKCOLOR       =   &H8000000F&
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   10020
+            TABINDEX        =   38
+            TABSTOP         =   0   'FALSE
+            TOP             =   1800
+            WIDTH           =   4170
+         END
+         BEGIN VB.TEXTBOX TXTELECTRIC2STATE 
+            BACKCOLOR       =   &H8000000F&
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   10020
+            TABINDEX        =   35
+            TABSTOP         =   0   'FALSE
+            TOP             =   1440
+            WIDTH           =   4170
+         END
+         BEGIN VB.TEXTBOX TXTELECTRIC1STATE 
+            BACKCOLOR       =   &H8000000F&
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            IMEMODE         =   3  'ｵﾌ固定
+            LEFT            =   10020
+            TABINDEX        =   32
+            TABSTOP         =   0   'FALSE
+            TOP             =   1080
+            WIDTH           =   4170
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   1
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   82
+            TOP             =   360
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKCUSTOMERCODE 
+               CAPTION         =   $"FRMNEWLISTCALL.FRX":091E
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   1
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   2
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   81
+            TOP             =   720
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKCALLUSER 
+               CAPTION         =   "架電担当者"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   3
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   3
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   80
+            TOP             =   1080
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKELECTRIC1RET 
+               CAPTION         =   "架電目的（電気1）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   7
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTELECTRIC2RET 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   10
+            TABSTOP         =   0   'FALSE
+            TOP             =   1440
+            WIDTH           =   4035
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   4
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   79
+            TOP             =   1440
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKELECTRIC2RET 
+               CAPTION         =   "架電目的（電気2）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   9
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTGASRET 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   12
+            TABSTOP         =   0   'FALSE
+            TOP             =   1800
+            WIDTH           =   4035
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   5
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   78
+            TOP             =   1800
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKGASRET 
+               CAPTION         =   "架電目的（ガス）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   11
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTSOLUTIONRET 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   14
+            TABSTOP         =   0   'FALSE
+            TOP             =   2160
+            WIDTH           =   4035
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   6
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   77
+            TOP             =   2160
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKSOLUTIONRET 
+               CAPTION         =   "架電目的（ｿﾘｭｰｼｮﾝ）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   13
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTPHONENO 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   16
+            TABSTOP         =   0   'FALSE
+            TOP             =   2520
+            WIDTH           =   4035
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   7
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   76
+            TOP             =   2520
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKPHONENO 
+               CAPTION         =   "電話番号"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   15
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   8
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   75
+            TOP             =   2880
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKRECALLDATE 
+               CAPTION         =   "再架電予定日"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   17
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   9
+            LEFT            =   360
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   74
+            TOP             =   3240
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKNEXTCALLTIME 
+               CAPTION         =   "次回架電日時"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   22
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTENTERPRISENAME 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   10020
+            TABINDEX        =   28
+            TABSTOP         =   0   'FALSE
+            TOP             =   360
+            WIDTH           =   4170
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   0
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   73
+            TOP             =   360
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKENTERPRISENAME 
+               CAPTION         =   "企業名"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   27
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTCORPORATIONNAME 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   10020
+            TABINDEX        =   30
+            TABSTOP         =   0   'FALSE
+            TOP             =   720
+            WIDTH           =   4170
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   10
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   72
+            TOP             =   720
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKCORPORATIONNAME 
+               CAPTION         =   "法人名"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   29
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   11
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   71
+            TOP             =   1080
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKELECTRIC1STATE 
+               CAPTION         =   "架電状況（電気1）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   31
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   12
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   70
+            TOP             =   1440
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKELECTRIC2STATE 
+               CAPTION         =   "架電状況（電気2）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   34
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   13
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   69
+            TOP             =   1800
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKGASSTATE 
+               CAPTION         =   "架電状況（ガス）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   37
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   14
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   68
+            TOP             =   2160
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKSOLUTIONSTATE 
+               CAPTION         =   "架電状況（ｿﾘｭｰｼｮﾝ）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   40
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   15
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   67
+            TOP             =   2520
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKE1APLFORM 
+               CAPTION         =   "申込書（電気1）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   43
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   17
+            LEFT            =   7320
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   2655
+            TABINDEX        =   66
+            TOP             =   2880
+            WIDTH           =   2715
+            BEGIN VB.CHECKBOX CHKE2APLFORM 
+               CAPTION         =   "申込書（電気2）"
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   47
+               TOP             =   0
+               WIDTH           =   5115
+            END
+         END
+         BEGIN VB.TEXTBOX TXTCALLUSERNAME 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   4680
+            TABINDEX        =   5
+            TABSTOP         =   0   'FALSE
+            TOP             =   720
+            WIDTH           =   2040
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   18
+            LEFT            =   10035
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   1200
+            TABINDEX        =   65
+            TOP             =   2520
+            WIDTH           =   1260
+            BEGIN VB.CHECKBOX CHKE1APLFORMWAIT 
+               CAPTION         =   "受領待"
+               ENABLED         =   0   'FALSE
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   44
+               TOP             =   0
+               WIDTH           =   5715
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   19
+            LEFT            =   11280
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   1200
+            TABINDEX        =   64
+            TOP             =   2520
+            WIDTH           =   1260
+            BEGIN VB.CHECKBOX CHKE1APLFORMDONE 
+               CAPTION         =   "受領済"
+               ENABLED         =   0   'FALSE
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   45
+               TOP             =   0
+               WIDTH           =   5235
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   20
+            LEFT            =   12525
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   1605
+            TABINDEX        =   63
+            TOP             =   2520
+            WIDTH           =   1660
+            BEGIN VB.CHECKBOX CHKE1APLFORMUNNECESSARY 
+               CAPTION         =   "受領不要"
+               ENABLED         =   0   'FALSE
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   46
+               TOP             =   0
+               WIDTH           =   5235
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   21
+            LEFT            =   10035
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   1200
+            TABINDEX        =   62
+            TOP             =   2880
+            WIDTH           =   1260
+            BEGIN VB.CHECKBOX CHKE2APLFORMWAIT 
+               CAPTION         =   "受領待"
+               ENABLED         =   0   'FALSE
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   48
+               TOP             =   0
+               WIDTH           =   5235
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   22
+            LEFT            =   11280
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   1200
+            TABINDEX        =   61
+            TOP             =   2880
+            WIDTH           =   1260
+            BEGIN VB.CHECKBOX CHKE2APLFORMDONE 
+               CAPTION         =   "受領済"
+               ENABLED         =   0   'FALSE
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   49
+               TOP             =   0
+               WIDTH           =   5235
+            END
+         END
+         BEGIN VB.PICTUREBOX PICDEMO 
+            HEIGHT          =   345
+            INDEX           =   23
+            LEFT            =   12525
+            SCALEHEIGHT     =   285
+            SCALEWIDTH      =   1605
+            TABINDEX        =   60
+            TOP             =   2880
+            WIDTH           =   1660
+            BEGIN VB.CHECKBOX CHKE2APLFORMUNNECESSARY 
+               CAPTION         =   "受領不要"
+               ENABLED         =   0   'FALSE
+               HEIGHT          =   315
+               LEFT            =   120
+               TABINDEX        =   50
+               TOP             =   0
+               WIDTH           =   5235
+            END
+         END
+         BEGIN VB.COMMANDBUTTON BTNUSER 
+            ENABLED         =   0   'FALSE
+            HEIGHT          =   345
+            LEFT            =   6730
+            PICTURE         =   "FRMNEWLISTCALL.FRX":0930
+            STYLE           =   1  'ｸﾞﾗﾌｨｯｸｽ
+            TABINDEX        =   6
+            TOP             =   721
+            WIDTH           =   345
+         END
+         BEGIN VB.TEXTBOX TXTRECALLDATESTART 
+            BACKCOLOR       =   &H8000000F&
+            HEIGHT          =   345
+            LEFT            =   3060
+            TABINDEX        =   18
+            TABSTOP         =   0   'FALSE
+            TOP             =   2880
+            WIDTH           =   1635
+         END
+      END
+      BEGIN MSCOMDLG.COMMONDIALOG CDLFILE 
+         LEFT            =   0
+         TOP             =   0
+         _EXTENTX        =   847
+         _EXTENTY        =   847
+         _VERSION        =   393216
+      END
+      BEGIN MSCOMCTLLIB.LISTVIEW LVWKEEP 
+         HEIGHT          =   2535
+         LEFT            =   240
+         TABINDEX        =   58
+         TOP             =   9240
+         WIDTH           =   17235
+         _EXTENTX        =   30401
+         _EXTENTY        =   4471
+         VIEW            =   3
+         LABELEDIT       =   1
+         LABELWRAP       =   -1  'TRUE
+         HIDESELECTION   =   -1  'TRUE
+         FULLROWSELECT   =   -1  'TRUE
+         GRIDLINES       =   -1  'TRUE
+         _VERSION        =   393217
+         FORECOLOR       =   -2147483640
+         BACKCOLOR       =   -2147483643
+         APPEARANCE      =   1
+         NUMITEMS        =   16
+         BEGINPROPERTY COLUMNHEADER(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            TEXT            =   "PROFILEID"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   1
+            TEXT            =   "顧客名"
+            OBJECT.WIDTH           =   3351
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   2
+            TEXT            =   "電話番号"
+            OBJECT.WIDTH           =   3351
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   3
+            OBJECT.WIDTH           =   3404
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   4
+            OBJECT.WIDTH           =   3351
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   5
+            TEXT            =   "優先結果"
+            OBJECT.WIDTH           =   3351
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(7) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            ALIGNMENT       =   2
+            SUBITEMINDEX    =   6
+            TEXT            =   "予定日(平日)"
+            OBJECT.WIDTH           =   2822
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(8) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            ALIGNMENT       =   2
+            SUBITEMINDEX    =   7
+            TEXT            =   "開始(平日)"
+            OBJECT.WIDTH           =   2469
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(9) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            ALIGNMENT       =   2
+            SUBITEMINDEX    =   8
+            TEXT            =   "終了(平日)"
+            OBJECT.WIDTH           =   2469
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(10) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            ALIGNMENT       =   2
+            SUBITEMINDEX    =   9
+            TEXT            =   "予定日(休日)"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(11) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            ALIGNMENT       =   2
+            SUBITEMINDEX    =   10
+            TEXT            =   "開始(休日)"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(12) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            ALIGNMENT       =   2
+            SUBITEMINDEX    =   11
+            TEXT            =   "終了(休日)"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(13) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   12
+            TEXT            =   "CUSTOMERCODE"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(14) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   13
+            TEXT            =   "GROUPCODE"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(15) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   14
+            TEXT            =   "LISTCODE"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+         BEGINPROPERTY COLUMNHEADER(16) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SUBITEMINDEX    =   15
+            TEXT            =   "JOBCODE"
+            OBJECT.WIDTH           =   0
+         ENDPROPERTY
+      END
+      BEGIN VB.LABEL LBLERRMSG 
+         ALIGNMENT       =   1  '右揃え
+         BACKSTYLE       =   0  '透明
+         CAPTION         =   "エラー：検索結果件数が多すぎて結果が表示できません、検索条件を絞ってください。"
+         FORECOLOR       =   &H000000C0&
+         HEIGHT          =   255
+         LEFT            =   -4560
+         TABINDEX        =   86
+         TOP             =   4080
+         VISIBLE         =   0   'FALSE
+         WIDTH           =   13275
+      END
+      BEGIN VB.LABEL LBLDATACOUNT 
+         ALIGNMENT       =   1  '右揃え
+         BACKSTYLE       =   0  '透明
+         CAPTION         =   "0件のデータが該当しました"
+         FORECOLOR       =   &H000000C0&
+         HEIGHT          =   255
+         LEFT            =   13320
+         TABINDEX        =   85
+         TOP             =   4080
+         WIDTH           =   4155
+      END
+   END
+END
+ATTRIBUTE VB_NAME = "FRMNEWLISTCALL"
+ATTRIBUTE VB_GLOBALNAMESPACE = FALSE
+ATTRIBUTE VB_CREATABLE = FALSE
+ATTRIBUTE VB_PREDECLAREDID = TRUE
+ATTRIBUTE VB_EXPOSED = FALSE
+OPTION EXPLICIT
