@@ -1,0 +1,3 @@
+port: ":8080"
+rtimeOut: 10
+wtimeOut: 10

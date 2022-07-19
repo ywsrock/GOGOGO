@@ -109,7 +109,7 @@ func main() {
 	var poolMax = 5
 	var jobMax = 10
 
-	//Dispatcher 新規作成
+	//dispatcher 新規作成
 	d := &dispatcher{
 		pool:  make(chan *worker, poolMax),
 		queue: make(chan interface{}, jobMax),

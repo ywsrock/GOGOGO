@@ -1,0 +1,94 @@
+{{define "timerCount"}}
+<style type="text/css">
+    /*#count_up_timer{*/
+    /*    font-size: 12px;*/
+    /*    font-weight: bold;*/
+    /*    color: white;*/
+    /*}*/
+    /*#stop_count_up_timer{*/
+    /*    background-color:black;*/
+    /*    color:white*/
+    /*}*/
+</style>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+<script>
+
+    const form = document.querySelector("#searchForm");
+    form.addEventListener("submit", function(){
+        Cookies.set('SHUAI-T', totalSeconds, { expires: 1 })
+    })
+
+
+    //
+    window.addEventListener('load', (event) => {
+        if (Cookies.get('SHUAI-STS') == "started") {
+           start();
+        }
+        // document.querySelector("#searchForm-Input").focus();
+    });
+
+</script>
+
+<script>
+    var timerVariable
+    var totalSeconds = 0;
+
+    if (Cookies.get('SHUAI-T') == undefined) {
+        totalSeconds = 0
+    } else {
+        totalSeconds = Cookies.get('SHUAI-T')
+    }
+
+    let start = () => {
+        if (timerVariable == null) {
+            Cookies.set('SHUAI-STS', "started", { expires: 1 })
+            timerVariable = setInterval(countUpTimer, 1000);
+        }
+    }
+    let stop = () => {
+        clearInterval(timerVariable);
+        Cookies.set('SHUAI-STS', "pause", { expires: 1 })
+        timerVariable = null;
+    }
+
+    let reset = () => {
+        totalSeconds = 0;
+        Cookies.remove('SHUAI-T')
+        Cookies.remove('SHUAI-STS')
+        document.getElementById("count_up_timer").innerHTML = "00:00:00";
+    }
+
+    function countUpTimer() {
+        ++totalSeconds;
+        Cookies.set('SHUAI-T', totalSeconds, { expires: 1 })
+        var hour = Math.floor(totalSeconds / 3600);
+        var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+        var seconds = totalSeconds - (hour * 3600 + minute * 60);
+
+        document.getElementById("count_up_timer").innerHTML = ('00' + hour).slice(-2) +
+            ":" + ('00' + minute).slice(-2) +
+            ":" + ('00' + seconds).slice(-2);
+    }
+</script>
+<ul class="nav col-12 col-lg-auto me-lg-auto mb-1 justify-content-center justify-content-sm-end mb-md-0">
+
+    <li class="">
+        <a class="btn btn-sm btn-outline-light me-1" id="pause_count_up_timer" onclick="start()"> <i
+                data-feather="play-circle"  height="20"></i></a>
+    </li>
+    <li class="">
+        <div class="btn btn-sm btn-outline-light me-1 bg-success" id="count_up_timer"> 00:00:00</div>
+    </li>
+    <li class="">
+        <a class="btn btn-sm btn-outline-light me-1" id="stop_count_up_timer" onclick="stop()"><i
+                data-feather="pause-circle"  height="20"></i></a>
+    </li>
+    <li class="">
+        <a class="btn btn-sm btn-outline-light me-1" id="reset_count_up_timer" onclick="reset()"><i
+                data-feather="stop-circle" height="20"></i> </a>
+    </li>
+
+
+</ul>
+{{end}}

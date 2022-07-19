@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+
+package hello;
+
+option go_package = "ywsrock/hello";
+
+service Message {
+  rpc SayHello(HelloRequest) returns(HelloResponse){}
+}
+
+message HelloRequest {
+    string word = 1;
+}
+
+message HelloResponse {
+    Result result= 1;
+}
+
+
+message Result {
+  string name = 1;
+  int32 age = 2;
+}

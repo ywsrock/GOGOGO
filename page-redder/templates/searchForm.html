@@ -1,0 +1,15 @@
+{{ define "searchForm" }}
+<form method="get" action="/c" class="row" id="searchForm">
+    <div class="col-md-10 col-sm-12">
+        <div class="input-group mb-3">
+            <input type="text" id="searchForm-Input" name="key" tabindex="0" class="form-control" placeholder="key word" aria-label="search word"
+                   aria-describedby="basic-addon2">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary form-control sm-3">検索</button>
+    </div>
+</form>
+{{ template "timerCount" }}
+{{ end }}
+

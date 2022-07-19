@@ -1,0 +1,38 @@
+{{ define "searchResult" }}
+<div class="card-body text-light">
+    {{ if ne .w.Word "" }}
+    <p>
+        <span class="fs-1">{{ .w.Word }}</span>
+        <span class="fs-6 bg-warning text-dark ps-2">音節: </span>
+        <span class="fs-6">{{ .w.Syllable }}</span>
+        <span class="fs-6 bg-warning text-dark ps-2">  読み方:</span>
+        <span class="fs-6">{{ .w.PhoneticSymbols }} </span>
+    </p>
+    <hr/>
+    <p class="card-text">
+        <span class="bg-warning text-dark fs-6">意味・対訳:</span>
+        <span class="fs-5"> {{ .w.Info }}</span>
+    </p>
+    {{ else }}
+    <span class="fs-2 text-success"> {{ .w.Info }}</span>
+    {{ end }}
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <pre></pre>
+            <audio controls="controls" preload="none"  tabindex="1" class="btn btn-light form-control sm-3 btn-outline-dark"
+                   style="height: 50px">
+                <source src="{{ .w.VoiceLink }}" type="audio/mp3" media="all">
+            </audio>
+        </div>
+        <div class="col-md-6">
+            <pre></pre>
+            <button class="btn btn-light btn-lg form-control sm-3 btn-outline-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true"
+                    aria-controls="collapseExample">
+                Examples
+            </button>
+        </div>
+    </div>
+    {{ block "meaningList" .}}{{end}}
+</div>
+{{ end }}

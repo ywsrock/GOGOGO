@@ -1,0 +1,12 @@
+version: "3"
+services:
+  redis:
+    image: "redis:latest"
+#    command: "redis-server --include /usr/local/etc/redis/redis.conf"
+    container_name: "myredis"
+    ports:
+      - "6379:6379"
+    command: "redis-server --requirepass ywsrock"
+    volumes:
+      - "./redis/data:/data"
+#      - "./redis/redis.config:/usr/local/etc/redis/redis.conf"

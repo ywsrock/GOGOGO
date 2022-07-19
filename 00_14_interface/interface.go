@@ -23,9 +23,27 @@ func RaiseError() error {
 	return &MyError{ErrMsg: "Error implement", ErrCode: 10}
 }
 
+type If interface {
+	getname() string
+}
+
+type ImpIf struct {
+	name string
+}
+
+func (I *ImpIf) getname() string{
+	return I.name
+}
+
+
+
 //interface の実装とき、interfaceで定義されたメソッド名を同じにすると
 //実装を見なす
 func main() {
 	err := RaiseError()
 	fmt.Println(err.Error())
+
+	ii := &ImpIf{name: "12345"}
+	fmt.Println(ii.getname())
+
 }
