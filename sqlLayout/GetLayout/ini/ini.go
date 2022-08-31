@@ -10,7 +10,7 @@ import (
 var ini *goini.INI
 
 var (
-	filename     string = "agentforce.ini"
+	filename     string = "XXXXXX.ini"
 	dbServerName        = ""
 	dbFileName          = ""
 	dbUserName          = ""
