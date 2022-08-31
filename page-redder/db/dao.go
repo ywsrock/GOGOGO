@@ -9,14 +9,14 @@ import (
 
 var db *gorm.DB
 
-func DBInit () {
+func DBInit() {
 	db1, err := gorm.Open(mysql.New(mysql.Config{
-		DSN: "root:passw0rd@tcp(127.0.0.1:3306)/wordlist?charset=utf8mb4&parseTime=True&loc=Local", // data source name
-		DefaultStringSize: 256, // default size for string fields
-		DisableDatetimePrecision: true, // disable datetime precision, which not supported before MySQL 5.6
-		DontSupportRenameIndex: true, // drop & create when rename index, rename index not supported before MySQL 5.7, MariaDB
-		DontSupportRenameColumn: true, // `change` when rename column, rename column not supported before MySQL 8, MariaDB
-		SkipInitializeWithVersion: false, // auto configure based on currently MySQL version
+		DSN:                       "root:passw0rd@tcp(127.0.0.1:3306)/wordlist?charset=utf8mb4&parseTime=True&loc=Local", // data source name
+		DefaultStringSize:         256,                                                                                   // default size for string fields
+		DisableDatetimePrecision:  true,                                                                                  // disable datetime precision, which not supported before MySQL 5.6
+		DontSupportRenameIndex:    true,                                                                                  // drop & create when rename index, rename index not supported before MySQL 5.7, MariaDB
+		DontSupportRenameColumn:   true,                                                                                  // `change` when rename column, rename column not supported before MySQL 8, MariaDB
+		SkipInitializeWithVersion: false,                                                                                 // auto configure based on currently MySQL version
 	}), &gorm.Config{})
 	if err != nil {
 		log.Fatalln(err)
@@ -27,7 +27,7 @@ func DBInit () {
 
 func SaveWord(wordinfo *model.WordInfo) error {
 	// if exists then exit
-	if _,b := FindFirst(wordinfo.Word);b == true {
+	if _, b := FindFirst(wordinfo.Word); b == true {
 		return nil
 	}
 
@@ -39,24 +39,20 @@ func SaveWord(wordinfo *model.WordInfo) error {
 	return nil
 }
 
-/**
-	FindFirst: get the first record
-		when the word was existed then return then word info
-		Other return then nil
- */
-func FindFirst(word string) (*model.WordInfo,bool) {
+// FindFirst /**
+func FindFirst(word string) (*model.WordInfo, bool) {
 	var wordinfo model.WordInfo
-	ret := db.Where("word = ?",word).First(&wordinfo)
+	ret := db.Where("word = ?", word).First(&wordinfo)
 	if ret.Error != nil {
-		return nil,false
+		return nil, false
 	}
-	return &wordinfo,true
+	return &wordinfo, true
 }
 
 /*
-	FindAll: get All word Info
- */
-func FindAll() []model.WordInfo{
+FindAll: get All word Info
+*/
+func FindAll() []model.WordInfo {
 	var wordinfos []model.WordInfo
 	ret := db.Order("id desc").Find(&wordinfos)
 	if ret.Error != nil {

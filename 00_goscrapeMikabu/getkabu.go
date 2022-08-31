@@ -15,7 +15,6 @@ func main() {
 	quit := make(chan os.Signal)
 	signal.Notify(quit, os.Interrupt)
 	cKey := make(chan string)
-
 	go func() {
 		var key string
 		for {
@@ -43,7 +42,6 @@ func main() {
 	}()
 
 	<-quit
-
 }
 
 func getkabuBycolly(code string) {
@@ -53,16 +51,16 @@ func getkabuBycolly(code string) {
 	}
 
 	c := colly.NewCollector()
-	//Request
+	// Request
 	c.OnRequest(func(request *colly.Request) {
 		fmt.Println(request.URL)
 	})
 
-	//stock-detail
-	//c.OnHTML(".stock-detail", func(element *colly.HTMLElement) {
+	// stock-detail
+	// c.OnHTML(".stock-detail", func(element *colly.HTMLElement) {
 	c.OnHTML(".ly_col.ly_colsize_5.md_box.ly_row.md_target_box_group", func(element *colly.HTMLElement) {
 		childNode(element.DOM.Get(0), nil, nil)
-		//childNode(element.DOM.Get(0),startElement,endElement)
+		// childNode(element.DOM.Get(0),startElement,endElement)
 	})
 
 	c.Visit("https://minkabu.jp/stock/" + code)
