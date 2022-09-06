@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package dic.v1;
+
+option go_package="v1/dic";
+
+message GetKeyRequest {
+  string name = 1;
+}
+
+message GetKeyResponse {
+  string value= 1;
+  }
+
+service DicService {
+  rpc GetKey(GetKeyRequest) returns (GetKeyResponse){}
+}

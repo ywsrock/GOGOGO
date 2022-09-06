@@ -1,0 +1,22 @@
+version: "3"
+services:
+    app:
+      container_name: golang
+      build:
+        context: .
+        dockerfile: Dockerfile
+      tty: true
+      command: go run main.go
+      ports:
+        - 8080:8080
+
+    mysql:
+      container_name: DB
+      build:
+        context: ./mysql/
+        dockerfile: Dockerfile
+      volumes:
+        - ./mysql/data:/temp/
+        - ./mysql/initdb:/docker-entrypoint-initdb.d
+      env_file: .env
+      restart: always
