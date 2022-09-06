@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package ="ywsrock/hello2";
+
+
+package hello2;
+
+import "google/api/annotations.proto";
+
+service Hello2 {
+  rpc SayName(MsgReq) returns(MsgRsp){
+    option (google.api.http) = {
+      post: "/v1/example/echo"
+      body: "*"
+    };
+  };
+}
+
+message MsgReq {
+  string Msg = 1;
+}
+
+message MsgRsp {
+  string Msg = 1;
+}

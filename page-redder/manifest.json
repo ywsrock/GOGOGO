@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Page Redder",
+  "action": {
+  },
+  "version": "0.1",
+  "description": "Turns the page red when you click the icon",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

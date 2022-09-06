@@ -1,0 +1,11 @@
+{{ define "weblio" }}
+<div class="row align-items-start ">
+    <div class="col-md-7 col-sm-12 col-xs-12">
+        {{ block "searchForm" .}}{{ end }}
+        {{ block "searchResult" .}} {{end}}
+    </div>
+    <div class="col-md-5 col-bg-info table-dark ">
+        {{ block "searchHistory" .}}{{ end }}
+    </div>
+</div>
+{{ end }}

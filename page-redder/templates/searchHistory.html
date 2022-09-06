@@ -1,0 +1,65 @@
+{{ define "searchHistory" }}
+<!--<div class="card h-100 table-dark ">-->
+<!--    <div class="card-header bg-dark text-light">-->
+<!--        検索履歴-->
+<!--    </div>-->
+<!--    <div class="table-responsive table-dark ">-->
+
+<div id="users">
+
+    <div class="row mb-2">
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-0 border-secondary rounded bg-dark text-light sm-3">検索履歴</div>
+            </div>
+<!--            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">-->
+            <input class="search form-control border border-secondary rounded bg-dark text-light" placeholder="Search" />
+        </div>
+    </div>
+<!--        <div class="col-md-2 col-sm-12">-->
+<!--            検索履歴-->
+<!--        </div>-->
+<!--            <div class="col-md-10">-->
+<!--            <input class="search w-100" placeholder="Search" />-->
+
+<!--            </div>-->
+<!--    </div>-->
+    <div  class="scroll-table">
+        <table class="table-responsive table table-sm table-dark table-striped table-hover table-bordered">
+            <thead>
+            <tr>
+                <th class="sort" scope="col" data-sort="his-no">#</th>
+                <th class="sort" scope="col" data-sort="his-word">word</th>
+                <th class="sort" scope="col" data-sort="his-info">mean</th>
+            </tr>
+            </thead>
+            <tbody class="list">
+            <div>
+                {{ range $k,$v := .h}}
+                <tr>
+                    <td class="his-no" scope="row">{{CountUpRow $k}}</td>
+                    <td class="his-word">
+                        <a class="link-Dark text-light" href="/c?key={{$v.Word}}"> {{$v.Word}}</a>
+                    </td>
+                    <td class="his-info">
+                        <a class="Link-success text-light" href="/c?key={{$v.Word}}"> {{$v.Info}}</a>
+                    </td>
+                </tr>
+                {{end}}
+            </div>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script>
+    var options = {
+        valueNames: ['his-no','his-word','his-info']
+    };
+
+    var userList = new List('users', options);
+</script>
+<!--    </div>-->
+<!--</div>-->
+{{ end }}

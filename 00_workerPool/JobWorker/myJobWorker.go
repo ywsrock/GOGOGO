@@ -10,7 +10,7 @@ import (
 const PoolSize = 10
 const MaxJobs = 20
 
-//task
+// task
 func PrintString(i string) {
 	time.Sleep(time.Second * 1)
 	fmt.Println("実行-->", i)
@@ -34,9 +34,9 @@ type Worker struct {
 
 // Manager Start
 func (d *Dispatcher) start() {
-	//worker 初期化
+	// worker 初期化
 	for _, worker := range d.Workers {
-		//worker 起動
+		// worker 起動
 		worker.start()
 	}
 
@@ -103,4 +103,5 @@ func main() {
 
 	}
 	d.wg.Wait()
+
 }

@@ -1,0 +1,37 @@
+<html>
+
+<body>
+  <h1>my Dic</h1>
+  <div id="ret"></div>
+  <button onclick="getWord();">AAA</button>
+  <p id="h1Query"></p>
+  <p id="desc"></p>
+  <audio class="contentAudio" controls="controls" preload="none">
+    <source src="" type="audio/mp3" media="all">
+  </audio>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function getWord() {
+    const searchParams = new URLSearchParams(window.location.search)
+    let key = searchParams.get('key')
+    axios.get(`https://ejje.weblio.jp/content/${key}`, {
+    }).then(res => {
+      var dom = $.parseHTML(res.data)
+      // console.log($(dom).find('#h1Query').text())
+      $("#h1Query").text($(dom).find('#h1Query').text())
+      // console.log($(dom).find('#summary > div.summaryM.descriptionWrp > p').text().trim())
+      $("#desc").text($(dom).find('#summary > div.summaryM.descriptionWrp > p').text().trim())
+      // console.log($(dom).find('#summary > table.summaryTbl > tbody > tr > td.summaryC > table > tbody > tr:nth-child(1) > td:nth-child(1) > i > audio > source').attr("src"))
+      let url = $(dom).find('#summary > table.summaryTbl > tbody > tr > td.summaryC > table > tbody > tr:nth-child(1) > td:nth-child(1) > i > audio > source')
+      url = $(url).attr("src")
+      $("audio > source").attr("src", url)
+      $("audio")[0].load()
+
+    })
+  }
+</script>
+
+</html>
