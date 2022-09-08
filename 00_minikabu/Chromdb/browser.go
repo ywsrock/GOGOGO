@@ -57,6 +57,11 @@ func GetHtmlValue(mes *task.Message) {
 		es := strings.TrimSpace(td[0])
 		// unify the array
 		if es == "日経225オプション" || strings.Contains(es, "権利行使価格 ") {
+			if len(td) < 7 {
+				for i := len(td); i <= 7; i++ {
+					td = append(td, "")
+				}
+			}
 			td[1] = fmt.Sprintf("%s %s", td[1], td[2])
 			td[2] = td[3]
 			td[3] = td[4]
