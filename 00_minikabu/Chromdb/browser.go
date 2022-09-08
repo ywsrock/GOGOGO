@@ -94,7 +94,7 @@ func GetChild(nodes []*cdp.Node, bs *strings.Builder) {
 
 func printTable(data [][]string) {
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"IndexName", "現在値", "変動率", "始値", "高値", "安値"})
+	table.SetHeader([]string{"先物名", "現在値", "変動率", "始値", "高値", "安値"})
 	for _, v := range data {
 		table.Append(v)
 	}
