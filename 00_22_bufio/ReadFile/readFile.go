@@ -10,16 +10,20 @@ import (
 
 func readFile(fileName string) *os.File {
 	f, err := os.Open("test.txt")
-
 	if err != nil {
 		log.Fatal(err)
 	}
+	// 長いファイル処理とき、Buffer足りない可能せいがあります
 	scanner := bufio.NewScanner(f)
-	// 単語単位で読む
+	// 単語単位で読む(default line)
 	scanner.Split(bufio.ScanWords)
 	for scanner.Scan() {
 		fmt.Println(scanner.Text())
 	}
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+
 	return f
 }
 
@@ -33,6 +37,7 @@ func writeFile(fileName string) {
 		if err != nil {
 			fmt.Println(err)
 		}
+		// buffer 内容書き込み
 		bw.Flush()
 		fmt.Println("------999")
 	}
@@ -46,7 +51,6 @@ func readFromString(str string) {
 	for scanner.Scan() {
 		fmt.Println(scanner.Text())
 	}
-
 }
 
 func main() {
@@ -63,5 +67,4 @@ func main() {
 	`
 	readFromString(str)
 	writeFile("out.txt")
-
 }

@@ -10,14 +10,15 @@ import (
 )
 
 func main() {
-	//get処理
+	// get処理
 	res, err := http.Get("https://www.google.com")
 	if err != nil {
 		log.Fatal(err)
 	}
 	bs, _ := ioutil.ReadAll(res.Body)
 	fmt.Println(string(bs))
-	//POST
+
+	// POST
 	v := url.Values{}
 	v.Add("key", "123")
 	resP, err1 := http.PostForm("https://www.google.com", v)

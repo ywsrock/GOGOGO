@@ -7,6 +7,7 @@ import (
 )
 
 func writeFile(fname string) {
+	// Deprecated  os.WriteFile()　に切り替え
 	ioutil.WriteFile(fname, []byte("1234"), 666)
 }
 func readFile(fname string) {
