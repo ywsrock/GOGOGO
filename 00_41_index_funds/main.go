@@ -1,15 +1,30 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"minikabu/Chromdb"
 	. "minikabu/Task"
+	"strings"
 )
 
 func main() {
-	mes1 := MakeMessageFutureIndex()
-	Chromdb.GetHtmlValue(mes1)
-	Chromdb.GetMini("https://finance.yahoo.co.jp/indices/list")
+
+	var flg string
+
+	flag.StringVar(&flg, "d", "2", "表示内容 1:News 2:Index 3 : ALL")
+	flag.Parse()
+
+	f := strings.TrimSpace(flg)
+	if f == "1" || f == "3" {
+		Url := `https://jp.reuters.com/news/archive/special20`
+		Chromdb.GetNews(Url)
+	}
+	if f == "2" || f == "3" {
+		mes1 := MakeMessageFutureIndex()
+		Chromdb.GetHtmlValue(mes1)
+		Chromdb.GetMini("https://finance.yahoo.co.jp/indices/list")
+	}
 }
 
 func MakeMessage() *Message {
