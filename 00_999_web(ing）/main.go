@@ -20,7 +20,7 @@ func init() {
 
 func main() {
 	r := gin.Default()
-	r.SetFuncMap(template.FuncMap{"CountUpRow": handler.CountRowCount, "json2String": handler.String2Slice})
+	r.SetFuncMap(template.FuncMap{"CountUpRow": handler.CountRowCount, "json2String": handler.String2Slice, "dateFormat": handler.Dateformat})
 	r.LoadHTMLGlob("templates/*.html")
 	r.GET("/", handler.RouterHandler)
 	r.GET("/c", handler.RouterHandler)

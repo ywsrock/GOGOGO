@@ -1,0 +1,19 @@
+.p1_Card {
+    /* max-width: 400 !important; */
+    /* max-width: 400px; */
+    max-width: 550px;
+    /* max-height: 350px; */
+    background-color: white !important;
+    background: rgba(248, 249, 250, 0.8) !important;
+    color: white;
+}
+
+@media screen and (max-width: 599px) {
+    .p1_Card {
+        max-width: 500px;
+        background-color: white !important;
+        /* background: rgba(1, 2, 3, 0.8) !important; */
+        background: rgba(248, 249, 250, 0.8) !important;
+        color: azure;
+    }
+}

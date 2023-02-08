@@ -1,0 +1,411 @@
+openapi: 3.0.0
+info:
+  title: 個人ページ
+  description: 個人サイト
+  contact:
+    email: ywsrock@gmail.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8003'
+    description: SwaggerHub API Auto Mocking
+tags:
+  - name: admins
+    description: Secured Admin-only calls
+  - name: developers
+    description: Operations available to regular developers
+paths:
+  /home:
+    get:
+      summary: Home
+      responses:
+        '200':
+          description: Home Data 表示
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Home'
+              examples:
+                example-1:
+                  value:
+                    id: '1'
+                    name: Home
+                    results:
+                      - id: '1'
+                        title: XXXシステム
+                        subTitle: subXXXシステム
+                        avatar: 'http://localhost:8080'
+                        startDate: '2022-11-12'
+                        endDate: '2022-11-13'
+                        description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+                      - id: '2'
+                        title: XXXシステム
+                        subTitle: subXXXシステム
+                        avatar: 'http://localhost:8080'
+                        startDate: '2022-11-12'
+                        endDate: '2022-11-13'
+                        description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+                      - id: '3'
+                        title: XXXシステム
+                        subTitle: subXXXシステム
+                        avatar: 'http://localhost:8080'
+                        startDate: '2022-11-12'
+                        endDate: '2022-11-13'
+                        description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+                      - id: '4'
+                        title: XXXシステム
+                        subTitle: subXXXシステム
+                        avatar: 'http://localhost:8080'
+                        startDate: '2022-11-12'
+                        endDate: '2022-11-13'
+                        description: また特定のurl以下を呼ばなければならないので、文字列に特定のurlを含むかどうかを条件として、含まないようであれば、また関数を回してあげることにしました。 以上のような感じでやってはみたのですが、量が多すぎるため、クロールしきれないです、たぶん書き方によってはどうにかなるとはおもうのですが、、、助言などしてもらえれば助かります。
+                      - id: '5'
+                        title: XXXシステム
+                        subTitle: subXXXシステム
+                        avatar: 'http://localhost:8080'
+                        startDate: '2022-11-12'
+                        endDate: '2022-11-13'
+                        description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+                      - id: '6'
+                        title: XXXシステム
+                        subTitle: subXXXシステム
+                        avatar: 'http://localhost:8080'
+                        startDate: '2022-11-12'
+                        endDate: '2022-11-13'
+                        description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+        '201':
+          description: Created
+        '400':
+          description: Bad request
+      operationId: get-home
+      description: Home画面初期表示
+      parameters: []
+      x-internal: false
+  /about:
+    get:
+      summary: About
+      tags: []
+      responses:
+        '200':
+          description: 処理正常終了
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/About'
+              examples:
+                Example 1:
+                  value:
+                    id: '2'
+                    name: about
+                    results:
+                      - id: self-introduction
+                        title: 自分紹介
+                        content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+                      - id: work-history
+                        title: 職歴
+                        content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+                      - id: self-history
+                        title: 履歴
+                        content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+                      - id: self-skill
+                        title: スキル
+                        content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+      operationId: get-about
+      description: About画面表示
+  /contents:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentsList'
+              examples:
+                Example 1:
+                  value:
+                    - date: '20210101'
+                      id: '1'
+                      Contents:
+                        - id: 1
+                          title: Present continuous
+                          subTitle: 'middle of doing it; I''ve started doing it and I haven''t finishedmiddle of doing it; I''ve started doing it and I haven''t finishedmiddle of doing it; I''ve started doing it and I haven''t finishedmiddle of doing it; I''ve started doing it and I haven''t finishedmiddle of doing it; '
+                          url: 00_memo.md
+                        - id: 2
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                    - date: '20220101'
+                      id: '2'
+                      Contents:
+                        - id: 3
+                          title: Present continuous
+                          subTitle: middlemiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finished of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 4
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                    - date: '20220102'
+                      id: '3'
+                      Contents:
+                        - id: 5
+                          title: Present continuous
+                          subTitle: middle of doing it; I've startmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finisheded doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 6
+                          title: Present contmiddle of doing it; I've started doing it and I haven't finishedmiddle of doing it; I've started doing it and I haven't finishedinuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 7
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 8
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 9
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 10
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 11
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+                        - id: 12
+                          title: Present continuous
+                          subTitle: middle of doing it; I've started doing it and I haven't finished
+                          url: 00_memo.md
+      operationId: get-contents
+      description: 記事内容表示
+    parameters: []
+components:
+  schemas:
+    Home:
+      title: Home
+      x-stoplight:
+        id: rkrbji6tzfcfs
+      type: object
+      x-examples:
+        HomeData:
+          id: '1'
+          name: Home
+          results:
+            - id: '1'
+              title: XXXシステム
+              subTitle: subXXXシステム
+              avatar: 'http://localhost:8080'
+              startDate: '2022-11-12'
+              endDate: '2022-11-13'
+              description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+            - id: '2'
+              title: XXXシステム
+              subTitle: subXXXシステム
+              avatar: 'http://localhost:8080'
+              startDate: '2022-11-12'
+              endDate: '2022-11-13'
+              description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+            - id: '3'
+              title: XXXシステム
+              subTitle: subXXXシステム
+              avatar: 'http://localhost:8080'
+              startDate: '2022-11-12'
+              endDate: '2022-11-13'
+              description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+            - id: '4'
+              title: XXXシステム
+              subTitle: subXXXシステム
+              avatar: 'http://localhost:8080'
+              startDate: '2022-11-12'
+              endDate: '2022-11-13'
+              description: また特定のurl以下を呼ばなければならないので、文字列に特定のurlを含むかどうかを条件として、含まないようであれば、また関数を回してあげることにしました。 以上のような感じでやってはみたのですが、量が多すぎるため、クロールしきれないです、たぶん書き方によってはどうにかなるとはおもうのですが、、、助言などしてもらえれば助かります。
+            - id: '5'
+              title: XXXシステム
+              subTitle: subXXXシステム
+              avatar: 'http://localhost:8080'
+              startDate: '2022-11-12'
+              endDate: '2022-11-13'
+              description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+            - id: '6'
+              title: XXXシステム
+              subTitle: subXXXシステム
+              avatar: 'http://localhost:8080'
+              startDate: '2022-11-12'
+              endDate: '2022-11-13'
+              description: このガイドでは、使用して独自の互換性のあるモデルを作成する方法を説明しようとVOSKを使用して、カルディ。私はカルディプロジェクトや音声認識とディープラーニングの背後にある技術全般の専門家ではないと述べていますが、モデルの作成が困難だったため、これについて少しガイドを共有したいと思いました。また、このガイドの英語レベルが悪くなることをお詫び申し上げます。
+      description: Home Model
+      x-internal: true
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        informations:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              title:
+                type: string
+              subTitle:
+                type: string
+              avatar:
+                type: string
+              startDate:
+                type: string
+              endDate:
+                type: string
+              description:
+                type: string
+              '':
+                type: string
+    About:
+      title: About
+      x-stoplight:
+        id: 301f07i2fnsts
+      type: object
+      x-examples:
+        Example 1:
+          id: '2'
+          name: about
+          results:
+            - id: self-introduction
+              title: 自分紹介
+              content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+              // fontSize: ''
+            - id: work-history
+              title: 職歴
+              content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+              // fontSize: ''
+            - id: self-history
+              title: 履歴
+              content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+              // fontSize: ''
+            - id: self-skill
+              title: スキル
+              content: これは段落です。「テキストを編集」をクリックするか、ここをダブルクリックしてテキストを追加・編集してください。また、文字の色やフォントを変更することもできます。サイト訪問者にあなたのサイトやあなた自身について紹介する文章を書いてみましょう。
+              // fontSize: ''
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              title:
+                type: string
+              content:
+                type: string
+    Content:
+      title: Content
+      x-stoplight:
+        id: eolza5fbndh2a
+      type: object
+      x-examples: {}
+      properties:
+        id:
+          type: integer
+        subTitle:
+          type: string
+        title:
+          type: string
+        url:
+          type: string
+    Contents:
+      title: Contents
+      x-stoplight:
+        id: hgg76lixww8ka
+      type: object
+      x-examples:
+        Example 1:
+          - id: 1
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+          - id: 2
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+          - id: 3
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+          - id: 4
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+          - id: 5
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+          - id: 6
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+          - id: 7
+            title: Present continuous
+            subTitle: middle of doing it; I've started doing it and I haven't finished
+            url: 00_memo.md
+        Example 2:
+          date: '20220101'
+          id: '1'
+          Contents:
+            - id: 0
+              subTitle: string
+              title: string
+              url: string
+      properties:
+        date:
+          type: string
+        id:
+          type: string
+        Contents:
+          type: array
+          items:
+            $ref: '#/components/schemas/Content'
+    ContentsList:
+      title: ContentsList
+      x-stoplight:
+        id: j9idm50jahd6e
+      type: array
+      items:
+        $ref: '#/components/schemas/Contents'
+      x-examples:
+        Example 1:
+          - date: '20210101'
+            Contents:
+              - id: 1
+                title: Present continuous
+                subTitle: middle of doing it; I've started doing it and I haven't finished
+                url: 00_memo.md
+              - id: 2
+                title: Present continuous
+                subTitle: middle of doing it; I've started doing it and I haven't finished
+                url: 00_memo.md
+          - date: '20220101'
+            Contents:
+              - id: 3
+                title: Present continuous
+                subTitle: middle of doing it; I've started doing it and I haven't finished
+                url: 00_memo.md
+              - id: 4
+                title: Present continuous
+                subTitle: middle of doing it; I've started doing it and I haven't finished
+                url: 00_memo.md
+  securitySchemes: {}

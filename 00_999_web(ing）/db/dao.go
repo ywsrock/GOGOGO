@@ -54,9 +54,27 @@ FindAll: get All word Info
 */
 func FindAll() []model.WordInfo {
 	var wordinfos []model.WordInfo
-	ret := db.Order("id desc").Find(&wordinfos)
+	ret := db.Order("id desc").Limit(10000).Find(&wordinfos)
 	if ret.Error != nil {
 		return nil
 	}
 	return wordinfos
+}
+
+/*
+FindDayCount
+*/
+func FindDayCount() []map[string]interface{} {
+	var results []map[string]interface{}
+	db.Raw("select date_format(created_at,\"%Y-%m-%d\") as day ,count(1) as dayCount from word_infos group by date_format(created_at,\"%Y-%m-%d\") order by day desc;").Scan(&results)
+	return results
+}
+
+/*
+FindDayCount
+*/
+func FindMonthCiybt() []map[string]interface{} {
+	var results []map[string]interface{}
+	db.Raw("select date_format(created_at,\"%Y-%m\") as month,count(1) as monthCount from word_infos group by date_format(created_at,\"%Y-%m\") order by month desc;").Scan(&results)
+	return results
 }

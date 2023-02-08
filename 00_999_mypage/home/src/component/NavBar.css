@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem 6rem;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.logo-links {
+    margin-right: 2rem;
+}
+
+.logo-links img {
+    width: 100px;
+    height: 40px;
+}
+
+.warpper-links {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.warpper-links p a,
+.warpper-menu p a,
+.nav-button p {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.warpper-menu p a {
+    color: white;
+}
+
+.nav-button button,
+.warpper-menu button {
+    color: white;
+    background-color: goldenrod;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.warpper-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: grey;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 6 rgb(0, 0, 0.2);
+}
+
+.warpper-menu p a {
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+.warpper-menu-button {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .warpper-links {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        padding: 2rem 4rem;
+    }
+
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .warpper-menu {
+        top: 20px;
+    }
+
+    .warpper-menu-button {
+        display: block;
+    }
+
+}

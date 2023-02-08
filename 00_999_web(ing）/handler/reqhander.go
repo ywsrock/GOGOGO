@@ -11,6 +11,7 @@ import (
 	"pageredder/db"
 	"pageredder/model"
 	"strings"
+	"time"
 )
 
 // var history = make(map[int]*model.WordInfo)
@@ -21,12 +22,16 @@ func RouterHandler(ctx *gin.Context) {
 	ws := make([]*model.WordInfo, 0)
 	// 検索履歴
 	history := db.FindAll()
+	dc := db.FindDayCount()
+	dm := db.FindMonthCiybt()
 	// 検索キーワード
 	q := ctx.DefaultQuery("key", " ")
 	if strings.TrimSpace(q) == "" {
 		ctx.HTML(http.StatusOK, "index.html", gin.H{
-			"w": model.WordInfo{Word: "", Info: "Have a Nice Day!", InfosJp: "", VoiceLink: ""},
-			"h": history,
+			"w":  model.WordInfo{Word: "", Info: "Have a Nice Day!", InfosJp: "", VoiceLink: ""},
+			"h":  history,
+			"dc": dc,
+			"dm": dm,
 		})
 		return
 	}
@@ -45,13 +50,19 @@ func RouterHandler(ctx *gin.Context) {
 
 	// 全部検索履歴
 	history = db.FindAll()
+	dc1 := db.FindDayCount()
+	dm1 := db.FindMonthCiybt()
+
 	ctx.HTML(http.StatusOK, "index.html", gin.H{
-		"w": ws[0],
-		"h": history,
+		"w":  ws[0],
+		"h":  history,
+		"dc": dc1,
+		"dm": dm1,
 	})
 }
 
-/**
+/*
+*
 From dictionary Weblio
 */
 func ReqWeblio(q string, ws []*model.WordInfo) []*model.WordInfo {
@@ -73,7 +84,8 @@ func ReqGoo(q string) string {
 	return w
 }
 
-/**
+/*
+*
 Send The HTTP Request
 */
 func SendRequest(gurl string, word string) *goquery.Document {
@@ -99,7 +111,8 @@ func SendRequest(gurl string, word string) *goquery.Document {
 	return doc
 }
 
-/**
+/*
+*
 
 Goquery from weblio
 */
@@ -144,7 +157,8 @@ func GetWeblioRes(doc *goquery.Document) *model.WordInfo {
 	return w
 }
 
-/**
+/*
+*
 Goquery from Goo
 */
 func GetGooMeansList(doc *goquery.Document) string {
@@ -200,4 +214,24 @@ func CountRowCount(i int) int {
 func String2Slice(str string) []string {
 	s := strings.Split(str, "\n")
 	return s
+}
+
+func Dateformat(srcDate time.Time) string {
+	// t, err := time.Parse("2006-01-02 15:04:05", srcDate)
+	t := srcDate.Format("2006-01-02")
+	// if err != nil {
+	// 	return ""
+	// }
+	return t
+}
+
+// day query count
+func GetDayCount() int {
+	return 0
+}
+
+// Month query count
+func getMonthCount() int {
+
+	return 0
 }
