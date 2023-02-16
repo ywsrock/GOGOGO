@@ -61,6 +61,49 @@ func RouterHandler(ctx *gin.Context) {
 	})
 }
 
+func RouterHandlerForJson(ctx *gin.Context) {
+	ws := make([]*model.WordInfo, 0)
+	// 検索履歴
+	history := db.FindAll()
+	dc := db.FindDayCount()
+	dm := db.FindMonthCiybt()
+	// 検索キーワード
+	q := ctx.DefaultQuery("key", " ")
+	if strings.TrimSpace(q) == "" {
+		ctx.JSON(http.StatusOK, gin.H{
+			"w":  model.WordInfo{Word: "", Info: "Have a Nice Day!", InfosJp: "", VoiceLink: ""},
+			"h":  history,
+			"dc": dc,
+			"dm": dm,
+		})
+		return
+	}
+
+	// 検索履歴からキーワードを検察
+	w, b := db.FindFirst(q)
+	if b == true {
+		ws = append(ws, w)
+	} else {
+		// dic weblio
+		ws = ReqWeblio(q, ws)
+		ws[0].InfosJp = ReqGoo(q)
+		ws[0].InfosEn = ""
+		db.SaveWord(ws[0])
+	}
+
+	// 全部検索履歴
+	history = db.FindAll()
+	dc1 := db.FindDayCount()
+	dm1 := db.FindMonthCiybt()
+
+	ctx.JSON(http.StatusOK, gin.H{
+		"w":  ws[0],
+		"h":  history,
+		"dc": dc1,
+		"dm": dm1,
+	})
+}
+
 /*
 *
 From dictionary Weblio

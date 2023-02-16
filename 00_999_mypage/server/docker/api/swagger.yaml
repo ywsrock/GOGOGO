@@ -188,6 +188,780 @@ paths:
       operationId: get-contents
       description: 記事内容表示
     parameters: []
+  /tool/dic/v1/c:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: 処理正常終了
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dictionary'
+              examples:
+                Example 1:
+                  value:
+                    dc:
+                      - day: '2023-02-01'
+                        dayCount: 39
+                      - day: '2023-01-31'
+                        dayCount: 1
+                      - day: '2023-01-30'
+                        dayCount: 15
+                      - day: '2023-01-29'
+                        dayCount: 4
+                    dm:
+                      - month: 2023-02
+                        monthCount: 39
+                      - month: 2023-01
+                        monthCount: 189
+                      - month: 2022-11
+                        monthCount: 5
+                      - month: 2022-10
+                        monthCount: 131
+                      - month: 2022-09
+                        monthCount: 5
+                      - month: 2022-08
+                        monthCount: 395
+                      - month: 2022-07
+                        monthCount: 333
+                      - month: 2022-06
+                        monthCount: 230
+                      - month: 2022-05
+                        monthCount: 142
+                    h:
+                      - ID: 1478
+                        CreatedAt: '2023-02-01T23:23:00+09:00'
+                        UpdatedAt: '2023-02-01T23:23:00+09:00'
+                        DeletedAt: ''
+                        Word: barbaric
+                        Syllable: bar・bar・ic
+                        PhoneticSymbols: '/bɑɚbˈærɪk(米国英語), bɑ:ˈrbærɪk(英国英語)/'
+                        Info: 野蛮人の(ような)、洗練されていない、粗野な、残忍な
+                        InfosJp: |
+                          1 野蛮な，原始的な，未開人の（ような）；残忍な
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E178D06_E-E17BEA4.mp3'
+                        Memo: ''
+                      - ID: 1477
+                        CreatedAt: '2023-02-01T23:22:15+09:00'
+                        UpdatedAt: '2023-02-01T23:22:15+09:00'
+                        DeletedAt: ''
+                        Word: banter
+                        Syllable: ban・ter
+                        PhoneticSymbols: '/bˈænṭɚ(米国英語), ˈbæntɜ:(英国英語)/'
+                        Info: (悪意のない才気のある)冗談、ひやかし、からかい
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E16C050_E-E16E118.mp3'
+                        Memo: ''
+                      - ID: 1476
+                        CreatedAt: '2023-02-01T23:21:52+09:00'
+                        UpdatedAt: '2023-02-01T23:21:52+09:00'
+                        DeletedAt: ''
+                        Word: banish
+                        Syllable: ban・ish
+                        PhoneticSymbols: /bˈænɪʃ(米国英語)/
+                        Info: (罰として国外へ)追放する、追放する、(…に)追放する、追い払う、払いのける
+                        InfosJp: |
+                          1 〈人を〉（国から）追放する，流刑にする，（…から/…に）追い出す≪from，out of/to≫
+
+                          banish a person for high treason大逆罪で人を放逐する
+                          be banished to an island島流しになる
+
+                          banish a person for high treason
+                          大逆罪で人を放逐する
+                          be banished to an island
+                          島流しになる
+                          2 〈恐怖・心配などを〉（心から）払いのける≪from≫
+
+                          banish sorrow from one's memory悲しみを思い出すまいとつとめる
+
+                          banish sorrow from one's memory
+                          悲しみを思い出すまいとつとめる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B85EE5E_E-B861A10.mp3'
+                        Memo: ''
+                      - ID: 1475
+                        CreatedAt: '2023-02-01T23:17:26+09:00'
+                        UpdatedAt: '2023-02-01T23:17:26+09:00'
+                        DeletedAt: ''
+                        Word: 飛行機
+                        Syllable: ''
+                        PhoneticSymbols: ''
+                        Info: ''
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: ''
+                        Memo: ''
+                      - ID: 1474
+                        CreatedAt: '2023-02-01T23:01:47+09:00'
+                        UpdatedAt: '2023-02-01T23:01:47+09:00'
+                        DeletedAt: ''
+                        Word: cannibal
+                        Syllable: can・ni・bal
+                        PhoneticSymbols: /kˈænəb(ə)l(米国英語)/
+                        Info: 人肉を食べる人、共食いする動物
+                        InfosJp: |
+                          1 人食い人種［部族］；食人鬼
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E71AE58_E-E71D1B2.mp3'
+                        Memo: ''
+                      - ID: 1473
+                        CreatedAt: '2023-02-01T23:00:35+09:00'
+                        UpdatedAt: '2023-02-01T23:00:35+09:00'
+                        DeletedAt: ''
+                        Word: baleful
+                        Syllable: bale・ful
+                        PhoneticSymbols: '/béɪlf(ə)l(米国英語), ˈbeɪlfʌl(英国英語)/'
+                        Info: 害を与える、有害な、悪意のある、不吉な
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/baleful.mp3'
+                        Memo: ''
+                      - ID: 1472
+                        CreatedAt: '2023-02-01T23:00:02+09:00'
+                        UpdatedAt: '2023-02-01T23:00:02+09:00'
+                        DeletedAt: ''
+                        Word: bane
+                        Syllable: bane
+                        PhoneticSymbols: '/béɪn(米国英語), beɪn(英国英語)/'
+                        Info: 破滅のもと
+                        InfosJp: |
+                          1 〔主に複合語で〕猛毒
+
+                          ratsbaneネコいらず
+
+                          ratsbane
+                          ネコいらず
+                          2 〔the ～〕破滅のもと；悩みの種
+
+                          be the bane of a person's existence [life]人の命取りになる
+
+                          be the bane of a person's existence [life]
+                          人の命取りになる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E15EF84_E-E1615CE.mp3'
+                        Memo: ''
+                      - ID: 1471
+                        CreatedAt: '2023-02-01T22:58:38+09:00'
+                        UpdatedAt: '2023-02-01T22:58:38+09:00'
+                        DeletedAt: ''
+                        Word: baffle
+                        Syllable: baf・fle
+                        PhoneticSymbols: /bˈæfl(米国英語)/
+                        Info: 困惑させる、当惑させる、まごつかせる、挫折させる、くじく、失敗させる
+                        InfosJp: |
+                          1 他〈人を〉まごつかせる，当惑させる；自〈人・動物が〉もがく，あがく
+
+                          The sudden question baffled me.突然の質問にまごついた
+
+                          The sudden question baffled me.
+                          突然の質問にまごついた
+                          2 他〔しばしば受身形で〕〈望み・計画などを〉くじく；〈人を〉（企てなどで）挫折ざせつさせる≪in≫
+
+                          He was baffled in his plan.彼の計画はだめになった
+
+                          He was baffled in his plan.
+                          彼の計画はだめになった
+                          3 他〈光・音・液体などの〉流れを止める［そらす］；((主に英))〈風・天候などが〉〈進路などを〉妨げる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B84130C_E-B84387E.mp3'
+                        Memo: ''
+                      - ID: 1470
+                        CreatedAt: '2023-02-01T22:57:52+09:00'
+                        UpdatedAt: '2023-02-01T22:57:52+09:00'
+                        DeletedAt: ''
+                        Word: blissful
+                        Syllable: bliss・ful
+                        PhoneticSymbols: /blísf(ə)l(米国英語)/
+                        Info: 至福の、この上なく幸せな、楽しい
+                        InfosJp: |
+                          blissful ignorance
+                          知らぬが仏
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E3A979C_E-E3ABE94.mp3'
+                        Memo: ''
+                      - ID: 1469
+                        CreatedAt: '2023-02-01T22:57:32+09:00'
+                        UpdatedAt: '2023-02-01T22:57:32+09:00'
+                        DeletedAt: ''
+                        Word: blackout
+                        Syllable: bláck・òut
+                        PhoneticSymbols: ''
+                        Info: 停電、消灯、灯火管制、報道管制、舞台暗転、瞬間的な失神、一時的な記憶喪失
+                        InfosJp: |
+                          1 停電；（空襲などに備えた）燈火管制；〔通例～s〕((英))（燈火管制のための）暗幕
+                          1a （舞台の）消灯，暗転；暗転で終わるスキット
+                          2 （一時的な）記憶［意識，視覚］喪失，失神
+                          3 （スト・停電による）報道機関の機能停止；（政府・警察による）報道管制，情報統制；（入場券売り上げ確保のための故意の）試合の中継放送規制［禁止］
+                          4 （優待の）適用除外
+                          5 ブラックアウト（◇通信障害［途絶］）
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/blackout.mp3'
+                        Memo: ''
+                    w:
+                      ID: 1460
+                      CreatedAt: '2023-02-01T21:30:50+09:00'
+                      UpdatedAt: '2023-02-01T21:30:50+09:00'
+                      DeletedAt: ''
+                      Word: celebrate
+                      Syllable: cel・e・brate
+                      PhoneticSymbols: '/séləbrèɪt(米国英語), ˈsɛl.ɪ.bɹeɪt(英国英語)/'
+                      Info: celebrateの意味・対訳は、挙行する、(式を挙げて)祝う、ほめたたえる、ほめて世に知らせる、などです。
+                      InfosJp: |
+                        1 他〈記念日・行事などを〉（…で）祝う，祝賀［記念］する；お祝いする；自（…で）祝う≪with≫
+
+                        celebrate the 50th anniversary５０周年を祝う
+                        celebrate a person's birthday人の誕生日を祝う
+                        celebrate Christmas [New Year]クリスマス［新年］を祝う
+                        They celebrated the victory with champagne.勝利をシャンパンで祝った
+
+                        celebrate the 50th anniversary
+                        ５０周年を祝う
+                        celebrate a person's birthday
+                        人の誕生日を祝う
+                        celebrate Christmas [New Year]
+                        クリスマス［新年］を祝う
+                        They celebrated the victory with champagne.
+                        勝利をシャンパンで祝った
+                        1a 自((略式))祝杯をあげる；お祭り騒ぎをする，浮かれ騒ぐ
+                        2 他自（祝典・儀式などを）挙行する；（ミサなどの宗教儀式を）執り行う
+                        3 他((形式))〈人・勲功などを〉（…として/…で）ほめたたえる，賞賛［賛美］する≪as/for≫；…を世に喧伝けんでんする
+
+                        celebrate the life and work of ...…の生涯と功績をたたえる
+
+                        celebrate the life and work of ...
+                        …の生涯と功績をたたえる
+                      InfosEn: ''
+                      VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-9E53942_E-9E563E8.mp3'
+                      Memo: ''
+      operationId: get-tools-dic
+      description: 辞書
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: key
+          description: 検索word
+    parameters: []
+  /tool/dic/v1/c/historyAll:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: 処理正常終了
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dictionary'
+              examples:
+                Example 1:
+                  value:
+                    dc:
+                      - day: '2023-02-01'
+                        dayCount: 39
+                      - day: '2023-01-31'
+                        dayCount: 1
+                      - day: '2023-01-30'
+                        dayCount: 15
+                      - day: '2023-01-29'
+                        dayCount: 4
+                    dm:
+                      - month: 2023-02
+                        monthCount: 39
+                      - month: 2023-01
+                        monthCount: 189
+                      - month: 2022-11
+                        monthCount: 5
+                      - month: 2022-10
+                        monthCount: 131
+                      - month: 2022-09
+                        monthCount: 5
+                      - month: 2022-08
+                        monthCount: 395
+                      - month: 2022-07
+                        monthCount: 333
+                      - month: 2022-06
+                        monthCount: 230
+                      - month: 2022-05
+                        monthCount: 142
+                    h:
+                      - ID: 1478
+                        CreatedAt: '2023-02-01T23:23:00+09:00'
+                        UpdatedAt: '2023-02-01T23:23:00+09:00'
+                        DeletedAt: ''
+                        Word: barbaric
+                        Syllable: bar・bar・ic
+                        PhoneticSymbols: '/bɑɚbˈærɪk(米国英語), bɑ:ˈrbærɪk(英国英語)/'
+                        Info: 野蛮人の(ような)、洗練されていない、粗野な、残忍な
+                        InfosJp: |
+                          1 野蛮な，原始的な，未開人の（ような）；残忍な
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E178D06_E-E17BEA4.mp3'
+                        Memo: ''
+                      - ID: 1477
+                        CreatedAt: '2023-02-01T23:22:15+09:00'
+                        UpdatedAt: '2023-02-01T23:22:15+09:00'
+                        DeletedAt: ''
+                        Word: banter
+                        Syllable: ban・ter
+                        PhoneticSymbols: '/bˈænṭɚ(米国英語), ˈbæntɜ:(英国英語)/'
+                        Info: (悪意のない才気のある)冗談、ひやかし、からかい
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E16C050_E-E16E118.mp3'
+                        Memo: ''
+                      - ID: 1476
+                        CreatedAt: '2023-02-01T23:21:52+09:00'
+                        UpdatedAt: '2023-02-01T23:21:52+09:00'
+                        DeletedAt: ''
+                        Word: banish
+                        Syllable: ban・ish
+                        PhoneticSymbols: /bˈænɪʃ(米国英語)/
+                        Info: (罰として国外へ)追放する、追放する、(…に)追放する、追い払う、払いのける
+                        InfosJp: |
+                          1 〈人を〉（国から）追放する，流刑にする，（…から/…に）追い出す≪from，out of/to≫
+
+                          banish a person for high treason大逆罪で人を放逐する
+                          be banished to an island島流しになる
+
+                          banish a person for high treason
+                          大逆罪で人を放逐する
+                          be banished to an island
+                          島流しになる
+                          2 〈恐怖・心配などを〉（心から）払いのける≪from≫
+
+                          banish sorrow from one's memory悲しみを思い出すまいとつとめる
+
+                          banish sorrow from one's memory
+                          悲しみを思い出すまいとつとめる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B85EE5E_E-B861A10.mp3'
+                        Memo: ''
+                      - ID: 1475
+                        CreatedAt: '2023-02-01T23:17:26+09:00'
+                        UpdatedAt: '2023-02-01T23:17:26+09:00'
+                        DeletedAt: ''
+                        Word: 飛行機
+                        Syllable: ''
+                        PhoneticSymbols: ''
+                        Info: ''
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: ''
+                        Memo: ''
+                      - ID: 1474
+                        CreatedAt: '2023-02-01T23:01:47+09:00'
+                        UpdatedAt: '2023-02-01T23:01:47+09:00'
+                        DeletedAt: ''
+                        Word: cannibal
+                        Syllable: can・ni・bal
+                        PhoneticSymbols: /kˈænəb(ə)l(米国英語)/
+                        Info: 人肉を食べる人、共食いする動物
+                        InfosJp: |
+                          1 人食い人種［部族］；食人鬼
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E71AE58_E-E71D1B2.mp3'
+                        Memo: ''
+                      - ID: 1473
+                        CreatedAt: '2023-02-01T23:00:35+09:00'
+                        UpdatedAt: '2023-02-01T23:00:35+09:00'
+                        DeletedAt: ''
+                        Word: baleful
+                        Syllable: bale・ful
+                        PhoneticSymbols: '/béɪlf(ə)l(米国英語), ˈbeɪlfʌl(英国英語)/'
+                        Info: 害を与える、有害な、悪意のある、不吉な
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/baleful.mp3'
+                        Memo: ''
+                      - ID: 1472
+                        CreatedAt: '2023-02-01T23:00:02+09:00'
+                        UpdatedAt: '2023-02-01T23:00:02+09:00'
+                        DeletedAt: ''
+                        Word: bane
+                        Syllable: bane
+                        PhoneticSymbols: '/béɪn(米国英語), beɪn(英国英語)/'
+                        Info: 破滅のもと
+                        InfosJp: |
+                          1 〔主に複合語で〕猛毒
+
+                          ratsbaneネコいらず
+
+                          ratsbane
+                          ネコいらず
+                          2 〔the ～〕破滅のもと；悩みの種
+
+                          be the bane of a person's existence [life]人の命取りになる
+
+                          be the bane of a person's existence [life]
+                          人の命取りになる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E15EF84_E-E1615CE.mp3'
+                        Memo: ''
+                      - ID: 1471
+                        CreatedAt: '2023-02-01T22:58:38+09:00'
+                        UpdatedAt: '2023-02-01T22:58:38+09:00'
+                        DeletedAt: ''
+                        Word: baffle
+                        Syllable: baf・fle
+                        PhoneticSymbols: /bˈæfl(米国英語)/
+                        Info: 困惑させる、当惑させる、まごつかせる、挫折させる、くじく、失敗させる
+                        InfosJp: |
+                          1 他〈人を〉まごつかせる，当惑させる；自〈人・動物が〉もがく，あがく
+
+                          The sudden question baffled me.突然の質問にまごついた
+
+                          The sudden question baffled me.
+                          突然の質問にまごついた
+                          2 他〔しばしば受身形で〕〈望み・計画などを〉くじく；〈人を〉（企てなどで）挫折ざせつさせる≪in≫
+
+                          He was baffled in his plan.彼の計画はだめになった
+
+                          He was baffled in his plan.
+                          彼の計画はだめになった
+                          3 他〈光・音・液体などの〉流れを止める［そらす］；((主に英))〈風・天候などが〉〈進路などを〉妨げる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B84130C_E-B84387E.mp3'
+                        Memo: ''
+                      - ID: 1470
+                        CreatedAt: '2023-02-01T22:57:52+09:00'
+                        UpdatedAt: '2023-02-01T22:57:52+09:00'
+                        DeletedAt: ''
+                        Word: blissful
+                        Syllable: bliss・ful
+                        PhoneticSymbols: /blísf(ə)l(米国英語)/
+                        Info: 至福の、この上なく幸せな、楽しい
+                        InfosJp: |
+                          blissful ignorance
+                          知らぬが仏
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E3A979C_E-E3ABE94.mp3'
+                        Memo: ''
+                      - ID: 1469
+                        CreatedAt: '2023-02-01T22:57:32+09:00'
+                        UpdatedAt: '2023-02-01T22:57:32+09:00'
+                        DeletedAt: ''
+                        Word: blackout
+                        Syllable: bláck・òut
+                        PhoneticSymbols: ''
+                        Info: 停電、消灯、灯火管制、報道管制、舞台暗転、瞬間的な失神、一時的な記憶喪失
+                        InfosJp: |
+                          1 停電；（空襲などに備えた）燈火管制；〔通例～s〕((英))（燈火管制のための）暗幕
+                          1a （舞台の）消灯，暗転；暗転で終わるスキット
+                          2 （一時的な）記憶［意識，視覚］喪失，失神
+                          3 （スト・停電による）報道機関の機能停止；（政府・警察による）報道管制，情報統制；（入場券売り上げ確保のための故意の）試合の中継放送規制［禁止］
+                          4 （優待の）適用除外
+                          5 ブラックアウト（◇通信障害［途絶］）
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/blackout.mp3'
+                        Memo: ''
+                    w:
+                      ID: 1460
+                      CreatedAt: '2023-02-01T21:30:50+09:00'
+                      UpdatedAt: '2023-02-01T21:30:50+09:00'
+                      DeletedAt: ''
+                      Word: celebrate
+                      Syllable: cel・e・brate
+                      PhoneticSymbols: '/séləbrèɪt(米国英語), ˈsɛl.ɪ.bɹeɪt(英国英語)/'
+                      Info: celebrateの意味・対訳は、挙行する、(式を挙げて)祝う、ほめたたえる、ほめて世に知らせる、などです。
+                      InfosJp: |
+                        1 他〈記念日・行事などを〉（…で）祝う，祝賀［記念］する；お祝いする；自（…で）祝う≪with≫
+
+                        celebrate the 50th anniversary５０周年を祝う
+                        celebrate a person's birthday人の誕生日を祝う
+                        celebrate Christmas [New Year]クリスマス［新年］を祝う
+                        They celebrated the victory with champagne.勝利をシャンパンで祝った
+
+                        celebrate the 50th anniversary
+                        ５０周年を祝う
+                        celebrate a person's birthday
+                        人の誕生日を祝う
+                        celebrate Christmas [New Year]
+                        クリスマス［新年］を祝う
+                        They celebrated the victory with champagne.
+                        勝利をシャンパンで祝った
+                        1a 自((略式))祝杯をあげる；お祭り騒ぎをする，浮かれ騒ぐ
+                        2 他自（祝典・儀式などを）挙行する；（ミサなどの宗教儀式を）執り行う
+                        3 他((形式))〈人・勲功などを〉（…として/…で）ほめたたえる，賞賛［賛美］する≪as/for≫；…を世に喧伝けんでんする
+
+                        celebrate the life and work of ...…の生涯と功績をたたえる
+
+                        celebrate the life and work of ...
+                        …の生涯と功績をたたえる
+                      InfosEn: ''
+                      VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-9E53942_E-9E563E8.mp3'
+                      Memo: ''
+      operationId: get-tools-dic-history
+      description: 辞書
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: key
+          description: 検索word
+    parameters: []
+  /tool/dic/v1/c/sts:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: 処理正常終了
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dictionary'
+              examples:
+                Example 1:
+                  value:
+                    dc:
+                      - day: '2023-02-01'
+                        dayCount: 39
+                      - day: '2023-01-31'
+                        dayCount: 1
+                      - day: '2023-01-30'
+                        dayCount: 15
+                      - day: '2023-01-29'
+                        dayCount: 4
+                    dm:
+                      - month: 2023-02
+                        monthCount: 39
+                      - month: 2023-01
+                        monthCount: 189
+                      - month: 2022-11
+                        monthCount: 5
+                      - month: 2022-10
+                        monthCount: 131
+                      - month: 2022-09
+                        monthCount: 5
+                      - month: 2022-08
+                        monthCount: 395
+                      - month: 2022-07
+                        monthCount: 333
+                      - month: 2022-06
+                        monthCount: 230
+                      - month: 2022-05
+                        monthCount: 142
+                    h:
+                      - ID: 1478
+                        CreatedAt: '2023-02-01T23:23:00+09:00'
+                        UpdatedAt: '2023-02-01T23:23:00+09:00'
+                        DeletedAt: ''
+                        Word: barbaric
+                        Syllable: bar・bar・ic
+                        PhoneticSymbols: '/bɑɚbˈærɪk(米国英語), bɑ:ˈrbærɪk(英国英語)/'
+                        Info: 野蛮人の(ような)、洗練されていない、粗野な、残忍な
+                        InfosJp: |
+                          1 野蛮な，原始的な，未開人の（ような）；残忍な
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E178D06_E-E17BEA4.mp3'
+                        Memo: ''
+                      - ID: 1477
+                        CreatedAt: '2023-02-01T23:22:15+09:00'
+                        UpdatedAt: '2023-02-01T23:22:15+09:00'
+                        DeletedAt: ''
+                        Word: banter
+                        Syllable: ban・ter
+                        PhoneticSymbols: '/bˈænṭɚ(米国英語), ˈbæntɜ:(英国英語)/'
+                        Info: (悪意のない才気のある)冗談、ひやかし、からかい
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E16C050_E-E16E118.mp3'
+                        Memo: ''
+                      - ID: 1476
+                        CreatedAt: '2023-02-01T23:21:52+09:00'
+                        UpdatedAt: '2023-02-01T23:21:52+09:00'
+                        DeletedAt: ''
+                        Word: banish
+                        Syllable: ban・ish
+                        PhoneticSymbols: /bˈænɪʃ(米国英語)/
+                        Info: (罰として国外へ)追放する、追放する、(…に)追放する、追い払う、払いのける
+                        InfosJp: |
+                          1 〈人を〉（国から）追放する，流刑にする，（…から/…に）追い出す≪from，out of/to≫
+
+                          banish a person for high treason大逆罪で人を放逐する
+                          be banished to an island島流しになる
+
+                          banish a person for high treason
+                          大逆罪で人を放逐する
+                          be banished to an island
+                          島流しになる
+                          2 〈恐怖・心配などを〉（心から）払いのける≪from≫
+
+                          banish sorrow from one's memory悲しみを思い出すまいとつとめる
+
+                          banish sorrow from one's memory
+                          悲しみを思い出すまいとつとめる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B85EE5E_E-B861A10.mp3'
+                        Memo: ''
+                      - ID: 1475
+                        CreatedAt: '2023-02-01T23:17:26+09:00'
+                        UpdatedAt: '2023-02-01T23:17:26+09:00'
+                        DeletedAt: ''
+                        Word: 飛行機
+                        Syllable: ''
+                        PhoneticSymbols: ''
+                        Info: ''
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: ''
+                        Memo: ''
+                      - ID: 1474
+                        CreatedAt: '2023-02-01T23:01:47+09:00'
+                        UpdatedAt: '2023-02-01T23:01:47+09:00'
+                        DeletedAt: ''
+                        Word: cannibal
+                        Syllable: can・ni・bal
+                        PhoneticSymbols: /kˈænəb(ə)l(米国英語)/
+                        Info: 人肉を食べる人、共食いする動物
+                        InfosJp: |
+                          1 人食い人種［部族］；食人鬼
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E71AE58_E-E71D1B2.mp3'
+                        Memo: ''
+                      - ID: 1473
+                        CreatedAt: '2023-02-01T23:00:35+09:00'
+                        UpdatedAt: '2023-02-01T23:00:35+09:00'
+                        DeletedAt: ''
+                        Word: baleful
+                        Syllable: bale・ful
+                        PhoneticSymbols: '/béɪlf(ə)l(米国英語), ˈbeɪlfʌl(英国英語)/'
+                        Info: 害を与える、有害な、悪意のある、不吉な
+                        InfosJp: ''
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/baleful.mp3'
+                        Memo: ''
+                      - ID: 1472
+                        CreatedAt: '2023-02-01T23:00:02+09:00'
+                        UpdatedAt: '2023-02-01T23:00:02+09:00'
+                        DeletedAt: ''
+                        Word: bane
+                        Syllable: bane
+                        PhoneticSymbols: '/béɪn(米国英語), beɪn(英国英語)/'
+                        Info: 破滅のもと
+                        InfosJp: |
+                          1 〔主に複合語で〕猛毒
+
+                          ratsbaneネコいらず
+
+                          ratsbane
+                          ネコいらず
+                          2 〔the ～〕破滅のもと；悩みの種
+
+                          be the bane of a person's existence [life]人の命取りになる
+
+                          be the bane of a person's existence [life]
+                          人の命取りになる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E15EF84_E-E1615CE.mp3'
+                        Memo: ''
+                      - ID: 1471
+                        CreatedAt: '2023-02-01T22:58:38+09:00'
+                        UpdatedAt: '2023-02-01T22:58:38+09:00'
+                        DeletedAt: ''
+                        Word: baffle
+                        Syllable: baf・fle
+                        PhoneticSymbols: /bˈæfl(米国英語)/
+                        Info: 困惑させる、当惑させる、まごつかせる、挫折させる、くじく、失敗させる
+                        InfosJp: |
+                          1 他〈人を〉まごつかせる，当惑させる；自〈人・動物が〉もがく，あがく
+
+                          The sudden question baffled me.突然の質問にまごついた
+
+                          The sudden question baffled me.
+                          突然の質問にまごついた
+                          2 他〔しばしば受身形で〕〈望み・計画などを〉くじく；〈人を〉（企てなどで）挫折ざせつさせる≪in≫
+
+                          He was baffled in his plan.彼の計画はだめになった
+
+                          He was baffled in his plan.
+                          彼の計画はだめになった
+                          3 他〈光・音・液体などの〉流れを止める［そらす］；((主に英))〈風・天候などが〉〈進路などを〉妨げる
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B84130C_E-B84387E.mp3'
+                        Memo: ''
+                      - ID: 1470
+                        CreatedAt: '2023-02-01T22:57:52+09:00'
+                        UpdatedAt: '2023-02-01T22:57:52+09:00'
+                        DeletedAt: ''
+                        Word: blissful
+                        Syllable: bliss・ful
+                        PhoneticSymbols: /blísf(ə)l(米国英語)/
+                        Info: 至福の、この上なく幸せな、楽しい
+                        InfosJp: |
+                          blissful ignorance
+                          知らぬが仏
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E3A979C_E-E3ABE94.mp3'
+                        Memo: ''
+                      - ID: 1469
+                        CreatedAt: '2023-02-01T22:57:32+09:00'
+                        UpdatedAt: '2023-02-01T22:57:32+09:00'
+                        DeletedAt: ''
+                        Word: blackout
+                        Syllable: bláck・òut
+                        PhoneticSymbols: ''
+                        Info: 停電、消灯、灯火管制、報道管制、舞台暗転、瞬間的な失神、一時的な記憶喪失
+                        InfosJp: |
+                          1 停電；（空襲などに備えた）燈火管制；〔通例～s〕((英))（燈火管制のための）暗幕
+                          1a （舞台の）消灯，暗転；暗転で終わるスキット
+                          2 （一時的な）記憶［意識，視覚］喪失，失神
+                          3 （スト・停電による）報道機関の機能停止；（政府・警察による）報道管制，情報統制；（入場券売り上げ確保のための故意の）試合の中継放送規制［禁止］
+                          4 （優待の）適用除外
+                          5 ブラックアウト（◇通信障害［途絶］）
+                        InfosEn: ''
+                        VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/blackout.mp3'
+                        Memo: ''
+                    w:
+                      ID: 1460
+                      CreatedAt: '2023-02-01T21:30:50+09:00'
+                      UpdatedAt: '2023-02-01T21:30:50+09:00'
+                      DeletedAt: ''
+                      Word: celebrate
+                      Syllable: cel・e・brate
+                      PhoneticSymbols: '/séləbrèɪt(米国英語), ˈsɛl.ɪ.bɹeɪt(英国英語)/'
+                      Info: celebrateの意味・対訳は、挙行する、(式を挙げて)祝う、ほめたたえる、ほめて世に知らせる、などです。
+                      InfosJp: |
+                        1 他〈記念日・行事などを〉（…で）祝う，祝賀［記念］する；お祝いする；自（…で）祝う≪with≫
+
+                        celebrate the 50th anniversary５０周年を祝う
+                        celebrate a person's birthday人の誕生日を祝う
+                        celebrate Christmas [New Year]クリスマス［新年］を祝う
+                        They celebrated the victory with champagne.勝利をシャンパンで祝った
+
+                        celebrate the 50th anniversary
+                        ５０周年を祝う
+                        celebrate a person's birthday
+                        人の誕生日を祝う
+                        celebrate Christmas [New Year]
+                        クリスマス［新年］を祝う
+                        They celebrated the victory with champagne.
+                        勝利をシャンパンで祝った
+                        1a 自((略式))祝杯をあげる；お祭り騒ぎをする，浮かれ騒ぐ
+                        2 他自（祝典・儀式などを）挙行する；（ミサなどの宗教儀式を）執り行う
+                        3 他((形式))〈人・勲功などを〉（…として/…で）ほめたたえる，賞賛［賛美］する≪as/for≫；…を世に喧伝けんでんする
+
+                        celebrate the life and work of ...…の生涯と功績をたたえる
+
+                        celebrate the life and work of ...
+                        …の生涯と功績をたたえる
+                      InfosEn: ''
+                      VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-9E53942_E-9E563E8.mp3'
+                      Memo: ''
+      operationId: get-tools-dic-sts
+      description: 辞書
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: key
+          description: 検索word
+    parameters: []
 components:
   schemas:
     Home:
@@ -408,4 +1182,319 @@ components:
                 title: Present continuous
                 subTitle: middle of doing it; I've started doing it and I haven't finished
                 url: 00_memo.md
+    Dictionary:
+      type: object
+      properties:
+        dc:
+          type: array
+          items:
+            type: object
+            properties:
+              day:
+                type: string
+              dayCount:
+                type: integer
+        dm:
+          type: array
+          items:
+            type: object
+            properties:
+              month:
+                type: string
+              monthCount:
+                type: integer
+        h:
+          type: array
+          items:
+            type: object
+            properties:
+              ID:
+                type: integer
+              CreatedAt:
+                type: string
+              UpdatedAt:
+                type: string
+              DeletedAt:
+                type: string
+              Word:
+                type: string
+              Syllable:
+                type: string
+              PhoneticSymbols:
+                type: string
+              Info:
+                type: string
+              InfosJp:
+                type: string
+              InfosEn:
+                type: string
+              VoiceLink:
+                type: string
+              Memo:
+                type: string
+        w:
+          type: object
+          properties:
+            ID:
+              type: integer
+            CreatedAt:
+              type: string
+            UpdatedAt:
+              type: string
+            DeletedAt:
+              type: string
+            Word:
+              type: string
+            Syllable:
+              type: string
+            PhoneticSymbols:
+              type: string
+            Info:
+              type: string
+            InfosJp:
+              type: string
+            InfosEn:
+              type: string
+            VoiceLink:
+              type: string
+            Memo:
+              type: string
+      x-examples:
+        Example 1:
+          dc:
+            - day: '2023-02-01'
+              dayCount: 39
+            - day: '2023-01-31'
+              dayCount: 1
+            - day: '2023-01-30'
+              dayCount: 15
+            - day: '2023-01-29'
+              dayCount: 4
+          dm:
+            - month: 2023-02
+              monthCount: 39
+            - month: 2023-01
+              monthCount: 189
+            - month: 2022-11
+              monthCount: 5
+            - month: 2022-10
+              monthCount: 131
+            - month: 2022-09
+              monthCount: 5
+            - month: 2022-08
+              monthCount: 395
+            - month: 2022-07
+              monthCount: 333
+            - month: 2022-06
+              monthCount: 230
+            - month: 2022-05
+              monthCount: 142
+          h:
+            - ID: 1478
+              CreatedAt: '2023-02-01T23:23:00+09:00'
+              UpdatedAt: '2023-02-01T23:23:00+09:00'
+              DeletedAt: ''
+              Word: barbaric
+              Syllable: bar・bar・ic
+              PhoneticSymbols: '/bɑɚbˈærɪk(米国英語), bɑ:ˈrbærɪk(英国英語)/'
+              Info: 野蛮人の(ような)、洗練されていない、粗野な、残忍な
+              InfosJp: |
+                1 野蛮な，原始的な，未開人の（ような）；残忍な
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E178D06_E-E17BEA4.mp3'
+              Memo: ''
+            - ID: 1477
+              CreatedAt: '2023-02-01T23:22:15+09:00'
+              UpdatedAt: '2023-02-01T23:22:15+09:00'
+              DeletedAt: ''
+              Word: banter
+              Syllable: ban・ter
+              PhoneticSymbols: '/bˈænṭɚ(米国英語), ˈbæntɜ:(英国英語)/'
+              Info: (悪意のない才気のある)冗談、ひやかし、からかい
+              InfosJp: ''
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E16C050_E-E16E118.mp3'
+              Memo: ''
+            - ID: 1476
+              CreatedAt: '2023-02-01T23:21:52+09:00'
+              UpdatedAt: '2023-02-01T23:21:52+09:00'
+              DeletedAt: ''
+              Word: banish
+              Syllable: ban・ish
+              PhoneticSymbols: /bˈænɪʃ(米国英語)/
+              Info: (罰として国外へ)追放する、追放する、(…に)追放する、追い払う、払いのける
+              InfosJp: |
+                1 〈人を〉（国から）追放する，流刑にする，（…から/…に）追い出す≪from，out of/to≫
+
+                banish a person for high treason大逆罪で人を放逐する
+                be banished to an island島流しになる
+
+                banish a person for high treason
+                大逆罪で人を放逐する
+                be banished to an island
+                島流しになる
+                2 〈恐怖・心配などを〉（心から）払いのける≪from≫
+
+                banish sorrow from one's memory悲しみを思い出すまいとつとめる
+
+                banish sorrow from one's memory
+                悲しみを思い出すまいとつとめる
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B85EE5E_E-B861A10.mp3'
+              Memo: ''
+            - ID: 1475
+              CreatedAt: '2023-02-01T23:17:26+09:00'
+              UpdatedAt: '2023-02-01T23:17:26+09:00'
+              DeletedAt: ''
+              Word: 飛行機
+              Syllable: ''
+              PhoneticSymbols: ''
+              Info: ''
+              InfosJp: ''
+              InfosEn: ''
+              VoiceLink: ''
+              Memo: ''
+            - ID: 1474
+              CreatedAt: '2023-02-01T23:01:47+09:00'
+              UpdatedAt: '2023-02-01T23:01:47+09:00'
+              DeletedAt: ''
+              Word: cannibal
+              Syllable: can・ni・bal
+              PhoneticSymbols: /kˈænəb(ə)l(米国英語)/
+              Info: 人肉を食べる人、共食いする動物
+              InfosJp: |
+                1 人食い人種［部族］；食人鬼
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E71AE58_E-E71D1B2.mp3'
+              Memo: ''
+            - ID: 1473
+              CreatedAt: '2023-02-01T23:00:35+09:00'
+              UpdatedAt: '2023-02-01T23:00:35+09:00'
+              DeletedAt: ''
+              Word: baleful
+              Syllable: bale・ful
+              PhoneticSymbols: '/béɪlf(ə)l(米国英語), ˈbeɪlfʌl(英国英語)/'
+              Info: 害を与える、有害な、悪意のある、不吉な
+              InfosJp: ''
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/baleful.mp3'
+              Memo: ''
+            - ID: 1472
+              CreatedAt: '2023-02-01T23:00:02+09:00'
+              UpdatedAt: '2023-02-01T23:00:02+09:00'
+              DeletedAt: ''
+              Word: bane
+              Syllable: bane
+              PhoneticSymbols: '/béɪn(米国英語), beɪn(英国英語)/'
+              Info: 破滅のもと
+              InfosJp: |
+                1 〔主に複合語で〕猛毒
+
+                ratsbaneネコいらず
+
+                ratsbane
+                ネコいらず
+                2 〔the ～〕破滅のもと；悩みの種
+
+                be the bane of a person's existence [life]人の命取りになる
+
+                be the bane of a person's existence [life]
+                人の命取りになる
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E15EF84_E-E1615CE.mp3'
+              Memo: ''
+            - ID: 1471
+              CreatedAt: '2023-02-01T22:58:38+09:00'
+              UpdatedAt: '2023-02-01T22:58:38+09:00'
+              DeletedAt: ''
+              Word: baffle
+              Syllable: baf・fle
+              PhoneticSymbols: /bˈæfl(米国英語)/
+              Info: 困惑させる、当惑させる、まごつかせる、挫折させる、くじく、失敗させる
+              InfosJp: |
+                1 他〈人を〉まごつかせる，当惑させる；自〈人・動物が〉もがく，あがく
+
+                The sudden question baffled me.突然の質問にまごついた
+
+                The sudden question baffled me.
+                突然の質問にまごついた
+                2 他〔しばしば受身形で〕〈望み・計画などを〉くじく；〈人を〉（企てなどで）挫折ざせつさせる≪in≫
+
+                He was baffled in his plan.彼の計画はだめになった
+
+                He was baffled in his plan.
+                彼の計画はだめになった
+                3 他〈光・音・液体などの〉流れを止める［そらす］；((主に英))〈風・天候などが〉〈進路などを〉妨げる
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-B84130C_E-B84387E.mp3'
+              Memo: ''
+            - ID: 1470
+              CreatedAt: '2023-02-01T22:57:52+09:00'
+              UpdatedAt: '2023-02-01T22:57:52+09:00'
+              DeletedAt: ''
+              Word: blissful
+              Syllable: bliss・ful
+              PhoneticSymbols: /blísf(ə)l(米国英語)/
+              Info: 至福の、この上なく幸せな、楽しい
+              InfosJp: |
+                blissful ignorance
+                知らぬが仏
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-E3A979C_E-E3ABE94.mp3'
+              Memo: ''
+            - ID: 1469
+              CreatedAt: '2023-02-01T22:57:32+09:00'
+              UpdatedAt: '2023-02-01T22:57:32+09:00'
+              DeletedAt: ''
+              Word: blackout
+              Syllable: bláck・òut
+              PhoneticSymbols: ''
+              Info: 停電、消灯、灯火管制、報道管制、舞台暗転、瞬間的な失神、一時的な記憶喪失
+              InfosJp: |
+                1 停電；（空襲などに備えた）燈火管制；〔通例～s〕((英))（燈火管制のための）暗幕
+                1a （舞台の）消灯，暗転；暗転で終わるスキット
+                2 （一時的な）記憶［意識，視覚］喪失，失神
+                3 （スト・停電による）報道機関の機能停止；（政府・警察による）報道管制，情報統制；（入場券売り上げ確保のための故意の）試合の中継放送規制［禁止］
+                4 （優待の）適用除外
+                5 ブラックアウト（◇通信障害［途絶］）
+              InfosEn: ''
+              VoiceLink: 'https://weblio.hs.llnwd.net/e8/audio/blackout.mp3'
+              Memo: ''
+          w:
+            ID: 1460
+            CreatedAt: '2023-02-01T21:30:50+09:00'
+            UpdatedAt: '2023-02-01T21:30:50+09:00'
+            DeletedAt: ''
+            Word: celebrate
+            Syllable: cel・e・brate
+            PhoneticSymbols: '/séləbrèɪt(米国英語), ˈsɛl.ɪ.bɹeɪt(英国英語)/'
+            Info: celebrateの意味・対訳は、挙行する、(式を挙げて)祝う、ほめたたえる、ほめて世に知らせる、などです。
+            InfosJp: |
+              1 他〈記念日・行事などを〉（…で）祝う，祝賀［記念］する；お祝いする；自（…で）祝う≪with≫
+
+              celebrate the 50th anniversary５０周年を祝う
+              celebrate a person's birthday人の誕生日を祝う
+              celebrate Christmas [New Year]クリスマス［新年］を祝う
+              They celebrated the victory with champagne.勝利をシャンパンで祝った
+
+              celebrate the 50th anniversary
+              ５０周年を祝う
+              celebrate a person's birthday
+              人の誕生日を祝う
+              celebrate Christmas [New Year]
+              クリスマス［新年］を祝う
+              They celebrated the victory with champagne.
+              勝利をシャンパンで祝った
+              1a 自((略式))祝杯をあげる；お祭り騒ぎをする，浮かれ騒ぐ
+              2 他自（祝典・儀式などを）挙行する；（ミサなどの宗教儀式を）執り行う
+              3 他((形式))〈人・勲功などを〉（…として/…で）ほめたたえる，賞賛［賛美］する≪as/for≫；…を世に喧伝けんでんする
+
+              celebrate the life and work of ...…の生涯と功績をたたえる
+
+              celebrate the life and work of ...
+              …の生涯と功績をたたえる
+            InfosEn: ''
+            VoiceLink: 'https://weblio.hs.llnwd.net/e7/img/dict/kenej/audio/S-9E53942_E-9E563E8.mp3'
+            Memo: ''
+      description: ''
   securitySchemes: {}

@@ -12,18 +12,23 @@ func main() {
 
 	var flg string
 
-	flag.StringVar(&flg, "d", "2", "表示内容 1:News 2:Index 3 : ALL")
+	flag.StringVar(&flg, "d", "2", "表示内容 1:News 2:Index 3:Calendar 4:ALL")
 	flag.Parse()
 
 	f := strings.TrimSpace(flg)
-	if f == "1" || f == "3" {
+	if f == "1" || f == "4" {
 		Url := `https://jp.reuters.com/news/archive/special20`
 		Chromdb.GetNews(Url)
 	}
-	if f == "2" || f == "3" {
+	if f == "2" || f == "4" {
 		mes1 := MakeMessageFutureIndex()
 		Chromdb.GetHtmlValue(mes1)
 		Chromdb.GetMini("https://finance.yahoo.co.jp/indices/list")
+	}
+
+	if f == "3" || f == "4" {
+		mes1 := EventCalendar()
+		Chromdb.GetEventList(mes1)
 	}
 }
 
@@ -61,8 +66,24 @@ func MakeMessageFutureIndex() *Message {
 	}
 	selector := make([]Selector, 0)
 	s := Selector{
-		Name:  "futures　Index",
-		Value: `body > div > div.content > div > div.ly_row > div.main.ly_mr_30 > div.ng-scope > div:nth-child(1) > div > div > table > tbody`,
+		Name: "futures　Index",
+		// Value: `body > div > div.content > div > div.ly_row > div.main.ly_mr_30 > div.ng-scope > div:nth-child(1) > div > div > table > tbody`,
+		// Value: `table.ui-table > tbody`,
+		Value: `/html/body/div/div/div/div[3]/div[1]/div[3]/div[1]/div/div/table/tbody`,
+	}
+
+	selector = append(selector, s)
+	message.Selectors = selector
+
+	return message
+}
+
+func EventCalendar() *Message {
+	message := &Message{Url: `https://www.rakuten-sec.co.jp/web/market/calendar/`}
+	selector := make([]Selector, 0)
+	s := Selector{
+		Name:  "Event Calendar",
+		Value: `#CALTBL > table > tbody`,
 	}
 
 	selector = append(selector, s)

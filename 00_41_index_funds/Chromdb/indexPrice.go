@@ -34,7 +34,8 @@ func GetHtmlValue(mes *task.Message) {
 	// Get child Nodes
 	err1 := chromedp.Run(ctx,
 		// 指定セレクターのコードID取得
-		chromedp.NodeIDs(sel, &ids, chromedp.ByQuery),
+		// chromedp.NodeIDs(sel, &ids, chromedp.ByQuery),
+		chromedp.NodeIDs(sel, &ids, chromedp.BySearch),
 		// 指定NodeIdの子のNode取得
 		chromedp.ActionFunc(func(ctx context.Context) error {
 			// Get the childNodes

@@ -37,12 +37,16 @@ const router = createBrowserRouter(
                     path: "/tool",
                     element: <Tools />
                 },
+                {
+                    path: "/tool/:t/:v/:c/*",
+                    element: <Tools />
+                }
             ]
         },
         {
             path: "/Contents/:url",
             element: <Content />
-        }
+        },
     ])
 
 export default router;

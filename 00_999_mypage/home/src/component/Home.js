@@ -1,15 +1,11 @@
-import React from 'react'
-import HomeCard from './HomeCard'
-import './Component.css'
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
-import ErrorPage from './ErrorPage';
-import { useHome } from '../api/api';
-import { experimentalStyled as styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import { Typography } from '@mui/material';
+import { experimentalStyled as styled } from '@mui/material/styles';
+import React from 'react';
+import { useHome } from '../api/api';
+import './Component.css';
+import ErrorPage from './ErrorPage';
 import HomeItem from './HomeItem';
-import Container from '@mui/material/Container';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
