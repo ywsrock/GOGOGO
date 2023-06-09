@@ -4,12 +4,13 @@ import { useEffect } from 'react';
 import { Outlet, useNavigation } from 'react-router-dom';
 
 // const bgImage = require("./assets/bg.png")
-const bgImage = require("./assets/gopher.png")
+// const bgImage = require("./assets/gopher.png")
 const style = {
-  backgroundImage: `url(${bgImage})`,
+  // backgroundImage: `url(${bgImage})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "cover",
+
 }
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
   const navigation = useNavigation();
 
   return (
-    <div div style={style} >
+    <div style={style} >
       <Nav></Nav>
       <div id='main-page' className={navigation.state === "loading" ? "loading" : ""
       }>

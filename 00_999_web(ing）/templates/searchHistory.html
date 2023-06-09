@@ -16,14 +16,6 @@
             <input class="search form-control border border-secondary rounded bg-dark text-light" placeholder="Search" />
         </div>
     </div>
-<!--        <div class="col-md-2 col-sm-12">-->
-<!--            検索履歴-->
-<!--        </div>-->
-<!--            <div class="col-md-10">-->
-<!--            <input class="search w-100" placeholder="Search" />-->
-
-<!--            </div>-->
-<!--    </div>-->
     <div  class="scroll-table">
         <table class="table-responsive table table-sm table-dark table-striped table-hover table-bordered">
             <thead>
@@ -40,13 +32,13 @@
                 <tr>
                     <td class="his-no" scope="row">{{CountUpRow $k}}</td>
                     <td class="his-word">
-                        <a class="link-Dark text-light" href="/c?key={{$v.Word}}"> {{$v.Word}}</a>
+                        <a class="link-Dark text-light" href="/v1/c?key={{$v.Word}}"> {{$v.Word}}</a>
                     </td>
                     <td class="his-info">
-                        <a class="Link-success text-light" href="/c?key={{$v.Word}}"> {{$v.Info}}</a>
+                        <a class="Link-success text-light" href="/v1/c?key={{$v.Word}}"> {{$v.Info}}</a>
                     </td>
                     <td class="his-date">
-                        <a class="Link-success text-light" href="/c?key={{$v.Word}}"> {{dateFormat $v.CreatedAt}}</a>
+                        <a class="Link-success text-light" href="/v1/c?key={{$v.Word}}"> {{dateFormat $v.CreatedAt}}</a>
                     </td>
                 </tr>
                 {{end}}

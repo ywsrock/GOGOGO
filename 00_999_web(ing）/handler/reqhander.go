@@ -52,7 +52,7 @@ func RouterHandler(ctx *gin.Context) {
 	history = db.FindAll()
 	dc1 := db.FindDayCount()
 	dm1 := db.FindMonthCiybt()
-
+	fmt.Println("---", ws[0])
 	ctx.HTML(http.StatusOK, "index.html", gin.H{
 		"w":  ws[0],
 		"h":  history,
@@ -112,6 +112,7 @@ func ReqWeblio(q string, ws []*model.WordInfo) []*model.WordInfo {
 	// weblio
 	doc := SendRequest("https://ejje.weblio.jp/content/%s", q)
 	w := GetWeblioRes(doc)
+	// fmt.Println("------->", w)
 	ws = append(ws, w)
 	return ws
 }
@@ -165,10 +166,13 @@ func GetWeblioRes(doc *goquery.Document) *model.WordInfo {
 	// wInfo := "#summary > div.summaryM.descriptionWrp > p > span"
 	wInfo := "#summary > div.summaryM.descriptionWrp > p > span.content-explanation.ej"
 	// query word voice selector
-	wVoiceUrl := `#summary > table.summaryTbl > tbody > tr > td.summaryC > table > tbody > 
-	tr:nth-child(1) > td:nth-child(1) > i > audio > source`
+	// wVoiceUrl := `#summary > table.summaryTbl > tbody > tr > td.summaryC > table > tbody >
+	// tr:nth-child(1) > td:nth-child(1) > i > audio > source`
+
+	wVoiceUrl := `#summary > div.summary-title-wrp > div.summary-icon-cells > div:nth-child(1) > i > audio > source`
 	// query word selector
-	keyword := "#h1Query"
+	// keyword := "#h1Query"
+	keyword := `#summary > div.summary-title-wrp > div.summary-title > h1`
 	// query word phonetic symbols
 	vPhoneticSymbol := "#phoneticEjjeNavi > div"
 	// query word syllable
@@ -176,7 +180,9 @@ func GetWeblioRes(doc *goquery.Document) *model.WordInfo {
 
 	// word keyword
 	doc.Find(keyword).Each(func(_ int, s *goquery.Selection) {
-		w.Word = s.Text()
+		st := strings.Split(s.Text(), "と")
+		w.Word = st[0]
+
 	})
 	// query word syllable
 	doc.Find(wSyllable).Each(func(_ int, s *goquery.Selection) {

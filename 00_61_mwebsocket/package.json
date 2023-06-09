@@ -1,0 +1,12 @@
+{
+  "name": "sendmessage",
+  "version": "1.0.0",
+  "description": "sendmessage ",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC"
+}

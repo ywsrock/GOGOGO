@@ -30,7 +30,7 @@ func main() {
 	v2 := r.Group("/v2")
 	{
 
-		v2.GET("/", handler.RouterHandlerFoJson)
+		v2.GET("/", handler.RouterHandlerForJson)
 		v2.GET("/c", handler.RouterHandlerForJson)
 	}
 

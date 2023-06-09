@@ -20,25 +20,9 @@ export const Home = () => {
     const { data, isError } = useHome("/home")
     if (isError) return <ErrorPage code="NetorkError"></ErrorPage>
     return (
-        // <div>
-        //     <Box>
-        //         <Grid container spacing={{ xs: 0.5, md: 1 }} columns={{ xs: 1, sm: 4, md: 3, lg: 12 }}>
-        //             {data.results.map((item, index) => (
-        //                 <Grid xs={1} sm={2} md={1} lg={4} key={index} sx={{ ml: '', py: '1em' }}>
-        //                     {/* <div style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', display: 'flex' }}> */}
-        //                     <div style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'start', display: 'flex' }} >
-        //                         <HomeCard item={item} className='Component-Home' />
-        //                     </div>
-        //                 </Grid>
-        //             ))}
-        //         </Grid>
-        //     </Box >
-        // </div >
-        <Box component="div" sx={{ width: '100vw', height: '100vh', overflow: 'scroll' }}>
+        <Box component="div" sx={{ width: '100%', height: '100%', overflow: 'scroll' }}>
             <HomeItem></HomeItem>
         </Box >
-        // <Box>
-        //     <HomeItem></HomeItem>
-        // </Box >
+
     )
 }

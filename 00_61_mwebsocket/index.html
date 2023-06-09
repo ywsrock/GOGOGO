@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SendMessage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align: center;">SendMessage</h1>
+    <div class="form-group">
+        <input type="text" id="messageInput" class="form-control" placeholder="メッセージを入力してください">
+    </div>
+    <div class="form-group">
+        <button onclick="sendMessage()" class="btn btn-primary">発信</button>
+    </div>
+    <ul id="clients" class="list-group"></ul>
+    <div id="checkboxContainer"></div>
+    <ul id="messageList" class="list-group"></ul>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+    const messageList = document.getElementById('messageList');
+    const clientsList = document.getElementById('checkboxContainer');
+    const messageInput = document.getElementById('messageInput');
+    let socket;
+
+    function appendMessage(message) {
+        const li = document.createElement('li');
+        li.textContent = message;
+        messageList.appendChild(li);
+    }
+
+    function appendClient(client) {
+        const li = document.createElement('li');
+        li.textContent = client;
+        clientsList.appendChild(li);
+    }
+
+    function sendMessage() {
+        const message = messageInput.value;
+        let msg = {};
+        if (message.trim() == "") return "";
+        msg.message = message;
+        msg.to = getCheckedValues();
+        var objString = JSON.stringify(msg);
+        socket.send(objString);
+        messageInput.value = '';
+    }
+
+    function connectWebSocket() {
+        socket = new WebSocket('ws://localhost:8080/ws');
+
+        socket.onopen = function (event) {
+            appendMessage('サーバに接続しました');
+        };
+        socket.onmessage = function (event) {
+            var res = JSON.parse(event.data);
+            appendMessage('受信したメッセージ: ' + res.message);
+            var cs = res.clients.split("<br>");
+            while (clientsList.firstChild) {
+                clientsList.removeChild(clientsList.firstChild);
+            }
+            createCheckboxes(cs);
+        };
+
+        socket.onclose = function (event) {
+            appendMessage('サーバから切断されました');
+        };
+
+        socket.onerror = function (event) {
+            appendMessage('WebSocketエラーが発生しました');
+        };
+    }
+
+    function createCheckboxes(checkboxOptions) {
+        var container = document.getElementById("checkboxContainer");
+        checkboxOptions.forEach(function (option) {
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = option;
+            container.appendChild(checkbox);
+
+            var label = document.createElement("label");
+            label.innerHTML = option;
+            container.appendChild(label);
+
+            container.appendChild(document.createElement("br"));
+        });
+    }
+
+    function getCheckedValues() {
+        var checkboxes = document.querySelectorAll("#checkboxContainer input[type=checkbox]:checked");
+        var values = Array.from(checkboxes).map(function (checkbox) {
+            return checkbox.value;
+        });
+        return values;
+    }
+
+    connectWebSocket();
+</script>
+<!-- このプロセスで他ファイルを require して実行することもできます -->
+<!--<script src="./renderer.js"></script>-->
+</body>
+</html>
