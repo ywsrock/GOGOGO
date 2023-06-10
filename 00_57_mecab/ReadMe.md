@@ -4,13 +4,9 @@ Golangでも簡単で日本語の形態素解析ができます。（環境構�
 
 
 
-[GItHub]: https://github.com/ywsrock/GOGOGO/tree/master/00_57_mecab
-
 
 
 ## コードの説明
-
-
 
 ## パッケージと定数
 
