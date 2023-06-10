@@ -14,7 +14,7 @@ type HelloStackProps struct {
 	awscdk.StackProps
 }
 
-func NewAFStack(scope constructs.Construct, id string, props *HelloStackProps) awscdk.Stack {
+func NewCfdStack(scope constructs.Construct, id string, props *HelloStackProps) awscdk.Stack {
 	var sprops awscdk.StackProps
 	if props != nil {
 		sprops = props.StackProps
@@ -75,7 +75,7 @@ func main() {
 
 	app := awscdk.NewApp(nil)
 
-	NewAFStack(app, "AFDemoStack", &HelloStackProps{
+	NewCfdStack(app, "CfdDemoStack", &HelloStackProps{
 		awscdk.StackProps{
 			Env: env(),
 		},
@@ -90,12 +90,12 @@ func env() *awscdk.Environment {
 	// If unspecified, this stack will be "environment-agnostic".
 	// Account/Region-dependent features and context lookups will not work, but a
 	// single synthesized template can be deployed anywhere.
-	//---------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------
 	return nil
 
 	// Uncomment if you know exactly what account and region you want to deploy
 	// the stack to. This is the recommendation for production stacks.
-	//---------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------
 	// return &awscdk.Environment{
 	//  Account: jsii.String("123456789012"),
 	//  Region:  jsii.String("us-east-1"),
@@ -104,7 +104,7 @@ func env() *awscdk.Environment {
 	// Uncomment to specialize this stack for the AWS Account and Region that are
 	// implied by the current CLI configuration. This is recommended for dev
 	// stacks.
-	//---------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------
 	// return &awscdk.Environment{
 	//  Account: jsii.String(os.Getenv("CDK_DEFAULT_ACCOUNT")),
 	//  Region:  jsii.String(os.Getenv("CDK_DEFAULT_REGION")),
