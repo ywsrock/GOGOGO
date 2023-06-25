@@ -17,7 +17,6 @@ func main() {
 	for _, v := range result {
 		fmt.Println(v)
 	}
-
 }
 
 func runGoErrGroup(fns ...func(int) (int, error)) ([]int, error) {
@@ -43,18 +42,14 @@ func runGoErrGroup(fns ...func(int) (int, error)) ([]int, error) {
 	}
 	// エラー終了待ち
 	if err := eg.Wait(); err != nil {
-		// エラーを無視して、結果を返す
-		// return result, err
-		// エラー終了 log.Fatal(err)
-		// log.Println(err)
-		return nil, err // 結果を無視、エラー返す
+		return nil, err
 	}
 	return result, nil
 }
 
 func subPro(i int) (int, error) {
 	if i == 0 {
-		return i, errors.New("0 dived")
+		return i, errors.New("0で割りました.")
 	}
 	return i, nil
 }
