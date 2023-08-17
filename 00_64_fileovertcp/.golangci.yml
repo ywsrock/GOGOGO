@@ -1,0 +1,29 @@
+linters:
+  enable:
+    - goimports
+    - govet
+    - gofumpt
+    - bodyclose
+  disable:
+    - unused
+    - staticcheck
+
+linters-settings:
+  gofumpt:
+    min-confidence: 0.8
+
+run:
+  skip-files:
+    - ".*_test.go"
+    - "pkg/generated/.*"
+  deadline: 5m
+
+output:
+  sort-results: true
+
+issues:
+  new: true
+  new-from-rev: HEAD~1
+  exclude-rules:
+    - linters: ["golint"]
+      text: "exported function .* should have comment"
