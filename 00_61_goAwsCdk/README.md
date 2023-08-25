@@ -11,8 +11,6 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
 
 
 
-
-
 ## コードの概要
 
 AWS CDKを使用してAWSのリソースをプロビジョニングするためのアプリケーションです。具体的には、AWS Lambda関数とAPI Gatewayを作成しています。

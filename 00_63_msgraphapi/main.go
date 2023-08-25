@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	TenantID := "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
+	TenantID := "c524e684-89b9-41e5-89c5-546aa8741088"
 	ClientID := "02f84e6f-f960-4543-a681-300ad761401e"
 	Scrit := "Q9Q8Q~7KVCqMBoquHU8tJ1Nl7hn5yu-HVMFCqaNa"
 
