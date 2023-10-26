@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-server
+    environment:
+      MYSQL_ROOT_PASSWORD: passw0rd!
+      MYSQL_DATABASE: xcard-personal
+      MYSQL_USER: user
+      MYSQL_PASSWORD: passw0rd!
+      TZ: Asia/Tokyo
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/conf.d/config.cnf:/etc/mysql/conf.d/config.cnf
+      - ./db/schema:/docker-entrypoint-initdb.d
+    networks:
+      - db-server
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-uroot", "-ppassw0rd!"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  mysql-cli:
+    image: mysql:8.0
+    networks:
+      - db-server
+    command: mysql -hmysql -uuser -ppassw0rd! xcard-personal && use xcard-personal
+
+networks:
+  db-server:
+    driver: bridge
+
+volumes:
+  mysql_data:
