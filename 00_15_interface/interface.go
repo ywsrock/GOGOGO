@@ -31,6 +31,7 @@ type ImpIf struct {
 	name string
 }
 
+// インターフェースのメソッド実現
 func (I *ImpIf) getName() string {
 	return I.name
 }
@@ -43,5 +44,4 @@ func main() {
 
 	ii := &ImpIf{name: "12345"}
 	fmt.Println(ii.getName())
-
 }
