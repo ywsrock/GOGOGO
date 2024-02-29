@@ -1,9 +1,14 @@
 package main
 
 import "net/http"
+import "os"
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello, World!"))
+	greeting := os.Getenv("GREETING")
+	if greeting == "" {
+		greeting = "not exist"
+	}
+	w.Write([]byte(greeting + "Hello, World!"))
 }
 
 func main() {
