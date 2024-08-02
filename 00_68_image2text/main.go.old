@@ -1,0 +1,258 @@
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"image"
+	"image/color"
+	"image/png"
+	"io/ioutil"
+	"math"
+	"os"
+	"path/filepath"
+
+	"github.com/disintegration/imaging"
+	"github.com/otiai10/gosseract/v2"
+	"gocv.io/x/gocv"
+)
+
+// グレースケール変換
+func toGrayscale(img image.Image) *image.Gray {
+	bounds := img.Bounds()
+	grayImg := image.NewGray(bounds)
+	for y := bounds.Min.Y; y < bounds.Max.Y; y++ {
+		for x := bounds.Min.X; x < bounds.Max.X; x++ {
+			grayColor := color.GrayModel.Convert(img.At(x, y))
+			grayImg.Set(x, y, grayColor)
+		}
+	}
+	return grayImg
+}
+
+// 二値化
+func binarize(img *image.Gray) *image.Gray {
+	bounds := img.Bounds()
+	binarizedImg := image.NewGray(bounds)
+	threshold := uint8(128) // 閾値
+	for y := bounds.Min.Y; y < bounds.Max.Y; y++ {
+		for x := bounds.Min.X; x < bounds.Max.X; x++ {
+			if img.GrayAt(x, y).Y > threshold {
+				binarizedImg.SetGray(x, y, color.Gray{Y: 255})
+			} else {
+				binarizedImg.SetGray(x, y, color.Gray{Y: 0})
+			}
+		}
+	}
+	return binarizedImg
+}
+
+// ノイズ除去
+func removeNoise(img *image.Gray) *image.Gray {
+	denoisedImg := imaging.Blur(img, 1) // ブラーをかけてノイズを除去
+	return imageToGray(denoisedImg)
+}
+
+// シャープ化
+func sharpen(img *image.Gray) *image.Gray {
+	sharpenedImg := imaging.Sharpen(img, 2) // シャープネスを強調
+	return imageToGray(sharpenedImg)
+}
+
+// NRGBA画像をGray画像に変換するヘルパー関数
+func imageToGray(img image.Image) *image.Gray {
+	bounds := img.Bounds()
+	grayImg := image.NewGray(bounds)
+	for y := bounds.Min.Y; y < bounds.Max.Y; y++ {
+		for x := bounds.Min.X; x < bounds.Max.X; x++ {
+			grayColor := color.GrayModel.Convert(img.At(x, y))
+			grayImg.Set(x, y, grayColor)
+		}
+	}
+	return grayImg
+}
+
+// 画像の傾きを補正
+func deskew(img image.Image) (image.Image, error) {
+	// GoCVを使用して画像の傾きを補正
+	mat, err := gocv.ImageToMatRGB(img)
+	if err != nil {
+		return nil, err
+	}
+	defer mat.Close()
+
+	grayMat := gocv.NewMat()
+	defer grayMat.Close()
+	gocv.CvtColor(mat, &grayMat, gocv.ColorRGBToGray)
+
+	edges := gocv.NewMat()
+	defer edges.Close()
+	gocv.Canny(grayMat, &edges, 50, 200)
+
+	lines := gocv.NewMat()
+	defer lines.Close()
+	gocv.HoughLinesP(edges, &lines, 1, math.Pi/180, 50)
+
+	var angle float64
+	for i := 0; i < lines.Rows(); i++ {
+		line := lines.GetVeciAt(i, 0)
+		angle += math.Atan2(float64(line[3]-line[1]), float64(line[2]-line[0]))
+	}
+
+	if lines.Rows() > 0 {
+		angle /= float64(lines.Rows())
+	}
+	angle = angle * 180 / math.Pi
+
+	rotated := gocv.NewMat()
+	defer rotated.Close()
+	center := image.Point{X: img.Bounds().Dx() / 2, Y: img.Bounds().Dy() / 2}
+	rotMat := gocv.GetRotationMatrix2D(center, angle, 1.0)
+	gocv.WarpAffine(mat, &rotated, rotMat, image.Point{X: img.Bounds().Dx(), Y: img.Bounds().Dy()})
+
+	// GoCVのMatからimage.Imageに変換
+	buf, err := gocv.IMEncode(gocv.PNGFileExt, rotated)
+	if err != nil {
+		return nil, err
+	}
+	defer buf.Close()
+
+	imgReader := bytes.NewReader(buf.GetBytes())
+	decodedImg, err := png.Decode(imgReader)
+	if err != nil {
+		return nil, err
+	}
+
+	return decodedImg, nil
+}
+
+// 画像の前処理を行う関数
+func preprocessImage(inputPath string, outputPath string) error {
+	imgFile, err := os.Open(inputPath)
+	if err != nil {
+		return err
+	}
+	defer imgFile.Close()
+
+	img, _, err := image.Decode(imgFile)
+	if err != nil {
+		return err
+	}
+
+	// グレースケール変換
+	grayImg := toGrayscale(img)
+
+	// 画像の傾きを補正
+	deskewedImg, err := deskew(grayImg)
+	if err != nil {
+		return err
+	}
+
+	// 二値化
+	binarizedImg := binarize(imageToGray(deskewedImg))
+
+	// ノイズ除去
+	denoisedImg := removeNoise(binarizedImg)
+
+	// シャープ化
+	sharpenedImg := sharpen(denoisedImg)
+
+	outFile, err := os.Create(outputPath)
+	if err != nil {
+		return err
+	}
+	defer outFile.Close()
+
+	// PNG 形式で保存
+	err = png.Encode(outFile, sharpenedImg)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+// テキストをファイルに保存する関数
+func saveTextToFile(text string, outputPath string) error {
+	err := ioutil.WriteFile(outputPath, []byte(text), 0o644)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func main() {
+	preFolder := "image/pre"
+	postFolder := "image/post"
+	textFolder := "text"
+
+	if err := os.MkdirAll(postFolder, os.ModePerm); err != nil {
+		fmt.Println("Postフォルダー作成エラー:", err)
+		return
+	}
+	if err := os.MkdirAll(textFolder, os.ModePerm); err != nil {
+		fmt.Println("Textフォルダー作成エラー:", err)
+		return
+	}
+
+	files, err := ioutil.ReadDir(preFolder)
+	if err != nil {
+		fmt.Println("Preフォルダー読み込みエラー:", err)
+		return
+	}
+
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+
+		inputPath := filepath.Join(preFolder, file.Name())
+		postPath := filepath.Join(postFolder, file.Name())
+		fileNameWithoutExt := file.Name()[:len(file.Name())-len(filepath.Ext(file.Name()))]
+		textFilePath := filepath.Join(textFolder, fileNameWithoutExt+".txt")
+
+		// 画像前処理
+		err := preprocessImage(inputPath, postPath)
+		if err != nil {
+			fmt.Println("前処理エラー:", err)
+			continue
+		}
+
+		// 前処理後の画像を手動で確認
+		fmt.Println("前処理後の画像保存先:", postPath)
+
+		// Tesseract OCR クライアントの作成
+		client := gosseract.NewClient()
+		defer client.Close()
+
+		client.SetLanguage("jpn+eng+chi_sim+chi_tra")
+		client.SetImage(postPath)
+		// PSMの設定
+		client.SetPageSegMode(gosseract.PSM_AUTO_OSD) // PSM: 自動ページセグメンテーション
+
+		// テキスト抽出
+		text, err := client.Text()
+		if (err != nil) || (text == "") {
+			client.SetPageSegMode(gosseract.PSM_SINGLE_LINE) // PSM: 単一行
+			text, err = client.Text()
+			if (err != nil) || (text == "") {
+				client.SetPageSegMode(gosseract.PSM_SINGLE_BLOCK) // PSM: 単一ブロック
+				text, err = client.Text()
+				if (err != nil) || (text == "") {
+					fmt.Println("OCR エラー:", err)
+					continue
+				}
+			}
+		}
+
+		// デバッグ用にテキストをコンソールに出力
+		fmt.Println("抽出したテキスト:", text)
+
+		// テキストをファイルに保存
+		if err := saveTextToFile(text, textFilePath); err != nil {
+			fmt.Println("テキストファイル保存エラー:", err)
+			continue
+		}
+
+		fmt.Println("抽出したテキストを保存しました:", textFilePath)
+	}
+}
