@@ -28,7 +28,7 @@ services:
     image: mysql:8.0
     networks:
       - db-server
-    command: mysql -hmysql -uuser -ppassw0rd! xcard-personal && use xcard-personal
+    command: mysql -hmysql -uuser -ppassw0rd! x-personal && use x-personal
 
 networks:
   db-server:
