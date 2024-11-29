@@ -1,17 +1,16 @@
-version: '3'
-
 services:
   mysql:
     image: mysql:8.0
     container_name: mysql-server
+    command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: passw0rd!
-      MYSQL_DATABASE: x-personal
+      MYSQL_DATABASE: x-personal 
       MYSQL_USER: user
       MYSQL_PASSWORD: passw0rd!
       TZ: Asia/Tokyo
     volumes:
-      - ./db/data:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
       - ./db/conf.d/config.cnf:/etc/mysql/conf.d/config.cnf
       - ./db/schema:/docker-entrypoint-initdb.d
     networks:
@@ -23,12 +22,15 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+    user: "1000:1000"
 
   mysql-cli:
     image: mysql:8.0
     networks:
       - db-server
     command: mysql -hmysql -uuser -ppassw0rd! x-personal && use x-personal
+    depends_on:
+      - mysql
 
 networks:
   db-server:
