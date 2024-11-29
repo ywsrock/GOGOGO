@@ -6,7 +6,7 @@ services:
     container_name: mysql-server
     environment:
       MYSQL_ROOT_PASSWORD: passw0rd!
-      MYSQL_DATABASE: xcard-personal
+      MYSQL_DATABASE: x-personal
       MYSQL_USER: user
       MYSQL_PASSWORD: passw0rd!
       TZ: Asia/Tokyo
